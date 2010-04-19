@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<style type="text/css">
+
+/*
+aqua
+57, 181, 189
+
+orange
+223, 97, 23
+
+green
+165, 221, 60
+
+pink
+216, 0, 101
+
+grey
+129, 130, 133
+*/
+
+@font-face {
+  font-family: 'MisoLight';
+  src: url('miso-light.eot');
+  src: local('Miso'), local('Miso-Light'), url('miso-light.woff') format('woff'), url('miso-light.ttf') format('truetype'), url('miso-light.svg#Miso-Light') format('svg');
+}
+body
+{
+  font-family: 'Helvetica Neue';
+  color: rgb(129,130,133);
+}
+div
+{
+  border: 0px solid black;
+}div.v4variable
+{
+  border: 1px solid black;
+  width: 350px;
+}
+
+h1
+{
+  font-family: 'MisoLight';
+  line-height: 0px;
+  font-size: 42px;
+  font-weight: 100;
+}
+h2
+{
+  font-size: 13px;
+  line-height: 8px;
+  font-weight: 300;
+}
+
+
+
+/* constant layout starts here (the part that doesn't move) */
+div.v4constant
+{
+  width: 405px;
+  margin: auto;
+  position: relative;
+}
+
+/* first 1/3 of the constant layout */
+div#v4constant_title
+{
+  height: 80px;
+}
+div#v4constant_title_text
+{
+  font-family: 'MisoLight';
+  font-size: 24px;
+  font-weight: 100;
+  position: absolute;
+  bottom: -7px;
+  right: 36px;
+  z-index: 75;
+}
+
+
+/* second 1/3 of the constant layout */
+div#v4constant_main
+{
+  height: 138px;
+}
+div#v4constant_main_text
+{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+div#v4constant_main_silhouette
+{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 84px;
+  height: 95px;
+  background: url('images/v4silhouette.png') no-repeat center;
+}
+div#v4constant_main_outline
+{
+  margin: auto;
+  position: absolute;
+  left: 0px;
+  
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 2px solid rgb(129, 130, 133);
+  background:rgba(255, 255, 255, 0.9);
+  
+  height: 138px;
+  width: 375px;
+  
+  z-index: 50;
+}
+
+div#v4buttons
+{
+  position: absolute;
+  right: 0px;
+  
+  padding-top: 8px;
+  
+  width: 32px;
+}
+div#v4buttons div
+{
+  margin-bottom: 5px;
+  
+  height: 20px;
+  width: 30px;
+}
+div#v4b1
+{
+  background:url('images/v4b1.png') right, rgb(57, 181, 189);
+}
+div#v4b2
+{
+  background:url('images/v4b2.png') right, rgb(223, 97, 23);
+}
+div#v4b3
+{
+  background:url('images/v4b3.png') right, rgb(165, 221, 60);
+}
+div#v4b4
+{
+  background:url('images/v4b4.png') right, rgb(216, 0, 101);
+}
+
+
+/* last 1/3 of the constant layout */
+div#v4constant_foot
+{
+  height: 30px;
+}
+div#v4constant_foot_text
+{
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  position: absolute;
+  bottom: 0px;
+  right: 36px;
+  z-index: 75;
+}
+
+
+/* the variable part of the site */
+div.v4variable
+{
+  border: 1px solid black;
+  width: 350px;
+  margin: auto;
+  position: relative;
+  top: -160px;
+}
+</style>
+
+
+  <div class="v4constant" id="v4constant_title">
+    <div id="v4constant_title_text">tyrale.com</div>
+  </div>
+
+  <div class="v4constant" id="v4constant_main">
+  
+    <div id="v4constant_main_outline">
+    
+      <div id="v4constant_main_text">
+        <h1>Tyrale Bloomfield</h1>
+        <h2>Designer, Developer, Husband, Father.</h2>
+        <h2>Lover of good ideas, Fixer to the bad.</h2>
+      </div><!-- v4constant_main_text -->
+    
+      <div id="v4constant_main_silhouette">
+        &nbsp;
+      </div><!-- v4constant_main_silhouette -->
+    
+    </div><!-- v4constant_main_outline -->
+  
+    <div id="v4buttons">
+    
+      <div id="v4b1">&nbsp;</div>
+      <div id="v4b2">&nbsp;</div>
+      <div id="v4b3">&nbsp;</div>
+      <div id="v4b4">&nbsp;</div>
+    
+    </div><!-- v4buttons -->
+  
+  </div><!-- v4constant -->
+
+  <div class="v4constant" id="v4constant_foot">
+    <div id="v4constant_foot_text">read my blog</div>
+  </div>
+
+  <div class="v4variable" id="v4networks">
+    Networks
+  </div><!-- end v4networks -->
+
+
+</html>
