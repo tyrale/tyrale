@@ -1,193 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-
-<style type="text/css">
-
-/*
-aqua
-57, 181, 189
-
-orange
-223, 97, 23
-
-green
-165, 221, 60
-
-pink
-216, 0, 101
-
-grey
-129, 130, 133
-*/
-
-@font-face {
-  font-family: 'MisoLight';
-  src: url('miso-light.eot');
-  src: local('Miso'), local('Miso-Light'), url('miso-light.woff') format('woff'), url('miso-light.ttf') format('truetype'), url('miso-light.svg#Miso-Light') format('svg');
-}
-body
-{
-  font-family: 'Helvetica Neue';
-  color: rgb(129,130,133);
-}
-div
-{
-  border: 0px solid black;
-}div.v4variable
-{
-  border: 1px solid black;
-  width: 350px;
-}
-
-h1
-{
-  font-family: 'MisoLight';
-  line-height: 0px;
-  font-size: 42px;
-  font-weight: 100;
-}
-h2
-{
-  font-size: 13px;
-  line-height: 8px;
-  font-weight: 300;
-}
-
-
-
-/* constant layout starts here (the part that doesn't move) */
-div.v4constant
-{
-  width: 405px;
-  margin: auto;
-  position: relative;
-}
-
-/* first 1/3 of the constant layout */
-div#v4constant_title
-{
-  height: 80px;
-}
-div#v4constant_title_text
-{
-  font-family: 'MisoLight';
-  font-size: 24px;
-  font-weight: 100;
-  position: absolute;
-  bottom: -7px;
-  right: 36px;
-  z-index: 75;
-}
-
-
-/* second 1/3 of the constant layout */
-div#v4constant_main
-{
-  height: 138px;
-}
-div#v4constant_main_text
-{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-div#v4constant_main_silhouette
-{
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 84px;
-  height: 95px;
-  background: url('images/v4silhouette.png') no-repeat center;
-}
-div#v4constant_main_outline
-{
-  margin: auto;
-  position: absolute;
-  left: 0px;
-  
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border: 2px solid rgb(129, 130, 133);
-  background:rgba(255, 255, 255, 0.9);
-  
-  height: 138px;
-  width: 375px;
-  
-  z-index: 50;
-}
-
-div#v4buttons
-{
-  position: absolute;
-  right: 0px;
-  
-  padding-top: 8px;
-  
-  width: 32px;
-}
-div#v4buttons div
-{
-  margin-bottom: 5px;
-  
-  height: 20px;
-  width: 30px;
-}
-div#v4b1
-{
-  background:url('images/v4b1.png') right, rgb(57, 181, 189);
-}
-div#v4b2
-{
-  background:url('images/v4b2.png') right, rgb(223, 97, 23);
-}
-div#v4b3
-{
-  background:url('images/v4b3.png') right, rgb(165, 221, 60);
-}
-div#v4b4
-{
-  background:url('images/v4b4.png') right, rgb(216, 0, 101);
-}
-
-
-/* last 1/3 of the constant layout */
-div#v4constant_foot
-{
-  height: 30px;
-}
-div#v4constant_foot_text
-{
-  font-size: 13px;
-  font-weight: 300;
-  font-style: italic;
-  position: absolute;
-  bottom: 0px;
-  right: 36px;
-  z-index: 75;
-}
-
-
-/* the variable part of the site */
-div.v4variable
-{
-  border: 1px solid black;
-  width: 350px;
-  margin: auto;
-  position: relative;
-  top: -160px;
-}
-</style>
-
-
+<head>
+  <title>Tyrale Bloomfield</title>
+  <meta name="title" content="Tyrale Bloomfield" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
   <div class="v4constant" id="v4constant_title">
     <div id="v4constant_title_text">tyrale.com</div>
   </div>
 
   <div class="v4constant" id="v4constant_main">
   
-    <div id="v4constant_main_outline">
+    <div id="v4constant_main_outline" class="v4default">
     
       <div id="v4constant_main_text">
         <h1>Tyrale Bloomfield</h1>
@@ -203,10 +30,10 @@ div.v4variable
   
     <div id="v4buttons">
     
-      <div id="v4b1">&nbsp;</div>
-      <div id="v4b2">&nbsp;</div>
-      <div id="v4b3">&nbsp;</div>
-      <div id="v4b4">&nbsp;</div>
+      <div id="v4b1"><a href="#about">&nbsp;</a></div>
+      <div id="v4b2"><a href="#contact">&nbsp;</a></div>
+      <div id="v4b3"><a href="#networks">&nbsp;</a></div>
+      <div id="v4b4"><a href="#credits">&nbsp;</a></div>
     
     </div><!-- v4buttons -->
   
@@ -215,10 +42,98 @@ div.v4variable
   <div class="v4constant" id="v4constant_foot">
     <div id="v4constant_foot_text">read my blog</div>
   </div>
+  
+  <div id="v4slides">
+    <div class="v4slide v4default" id="networks">
+      <div class="v4topper">
+        <div class="alignment">
+          <p>Align Here</p>
+        </div>
+      </div>
+      <div>
+        <ul>
+          <li><div>Networks</div></li>
+          <li><img src="images/networks/delicious.gif" /><div class="network-link">del.icio.us/tyralebloomfield</div><div class="chevron"></div></li>
+          <li><img src="images/networks/fb.gif" /><div class="network-link">facebook.com/tyralebloomfield</div><div class="chevron"></div></li>
+          <li><img src="images/networks/flickr.gif" /><div class="network-link">flickr.com/tyrale</div><div class="chevron"></div></li>
+          <li><img src="images/networks/linkedin.gif" /><div class="network-link">linkedin.com/in/tyrale</div><div class="chevron"></div></li>
+          <li><img src="images/networks/qik.gif" /><div class="network-link">qik.com/tyrale</div><div class="chevron"></div></li>
+          <li><img src="images/networks/robo.gif" /><div class="network-link">robo.to/tyrale</div><div class="chevron"></div></li>
+          <li><img src="images/networks/tumblr.gif" /><div class="network-link">tyrale.tumblr.com</div><div class="chevron"></div></li>
+          <li><img src="images/networks/twitter.gif" /><div class="network-link">twitter.com/tyrale</div><div class="chevron"></div></li>
+        </ul>
+      </div>
+    </div><!-- end networks -->
 
-  <div class="v4variable" id="v4networks">
-    Networks
-  </div><!-- end v4networks -->
+    <div class="v4slide v4default" id="contact">
+      <div class="v4topper">
+        <div class="alignment">
+          <p>Align Here</p>
+        </div>
+      </div>
+      <div>
+      
+        <ul>
+          <li><div>Personal</div></li>
+          <li><img src="images/contact/profile.png" /><div>Tyrale Bloomfield</div></li>
+          <li><img src="images/contact/phone.png" /><div>615.807.0791</div></li>
+          <li><img src="images/contact/email.png" /><div>emailme@tyrale.com</div></li>
+          <li><img src="images/contact/aim.png" /><div>tyraleim</div></li>
+          <li><img src="images/contact/talk.png" /><div>tyralebloomfield</div></li>
+          <li><img src="images/contact/wave.png" /><div>tyralebloomfield@googlewave.com</div></li>
+          <li><img src="images/contact/marker.png" />
+            <div>
+              <ul>
+                <li>AddThenSubtract</li>
+                <li>2306 Surrey Lane</li>
+                <li>Franklin, TN 37067</li>
+                <li>United States</li>
+              </ul>
+            </div></li>
+          <li><img src="images/contact/phone.png" /><div>Me</div></li>
+          <li><img src="images/contact/planet.png" /><div>Me</div></li>
+          <li><img src="images/contact/email.png" /><div>Me</div></li>
+          <li><img src="images/contact/aim.png" /><div>Me</div></li>
+        </ul>
+      
+      </div>
+    </div><!-- end contact -->
+  
+  
+    <div class="v4slide v4default" id="credits">
+      <div class="v4topper">
+        <div class="alignment">
+          <p>Align Here</p>
+        </div>
+      </div>
+      <div>
+      
+        credits!
+        <br>
+        credits!
+        <br>
+        credits!
+      
+      </div>
+    </div><!-- end contact -->
+
+    <div class="v4slide v4default" id="about">
+      <div class="v4topper">
+        <div class="alignment">
+          <p>Align Here</p>
+        </div>
+      </div>
+      <div>
+      
+        about!
+        <br>
+        about!
+        <br>
+        about!
+      
+      </div>
+    </div><!-- end contact -->
+  </div>
 
 
 </html>
