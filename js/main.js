@@ -1,8 +1,14 @@
 $(document).ready(function () {
   
-  default_top = -160;
+  default_top = -130;
   
   oldhash = location.hash;
+  
+  if (oldhash.length)
+  {
+    hide_footer();
+  }
+  
   swap_slides('', oldhash);
   checkHash();
   
@@ -14,6 +20,8 @@ function checkHash()
   
   if (newhash != oldhash)
   {
+    hide_footer();
+    
     swap_slides(oldhash, newhash);
     oldhash = newhash;
   }
@@ -24,7 +32,7 @@ function checkHash()
 function swap_slides(slide1, slide2)
 {
   slide(slide1, -1200, function () {  $(slide1).hide(); } );
-
+  
   $(slide2).show();
   slide(slide2, default_top);
 }
@@ -40,4 +48,9 @@ function slide(id, val, cb)
       complete: cb
     }
   );
+}
+
+function hide_footer()
+{
+  $('#v4constant_foot').hide();
 }
