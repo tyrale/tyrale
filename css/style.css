@@ -180,6 +180,7 @@ div#v4slides
 }
 div.v4slide
 {
+  left: 8px;
   width: 350px;
   margin: auto;
   position: absolute;
