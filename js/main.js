@@ -1,5 +1,13 @@
 $(document).ready(function () {
   
+  $('#v4buttons a').click(function () {
+    if (location.hash == $(this).attr('href'))
+    {
+      location.hash = 'home';
+      return false;
+    }
+  });
+  
   default_top = -130;
   
   oldhash = location.hash;
@@ -31,6 +39,11 @@ function checkHash()
 
 function swap_slides(slide1, slide2)
 {
+  if (!$(slide2).length)
+  {
+    show_footer();
+  }
+  
   slide(slide1, -1200, function () {  $(slide1).hide(); } );
   
   $(slide2).show();
@@ -53,4 +66,9 @@ function slide(id, val, cb)
 function hide_footer()
 {
   $('#v4constant_foot').hide();
+}
+
+function show_footer()
+{
+  $('#v4constant_foot').show();
 }
