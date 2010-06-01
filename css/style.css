@@ -168,9 +168,9 @@ div#v4constant_main_outline
 div#v4buttons
 {
   position: absolute;
-  right: -28px;
+  right: -26px;
   top: 0px;
-  
+  text-indent:-9999px;
   padding-top: 8px;
 }
 div#v4buttons div
@@ -179,7 +179,7 @@ div#v4buttons div
   margin-bottom: 5px;
   
   height: 20px;
-  width: 30px;
+  width: 26px;
 }
 div#v4buttons a
 {
@@ -188,19 +188,19 @@ div#v4buttons a
 }
 div#v4b1
 {
-  background:url('../images/v4b1.png') right, rgb(57, 181, 189);
+  background:url('../images/v4b1.png') right, -webkit-gradient(linear, right top, left top, color-stop(0.7, rgb(57, 181, 189)), color-stop(1.5, #000));
 }
 div#v4b2
 {
-  background:url('../images/v4b2.png') right, rgb(223, 97, 23);
+  background:url('../images/v4b2.png') right, -webkit-gradient(linear, right top, left top, color-stop(0.7, rgb(223, 97, 23)), color-stop(1.5, #000));
 }
 div#v4b3
 {
-  background:url('../images/v4b3.png') right, rgb(165, 221, 60);
-}
-div#v4b4
-{
-  background:url('../images/v4b4.png') right, rgb(216, 0, 101);
+  background:url('../images/v4b3.png') right, -webkit-gradient(linear, right top, left top, color-stop(0.7, rgb(165, 221,60)), color-stop(1.5, #000));
+}                                                                                                           
+div#v4b4                                                                                                    
+{                                                                                                           
+  background:url('../images/v4b4.png') right, -webkit-gradient(linear, right top, left top, color-stop(0.7, rgb(216, 0, 101)), color-stop(1.5, #000));
 }
 
 
