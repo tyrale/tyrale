@@ -8,7 +8,7 @@ $(document).ready(function () {
     }
   });
   
-  default_top = -130;
+  default_top = -125;
   
   oldhash = location.hash;
   
