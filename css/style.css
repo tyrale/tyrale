@@ -240,11 +240,6 @@ div.v4slide
 div.v4topper
 {
   color: rgb(255,255,255);
-  
-  font-family: 'MisoLight';
-  font-size: 42px;
-  font-weight: 100;
-  
   height: 120px;
 }
 div.v4topper div.alignment
@@ -254,8 +249,6 @@ div.v4topper div.alignment
   padding-top:40px;
   width: 200px;
   height: 80px;
-  text-align: center;
-  background: url('../images/arrow.png') no-repeat bottom;
 }
 div.v4topper p
 {
@@ -349,7 +342,7 @@ div#about a {color:rgb(57, 181, 189);}
 
 div#about .v4topper
 {
-  background:rgb(57, 181, 189);
+  background-image: url('../images/aquaBG.png');
 }
 div#contact a {color:rgb(223, 97, 23);}
 {
@@ -357,7 +350,7 @@ div#contact a {color:rgb(223, 97, 23);}
 }
 div#contact .v4topper
 {
-  background:rgb(223, 97, 23);
+  background:url('../images/orangeBG.png');
 }
 
 div#networks
@@ -367,7 +360,7 @@ div#networks
 div#networks a {color:rgb(125, 175, 55);}
 div#networks .v4topper
 {
-  background:rgb(165, 221, 60);
+  background:url('../images/greenBG.png');
 }
 
 div#credits
@@ -376,7 +369,7 @@ div#credits
 }
 div#credits .v4topper
 {
-  background:rgb(216, 0, 101);
+  background:url('../images/pinkBG.png');
 }
 .rounded {border:1px solid rgb(129, 130, 133);margin:15px;padding:15px;-moz-border-radius: 3px; -webkit-border-radius: 3px;}
 .about_copy {float:right;width:185px; }
