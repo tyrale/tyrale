@@ -1,0 +1,191 @@
+doctype html
+html(lang="en")
+  include inc/head.jade
+body.tk-chaparral-pro
+
+mixin project(subline,name,href,src)
+  li
+    a(href=href, target="_blank")
+      img(src=src, alt="")
+    h3.tk-chaparral-pro= subline
+    h2.tk-chaparral-pro
+      a(href=href, target="_blank")= name
+mixin archive(date, title, href)
+  li
+    span.tk-chaparral-pro.title
+      a(href=href)= title
+    span.tk-chaparral-pro.date= date
+.bio
+  h1.tk-chaparral-pro 
+    span.line Most people call me 
+    span.name Tyrale.
+.dontcare
+  p
+    input(type='checkbox' name='paragraph' id='paragraph')
+    label(for='paragraph')
+    span I design experiences and 
+    span you came here to see what I can 
+    span produce. Below you will find my recent projects. 
+    span You can also tap this block if you are so 
+    span inclined to read about me. You can check my work 
+    span history from 
+      a(href="http://linkedin.com/in/tyrale") Linkedin
+    span  , for my short thoughts check 
+    span 
+      a(href="http://twitter.com/tyrale") Twitter
+      |  and life choices 
+    span 
+      a(href="http://instagram.com/tyrale") Instagram. 
+      | Feel free to reach out anywhere. 
+    span Just google 
+      a(href="http://bit.ly/1KWsxvp") "tyrale"
+      |  , I am pretty easy to find.
+.whatmatters
+  h4.tk-chaparral-pro
+    i.icon-down
+    | what matters is down here
+    i.icon-down
+.work
+  ul.cats
+    +project('Designing a new UX process.'
+    ,'UX Triage'
+    ,'http://bit.ly/1GUVuV3'
+    ,'img/ux-triage.png')
+    +project('Build a delightful new way to wordplay.'
+    ,'Wordplay +/-'
+    ,'http://bit.ly/1GpePz8'
+    ,'img/wordplay.png')
+    +project('Designing hardware integration to a mobile platform with IDEO.'
+    ,'Shade.io'
+    ,'http://bit.ly/1KR4BM7'
+    ,'img/shade.png')
+    +project('Create a product that will empower Students and Brands.'
+    ,'whurk'
+    ,'http://bit.ly/1OMShjM'
+    ,'img/whurk.png')
+    +project('Audit UX to optimize conversion and EPC(earnings per click).'
+    ,'ReadyCart'
+    ,'http://bit.ly/1PTxXuD'
+    ,'img/readycart.png')
+    +project('Audit UX/UI to encourage homepage CTR(click-thru ratio)'
+    ,'MyManny'
+    ,'http://bit.ly/1QPKNtY'
+    ,'img/mymanny.png')
+    +project('Design a platform to stream culture specific content.'
+    ,'Ver on Demand'
+    ,'http://google.com'
+    ,'img/ver.png')
+    +project('Design mobile UX for physician.'
+    ,'PD Note'
+    ,'http://google.com'
+    ,'img/pdnote.png')
+    +project('Audit UX of physician EHR.'
+    ,'Patient Logic'
+    ,'http://google.com'
+    ,'img/medhost.png')
+    +project('Audit UX/UI to increase CTR and qualified leads.'
+    ,'Army National Guard'
+    ,'http://nationalguard.com'
+    ,'img/guard.png')
+.history
+  h4.tk-chaparral-pro My history of building
+  ul.timeline
+    +archive('2013-14'
+    ,'Patient Logic'
+    ,'http://tyrale.com/atomicUX')
+    +archive('Nov 2012'
+    ,'ColorShift'
+    ,'http://colorshiftapp.com')
+    +archive('Feb 2012'
+    ,'ProperCut'
+    ,'')
+    +archive('Jan 2012'
+    ,'SongWriter+'
+    ,'')
+    +archive('April 2014'
+    ,'LunchRadio'
+    ,'')
+    +archive('Dec 2011'
+    ,'Army National Guard History'
+    ,'')
+    +archive('Dec 2011'
+    ,'Soldier Fit'
+    ,'')
+    +archive('Dec 2011'
+    ,'Your Anonymous Friend'
+    ,'')
+    +archive('Nov 2011'
+    ,'Nossi College of Art'
+    ,'http://nossi.edu')
+    +archive('Aug 2011'
+    ,'Noah for iPad'
+    ,'')
+    +archive('Aug 2011'
+    ,'Bulwark'
+    ,'http://bulwark.com')
+    +archive('July 2011'
+    ,'Semper Fi Fund'
+    ,'http://semperfifund.org')
+    +archive('July 2011'
+    ,'RedKap'
+    ,'http://redkap.com')
+    +archive('June 2011'
+    ,'Second Harvest Food Bank'
+    ,'http://secondharvestmidtn.org')
+    +archive('May 2011'
+    ,'TwiceDaily'
+    ,'http://twicedaily.com')
+    +archive('July 2011'
+    ,'Barrett'
+    ,'http://barrett.net')
+    +archive('June 2011'
+    ,'Kimber'
+    ,'http://www.kimberamerica.com')
+    +archive('April 2011'
+    ,'ANG 1 Million Faces'
+    ,'https://www.facebook.com/nationalguard')
+    +archive('Dec 2010'
+    ,'Army National Guard Facebook'
+    ,'https://www.facebook.com/nationalguard')
+    +archive('Nov 2010'
+    ,'The Army National Guard'
+    ,'http://nationalguard.com')
+    +archive('Aug 2009'
+    ,'W hotel'
+    ,'https://www.starwoodhotels.com/whotels/property/overview/index.html?language=en_US&propertyID=97518')
+    +archive('March 2009'
+    ,'City Center'
+    ,'http://www.aria.com')
+    +archive('Feb 2008'
+    ,'Palms Fantasy'
+    ,'http://www.palms.com/')
+    +archive('Dec 2009'
+    ,'MGM Mirage'
+    ,'http://mgmmirage.com')
+    +archive('Sept 2008'
+    ,'Palms Place'
+    ,'http://www.palms.com/palms-place')
+    +archive('Dec 2007'
+    ,'St. Regis'
+    ,'http://www.stregisnewyork.com')
+    +archive('Nov 2007'
+    ,'Planet Hollywood Casino & Resort'
+    ,'https://www.caesars.com/planet-hollywood')
+    +archive('Dec 2007'
+    ,'St. Regis'
+    ,'http://www.stregisnewyork.com')
+    +archive('Dec 2007'
+    ,'St. Regis'
+    ,'http://www.stregisnewyork.com')
+    +archive('Dec 2007'
+    ,'St. Regis'
+    ,'http://www.stregisnewyork.com')
+    +archive('Dec 2007'
+    ,'St. Regis'
+    ,'http://www.stregisnewyork.com')
+    +archive('Dec 2007'
+    ,'St. Regis'
+    ,'http://www.stregisnewyork.com')
+    +archive('Dec 2007'
+    ,'St. Regis'
+    ,'http://www.stregisnewyork.com')

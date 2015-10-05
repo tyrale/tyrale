@@ -1,0 +1,129 @@
+
+body
+	.hide
+		display: none
+	.bio
+		padding: $body-pad
+		h1
+			+position(relative)
+			span
+				&.name
+					font-size: rem(100)
+					+position(relative, rem(32) null null)
+				&.line
+					font-weight: 100
+					font-size: rem(22)
+					+position(absolute, rem(-26) null null 0)
+	.dontcare
+		padding: $body-pad
+		+position(relative)
+		+clearfix
+		margin-top: rem(60)
+		p
+			input
+				+position(fixed, -100px null null -100px)
+			label
+				z-index: 1
+				+position(absolute, 0 0 0 0)
+				display: block
+				opacity: 0.1
+			span
+				a
+					text-decoration: underline
+				&:nth-of-type(1)
+					opacity: 1
+				&:nth-of-type(2)
+					opacity: 0.9
+				&:nth-of-type(3)
+					opacity: 0.8
+				&:nth-of-type(4)
+					opacity: 0.7
+				&:nth-of-type(5)
+					opacity: 0.6
+				&:nth-of-type(6)
+					opacity: 0.5
+				&:nth-of-type(7)
+					opacity: 0.4
+				&:nth-of-type(8)
+					opacity: 0.3
+				&:nth-of-type(9)
+					opacity: 0.2
+				&:nth-of-type(10)
+					opacity: 0.2
+			input[type="checkbox"]:checked ~ span
+				opacity: 1
+			input[type="checkbox"]:checked ~ label
+				display: none
+	.whatmatters
+		+position(relative)
+		margin-bottom: rem(32)
+		h4
+			opacity: 0.8
+			margin-top: rem(14)
+			.icon-down
+				opacity: 0.4
+				+position(relative, rem(3) null null)
+	.work
+		.cats
+			li
+				margin-top: rem(20)
+				img
+					margin-top: rem(20)
+					border-top: $border
+					border-bottom: $border
+				h3
+					padding-left: rem(20)
+				h2
+					padding-left: rem(20)
+					min-height: rem(40)
+					a
+						+underline
+	.history
+		margin-top: rem(120)
+		margin-bottom: rem(120)
+		ul.timeline
+			margin-top: rem(60)
+			li
+				text-align: center
+				margin-bottom: rem(50)
+				font-size: rem(18)
+				span
+					width: 180px
+					&.title
+						+position(relative)
+						text-align: right
+						display: inline-block
+						padding-right: rem(30)
+						&:before
+							content: ''
+							+size(8px)
+							background-color: $client-blue
+							display: block
+							+position(absolute, 36% rem(-3) null null)
+							z-index: 1
+							border-radius: 100%
+							box-shadow: 0px 0px 0px 0px white, 0px 0px 0px 0px $client-blue
+							+transition(all 0.15s ease-in-out)
+						&:after
+							content: ''
+							+size(2px 120px)
+							background-color: $client-gray-light
+							display: block
+							+position(absolute, rem(-30) 0 null null)
+					&.date
+						text-align: left
+						display: inline-block
+						padding-left: rem(30)
+						padding-top: rem(2)
+						opacity: 0.6
+						font-size: rem(16)
+						vertical-align: top
+					a
+						color: $client-blue
+						&:hover
+							color: $client-blue
+
+				&:hover
+					span:before
+						background-color: $client-blue
+						box-shadow: 0px 0px 0px 4px white, 0px 0px 0px 6px $client-blue
