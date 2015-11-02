@@ -2,6 +2,8 @@
 body
 	.hide
 		display: none
+	+media($medium-screen)
+		+outer-container(700px)
 	.bio
 		padding: $body-pad
 		h1
@@ -86,7 +88,7 @@ body
 			li
 				text-align: center
 				margin-bottom: rem(50)
-				font-size: rem(18)
+				font-size: rem(24)
 				span
 					width: 180px
 					&.title
@@ -106,7 +108,7 @@ body
 							+transition(all 0.15s ease-in-out)
 						&:after
 							content: ''
-							+size(2px 120px)
+							+size(2px 160px)
 							background-color: $client-gray-light
 							display: block
 							+position(absolute, rem(-30) 0 null null)
@@ -114,9 +116,9 @@ body
 						text-align: left
 						display: inline-block
 						padding-left: rem(30)
-						padding-top: rem(2)
+						padding-top: 1%
 						opacity: 0.6
-						font-size: rem(16)
+						font-size: rem(18)
 						vertical-align: top
 					a
 						color: $client-blue
