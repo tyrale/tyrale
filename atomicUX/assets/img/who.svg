@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="550" height="200" viewBox="0, 0, 550, 200">
+  <g id="Layer_1" display="none">
+    <path d="M-0,0 L550,0 L550,200 L-0,200 z" fill="#2B2B2B"/>
+  </g>
+  <g id="Layer_3">
+    <text transform="matrix(1, 0, 0, 1, 95.753, 102)">
+      <tspan x="-20.484" y="5" font-family="AGaramondPro-Regular" font-size="24" fill="#FFFFFF">OM</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 222.247, 35)">
+      <tspan x="-18.918" y="1" font-family="AGaramondPro-Regular" font-size="18" fill="#FFFFFF">ANC</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 354.247, 15)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">LAB</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 354.247, 35)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">RAD</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 354.247, 55)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">CBC</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 404.247, 60)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">NUR</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 404.247, 80)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">PAT</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 404.247, 100)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">AUX</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 454.247, 100)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">IV</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 454.247, 120)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">SEQ</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 454.247, 140)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">UNIT</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 354.247, 145)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">CARE</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 354.247, 165)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">CONF</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 354.247, 185)">
+      <tspan x="-27.312" y="1" font-family="AGaramondPro-Regular" font-size="12" fill="#FFFFFF">TAL</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 222.247, 81)">
+      <tspan x="-11.205" y="1" font-family="AGaramondPro-Regular" font-size="18" fill="#FFFFFF">PC</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 222.247, 124)">
+      <tspan x="-20.484" y="1" font-family="AGaramondPro-Regular" font-size="18" fill="#FFFFFF">MED</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 222.247, 164)">
+      <tspan x="-11.556" y="1" font-family="AGaramondPro-Regular" font-size="18" fill="#FFFFFF">OS</tspan>
+    </text>
+    <g>
+      <path d="M128.665,98.5 L186.395,49.335" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M188.34,51.619 L192.485,44.148 L184.45,47.051 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M128.665,98.5 L184.649,81.162" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M185.537,84.028 L192.291,78.796 L183.762,78.297 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M128.665,98.5 L184.511,112.336" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M183.789,115.248 L192.276,114.26 L185.232,109.424 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M128.665,98.5 L186.342,146.727" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M184.418,149.028 L192.479,151.859 L188.267,144.425 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,27.5 L308.407,16.19" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M308.97,19.137 L316.264,14.688 L307.843,13.243 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,27.5 L308.281,32.709" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M308.018,35.697 L316.251,33.412 L308.545,29.721 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,27.5 L308.612,44.961" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M307.766,47.839 L316.287,47.218 L309.459,42.082 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,157.5 L308.407,146.19" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M308.97,149.137 L316.264,144.688 L307.843,143.243 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,157.5 L308.281,162.709" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M308.018,165.697 L316.251,163.412 L308.545,159.721 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,157.5 L308.612,174.961" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M307.766,177.839 L316.287,177.218 L309.459,172.082 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,77.5 L356.864,59.949" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M357.347,62.91 L364.76,58.661 L356.381,56.988 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,77.5 L356.747,77.5" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M356.747,80.5 L364.747,77.5 L356.747,74.5 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,77.5 L356.852,94.126" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M356.394,97.091 L364.758,95.347 L357.31,91.161 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,119.5 L410.286,104.343" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M410.567,107.33 L418.251,103.594 L410.005,101.357 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,119.5 L410.247,119.5" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M410.247,122.5 L418.247,119.5 L410.247,116.5 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+    <g>
+      <path d="M249.247,119.5 L410.302,137.5" fill-opacity="0" stroke="#E2C200" stroke-width="1"/>
+      <path d="M409.969,140.482 L418.253,138.389 L410.636,134.519 z" fill="#E2C200" fill-opacity="1" stroke="#E2C200" stroke-width="1" stroke-opacity="1"/>
+    </g>
+  </g>
+</svg>

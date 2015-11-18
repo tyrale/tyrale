@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="550" height="140" viewBox="0, 0, 550, 140">
+  <g id="Layer_1" display="none">
+    <g>
+      <path d="M0.5,0.5 L550.5,0.5 L550.5,140.5 L0.5,140.5 z" fill="#151515"/>
+      <path d="M0.5,0.5 L550.5,0.5 L550.5,140.5 L0.5,140.5 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    </g>
+  </g>
+  <g id="Layer_2">
+    <text transform="matrix(1, 0, 0, 1, 148.75, 69.5)">
+      <tspan x="-91.44" y="14.5" font-family="SegoeUI-Light" font-size="36" fill="#FFFFFF">data object</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 318.75, 70.5)" opacity="0.5">
+      <tspan x="-64.94" y="14.5" font-family="SegoeUI-Light" font-size="36" fill="#FFFFFF">attribute</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 496.75, 72.5)" opacity="0.5">
+      <tspan x="-64.94" y="10.5" font-family="SegoeUI-Light" font-size="32" fill="#FFFFFF">button</tspan>
+    </text>
+    <path d="M27.31,80.5 C21.787,80.5 17.31,76.023 17.31,70.5 C17.31,64.977 21.787,60.5 27.31,60.5 C32.833,60.5 37.31,64.977 37.31,70.5 C37.31,76.023 32.833,80.5 27.31,80.5 z" fill="#FFFFFF"/>
+    <path d="M86.399,305.5 L595.399,305.5" fill-opacity="0" stroke="#E2C200" stroke-width="4"/>
+    <path d="M421.399,205.5 L478.399,205.5" fill-opacity="0" stroke="#E2C200" stroke-width="4" stroke-dasharray="12,8"/>
+    <path d="M541.399,255.5 L597.399,306" fill-opacity="0" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="M361.399,255.5 L538.399,255.5" fill-opacity="0" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="M481.399,205.5 L537.399,256" fill-opacity="0" stroke="#E2C200" stroke-width="4" stroke-dasharray="12,8"/>
+    <path d="M478.899,213 C474.481,213 470.899,209.418 470.899,205 C470.899,200.582 474.481,197 478.899,197 C483.317,197 486.899,200.582 486.899,205 C486.899,209.418 483.317,213 478.899,213 z" fill="#E2C200"/>
+    <path d="M536.399,263 C531.981,263 528.399,259.418 528.399,255 C528.399,250.582 531.981,247 536.399,247 C540.817,247 544.399,250.582 544.399,255 C544.399,259.418 540.817,263 536.399,263 z" fill="#FFFFFF"/>
+    <text transform="matrix(1, 0, 0, 1, 276.562, 355)" opacity="0.5">
+      <tspan x="-187.438" y="4" font-family="Helvetica" font-size="12" fill="#E2C200">Click data</tspan>
+      <tspan x="-134.751" y="4" font-family="Helvetica" font-size="12" fill="#555555">, </tspan>
+      <tspan x="-128.083" y="4" font-family="Helvetica" font-size="12" fill="#FFFFFF">entry variables, Save</tspan>
+      <tspan x="-16.028" y="4" font-family="Helvetica" font-size="12" fill="#555555">.</tspan>
+    </text>
+    <path d="M420.349,51.5 L531.449,51.5 C536.309,51.5 540.249,55.44 540.249,60.3 L540.249,86.7 C540.249,91.56 536.309,95.5 531.449,95.5 L420.349,95.5 C415.489,95.5 411.549,91.56 411.549,86.7 L411.549,60.3 C411.549,55.44 415.489,51.5 420.349,51.5 z" fill-opacity="0" stroke="#FFFFFF" stroke-width="4" opacity="0.5"/>
+  </g>
+  <g id="Layer_3">
+    <path d="M0.5,40 L393.623,40 L393.623,102 L0.5,102 z" fill-opacity="0" stroke="#E2C200" stroke-width="4" stroke-dasharray="12,8"/>
+    <text transform="matrix(1, 0, 0, 1, 85.347, 128.25)" opacity="0.5">
+      <tspan x="-22.902" y="-0.75" font-family="AGaramondPro-Regular" font-size="22" fill="#E2C200">Click</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 304.461, 124)" opacity="0.5">
+      <tspan x="-187.438" y="4" font-family="Helvetica" font-size="12" fill="#FFFFFF">(Expand in pleat to show details)</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 435.347, 128.25)" opacity="0.5">
+      <tspan x="-22.902" y="-0.75" font-family="AGaramondPro-Regular" font-size="22" fill="#E2C200">Click</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 651.438, 124)" opacity="0.5">
+      <tspan x="-187.438" y="4" font-family="Helvetica" font-size="12" fill="#FFFFFF">(Launch tray)</tspan>
+    </text>
+    <path d="M420.349,51.5 L531.449,51.5 C536.309,51.5 540.249,55.44 540.249,60.3 L540.249,86.7 C540.249,91.56 536.309,95.5 531.449,95.5 L420.349,95.5 C415.489,95.5 411.549,91.56 411.549,86.7 L411.549,60.3 C411.549,55.44 415.489,51.5 420.349,51.5 z" fill-opacity="0" stroke="#E2C200" stroke-width="4"/>
+  </g>
+</svg>

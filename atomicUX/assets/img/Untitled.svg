@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="550" height="200" viewBox="0, 0, 550, 200">
+  <g id="Layer_1" display="none">
+    <path d="M-27,-14 L564,-14 L564,200 L-27,200 z" fill="#000000"/>
+  </g>
+  <g id="Layer_2">
+    <path d="M-116.5,138.5 L163.5,138.5" fill-opacity="0" stroke="#E2C200" stroke-width="4"/>
+    <path d="M-11.918,426.5 L0.762,426.5 L0.762,419.633 C0.762,415.316 -2.737,411.817 -7.054,411.817 L-11.918,411.817 z" fill="#E2C200"/>
+    <path d="M-27,428.902 L-27,444.31 C-27,448.627 -23.501,452.127 -19.184,452.127 L-7.053,452.127 C-2.737,452.127 0.762,448.627 0.762,444.31 L0.762,428.902 z" fill="#E2C200"/>
+    <path d="M-14.32,426.5 L-14.32,411.817 L-19.184,411.817 C-23.501,411.817 -27,415.316 -27,419.633 L-27,426.5 z" fill="#E2C200"/>
+    <text transform="matrix(1, 0, 0, 1, 249, 141)">
+      <tspan x="-55.776" y="-0.75" font-family="AGaramondPro-Regular" font-size="22" fill="#FFFFFF">Content</tspan>
+    </text>
+    <path d="M-146.5,88.5 L93.5,88.5" fill-opacity="0" stroke="#E2C200" stroke-width="4" opacity="0.75"/>
+    <text transform="matrix(1, 0, 0, 1, 179, 91)">
+      <tspan x="-55.776" y="-0.75" font-family="AGaramondPro-Regular" font-size="22" fill="#FFFFFF">Tray</tspan>
+    </text>
+    <path d="M-186.5,28.5 L53.5,28.5" fill-opacity="0" stroke="#E2C200" stroke-width="4" stroke-dasharray="12,8" opacity="0.5"/>
+    <text transform="matrix(1, 0, 0, 1, 119, 31)">
+      <tspan x="-55.776" y="-0.75" font-family="AGaramondPro-Regular" font-size="22" fill="#FFFFFF">Overlay</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 380.662, 157.5)">
+      <tspan x="-187.438" y="4" font-family="Helvetica" font-size="12" fill="#808080">(Items that are on the visual base of the page. Data lives on this layer.)</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 310.662, 107.5)">
+      <tspan x="-187.438" y="4" font-family="Helvetica" font-size="12" fill="#808080">(Content creation, editing, or management. The "working" layer.)</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 307.662, 55)">
+      <tspan x="-244.438" y="-3.5" font-family="Helvetica" font-size="12" fill="#808080">(Used when the user **MUST** make a process decsion to progress thru the workflow. )</tspan>
+    </text>
+  </g>
+</svg>
