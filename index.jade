@@ -4,12 +4,12 @@ html(lang="en")
 body.tk-chaparral-pro
 
 mixin project(subline,name,href,src)
-  li
-    a(href=href, target="_blank")
+  li.project
+    a(href=href)
       img(src=src, alt="")
     h3.tk-chaparral-pro= subline
     h2.tk-chaparral-pro
-      a(href=href, target="_blank")= name
+      a(href=href)= name
 mixin archive(date, title, href)
   li
     span.tk-chaparral-pro.title
@@ -23,34 +23,35 @@ mixin archive(date, title, href)
   p
     input(type='checkbox' name='paragraph' id='paragraph')
     label(for='paragraph')
-    span I design experiences and 
-    span you came here to see what I can 
-    span produce. Below you will find my recent projects. 
-    span You can also tap this block if you are so 
-    span inclined to read about me. You can check my work 
-    span history from 
+    span You came here to see what I can 
+    span produce, or possibly see how I think. 
+    span I have designed experiences for over 10 years, 
+    span mentored and managed teams of +20, and 
+    span focused my work on smart, fresh UX. 
+    span Below you will find a few short cases. 
+    span You can also tap this block if you are so inclined to read about me. My work history is on 
       a(href="http://linkedin.com/in/tyrale") Linkedin
-    span  , for my short thoughts check 
+    span  , for a few short thoughts check 
     span 
       a(href="http://twitter.com/tyrale") Twitter
       |  and life choices 
     span 
-      a(href="http://instagram.com/tyrale") Instagram. 
-      | Feel free to reach out anywhere. 
+      a(href="http://instagram.com/tyrale") Instagram.
+      | &nbsp;Feel free to reach out anywhere.  
     span Just google 
       a(href="http://bit.ly/1KWsxvp") "tyrale"
       |  , I am pretty easy to find.
 .whatmatters
-  h4.tk-chaparral-pro
+  h5.tk-chaparral-pro
     i.icon-down
-    | what matters is down here
+    | Things I have built
     i.icon-down
 .work
   ul.cats
     +project('Designing a new UX process.'
     ,'UX Triage'
-    ,'http://bit.ly/1GUVuV3'
-    ,'img/ux-triage.png')
+    ,'uxtriage'
+    ,'img/ux-triage.png','1')
     +project('Build a delightful new way to wordplay.'
     ,'Wordplay +/-'
     ,'http://bit.ly/1GpePz8'
@@ -88,14 +89,17 @@ mixin archive(date, title, href)
     ,'http://tyrale.com/guard/'
     ,'img/guard.png')
 .history
-  h4.tk-chaparral-pro My history of building
+  h5.tk-chaparral-pro
+    i.icon-down
+    | More things I have built
+    i.icon-down
   ul.timeline
     +archive('2013-14'
     ,'Patient Logic'
     ,'http://tyrale.com/atomicUX')
     +archive('Nov 2012'
     ,'ColorShift'
-    ,'http://colorshiftapp.com')
+    ,'https://itunes.apple.com/us/app/colorshift/id410955379?mt=8&ign-mpt=uo%3D4')
     +archive('Feb 2012'
     ,'ProperCut')
     +archive('Jan 2012'

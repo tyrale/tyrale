@@ -1,44 +1,3 @@
-+font-face("icomoon", "../fonts/icomoon")
-// +font-face("icomoon")
-	// font-family: 'icomoon'
-	// src:url('fonts/icomoon.eot?hry80u')
-	// src:url('fonts/icomoon.eot?#iefixhry80u') format('embedded-opentype'), url('fonts/icomoon.ttf?hry80u') format('truetype'), url('fonts/icomoon.woff?hry80u') format('woff'), url('fonts/icomoon.svg?hry80u#icomoon') format('svg')
-
-[class^="icon-"], [class*=" icon-"]
-	font-family: 'icomoon'
-	speak: none
-	font-style: normal
-	font-weight: normal
-	font-variant: normal
-	text-transform: none
-	line-height: 1
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased
-	-moz-osx-font-smoothing: grayscale
-
-.icon-down:before
-	content: "\e605"
-.icon-medium:before
-	content: "\e604"
-.icon-book:before
-	content: "\f007"
-.icon-jersey:before
-	content: "\f0c4"
-.icon-speak:before
-	content: "\f0af"
-.icon-tools:before
-	content: "\f031"
-.icon-mobile:before
-	content: "\e600"
-.icon-browser:before
-	content: "\e601"
-.icon-twitter:before
-	content: "\e602"
-.icon-instagram:before
-	content: "\e603"
-
-
 // Fonts
 $base-font: "Helvetica Neue"
 $header-font: "Helvetica Neue"
@@ -47,34 +6,84 @@ $subhead-font: "Helvetica Neue"
 
 
 h1
-	font-family: $header-font, san-serif
-	font-size: 2.125em
-	color: $client-black
-	font-weight: 700
-	line-height: 1.4em
-	margin-bottom: 0
+  font-family: $header-font, san-serif
+  font-size: 2.125em
+  color: $client-black
+  font-weight: 700
+  line-height: 1.4em
+  margin-bottom: 0
+  &.fodder
+
 
 h2
-	font-family: $header-font-span, san-serif
-	font-size: rem(32)
-	color: $client-white
-	font-weight: 600
-	margin-bottom: 0
+  font-family: $header-font-span, san-serif
+  font-size: rem(36)
+  color: $client-gray-dark
+  font-weight: 600
+  margin-bottom: 0
 h3
-	font-size: rem(20)
-	color: $client-black
-	font-weight: 100
-	opacity: 0.6
-	margin-top: rem(10)
-	padding-right: rem(20)
+  font-size: rem(20)
+  color: $client-black
+  font-weight: 100
+  opacity: 0.6
+  margin-top: rem(10)
+  padding-right: rem(20)
 h4
-	font-size: rem(20)
-	color: $client-black
-	font-weight: 400
-	text-align: center
+  font-size: rem(96)
+  color: $client-gray-light
+  font-weight: 900
+  opacity: 0.6
+h5
+  font-size: rem(18)
+  text-align: center
+  font-weight: 400
+  margin-top: rem(20)
 p
-	font-size: rem(20)
-	font-weight: 300
-	margin-top: 0px
+  font-size: rem(20)
+  font-weight: 300
+  margin-top: 0px
 a
-	color: $client-gray-dark
+  color: $client-gray-dark
+
+
+
+
++font-face("icomoon", "../fonts/icomoon")
+// +font-face("icomoon")
+  // font-family: 'icomoon'
+  // src:url('fonts/icomoon.eot?hry80u')
+  // src:url('fonts/icomoon.eot?#iefixhry80u') format('embedded-opentype'), url('fonts/icomoon.ttf?hry80u') format('truetype'), url('fonts/icomoon.woff?hry80u') format('woff'), url('fonts/icomoon.svg?hry80u#icomoon') format('svg')
+
+[class^="icon-"], [class*=" icon-"]
+  font-family: 'icomoon'
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.icon-down:before
+  content: "\e605"
+.icon-medium:before
+  content: "\e604"
+.icon-book:before
+  content: "\f007"
+.icon-jersey:before
+  content: "\f0c4"
+.icon-speak:before
+  content: "\f0af"
+.icon-tools:before
+  content: "\f031"
+.icon-mobile:before
+  content: "\e600"
+.icon-browser:before
+  content: "\e601"
+.icon-twitter:before
+  content: "\e602"
+.icon-instagram:before
+  content: "\e603"
