@@ -10,14 +10,14 @@ mixin project(subline,name,href,src)
     h3.tk-chaparral-pro= subline
     h2.tk-chaparral-pro
       a(href=href)= name
-mixin archive(date, title, href)
+mixin archive(date, title)
   li
     span.tk-chaparral-pro.title
-      a(href=href)= title
+      a()= title
     span.tk-chaparral-pro.date= date
 .bio
   h1.tk-chaparral-pro 
-    span.line Most people call me 
+    span.line I'm generally known as,
     span.name Tyrale.
 .dontcare
   p
@@ -25,8 +25,8 @@ mixin archive(date, title, href)
     label(for='paragraph')
     span You came here to see what I can 
     span produce, or possibly see how I think. 
-    span I have designed experiences for over 10 years, 
-    span mentored and managed teams of +20, and 
+    span I have designed experiences for over a decade, 
+    span mentored and managed teams of +30, and 
     span focused my work on smart, fresh UX. 
     span Below you will find a few short cases. 
     span You can also tap this block if you are so inclined to read about me. My work history is on 
@@ -50,7 +50,7 @@ mixin archive(date, title, href)
   ul.cats
     +project('Designing a new UX process.'
     ,'UX Triage'
-    ,'http://bit.ly/1GUVuV3'
+    ,'uxtriage'
     ,'img/ux-triage.png','1')
     +project('Build a delightful new way to wordplay.'
     ,'Wordplay +/-'
@@ -94,12 +94,20 @@ mixin archive(date, title, href)
     | More things I have built
     i.icon-down
   ul.timeline
+    +archive('April 2015'
+    ,'Joker Greeting')
+    +archive('Jan 2015'
+    ,'Story Shelf')
+    +archive('Dec 2014'
+    ,'CommonWell Medical')
+    +archive('Aug 2014'
+    ,'Point Clear Solutions')
+    +archive('July 2014'
+    ,'Spartan')
     +archive('2013-14'
-    ,'Patient Logic'
-    ,'http://tyrale.com/atomicUX')
+    ,'Patient Logic')
     +archive('Nov 2012'
-    ,'ColorShift'
-    ,'https://itunes.apple.com/us/app/colorshift/id410955379?mt=8&ign-mpt=uo%3D4')
+    ,'ColorShift')
     +archive('Feb 2012'
     ,'ProperCut')
     +archive('Jan 2012'
@@ -107,74 +115,53 @@ mixin archive(date, title, href)
     +archive('April 2014'
     ,'LunchRadio')
     +archive('Dec 2011'
-    ,'Army National Guard History'
-    ,'http://nationalguard.com')
+    ,'Army National Guard History')
     +archive('Dec 2011'
-    ,'Soldier Fit'
-    ,'http://nationalguard.com')
+    ,'Soldier Fit')
     +archive('Dec 2011'
     ,'Your Anonymous Friend')
     +archive('Nov 2011'
-    ,'Nossi College of Art'
-    ,'http://nossi.edu')
+    ,'Nossi College of Art')
     +archive('Aug 2011'
     ,'Noah for iPad')
     +archive('Aug 2011'
-    ,'Bulwark'
-    ,'http://bulwark.com')
+    ,'Bulwark')
     +archive('July 2011'
-    ,'Semper Fi Fund'
-    ,'http://semperfifund.org')
+    ,'Semper Fi Fund')
     +archive('July 2011'
-    ,'RedKap'
-    ,'http://redkap.com')
+    ,'RedKap')
     +archive('June 2011'
-    ,'Second Harvest Food Bank'
-    ,'http://secondharvestmidtn.org')
+    ,'Second Harvest Food Bank')
     +archive('May 2011'
-    ,'TwiceDaily'
-    ,'http://twicedaily.com')
+    ,'TwiceDaily')
     +archive('July 2011'
-    ,'Barrett'
-    ,'http://barrett.net')
+    ,'Barrett')
     +archive('June 2011'
-    ,'Kimber'
-    ,'http://www.kimberamerica.com')
+    ,'Kimber')
     +archive('April 2011'
-    ,'ANG 1 Million Faces'
-    ,'https://www.facebook.com/nationalguard')
+    ,'ANG 1 Million Faces')
     +archive('Dec 2010'
-    ,'Army National Guard Facebook'
-    ,'https://www.facebook.com/nationalguard')
+    ,'Army National Guard Facebook')
     +archive('Nov 2010'
-    ,'The Army National Guard'
-    ,'http://nationalguard.com')
+    ,'The Army National Guard')
     +archive('Aug 2009'
-    ,'W hotel'
-    ,'https://www.starwoodhotels.com/whotels/property/overview/index.html?language=en_US&propertyID=97518')
+    ,'W hotel')
     +archive('March 2009'
-    ,'City Center'
-    ,'http://www.aria.com')
+    ,'City Center')
     +archive('Feb 2008'
-    ,'Palms Fantasy'
-    ,'http://www.palms.com/')
+    ,'Palms Fantasy')
     +archive('Dec 2009'
-    ,'MGM Mirage'
-    ,'http://mgmmirage.com')
+    ,'MGM Mirage')
     +archive('Sept 2008'
-    ,'Palms Place'
-    ,'http://www.palms.com/palms-place')
+    ,'Palms Place')
     +archive('Dec 2007'
-    ,'St. Regis'
-    ,'http://www.stregisnewyork.com')
+    ,'St. Regis')
     +archive('Nov 2007'
-    ,'Planet Hollywood'
-    ,'https://www.caesars.com/planet-hollywood')
+    ,'Planet Hollywood')
     +archive('Jan 2007'
     ,'Tyrale.com')
     +archive('Dec 2006'
-    ,'Palazzolo Design'
-    ,'http://www.palazzolodesign.com')
+    ,'Palazzolo Design')
     //- +archive('Dec 2007'
     //- ,'St. Regis'
     //- ,'http://www.stregisnewyork.com')
