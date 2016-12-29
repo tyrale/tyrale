@@ -1,4 +1,3 @@
-
 body
   .hide
     display: none
@@ -97,7 +96,7 @@ body
         margin-bottom: rem(50)
         font-size: rem(24)
         span
-          width: 180px
+          width: 350px
           &.title
             +position(relative)
             text-align: right
@@ -124,9 +123,19 @@ body
             display: inline-block
             padding-left: rem(30)
             padding-top: 1%
-            opacity: 0.6
+            // opacity: 0.6
             font-size: rem(18)
             vertical-align: top
+          &.type, &.thing
+            font-size: rem(16)
+            opacity: 0.6
+          &.type
+            float: right
+            margin-top: rem(-4)
+          &.thing
+            float: left
+            margin-top: rem(-2)
+
           a
             color: $client-blue
             &:hover
@@ -136,3 +145,11 @@ body
           span:before
             background-color: $client-blue
             box-shadow: 0px 0px 0px 4px white, 0px 0px 0px 6px $client-blue
+
+  p.foot
+    text-align: center
+    width: 40%
+    margin: 0 auto
+    font-size: rem(16)
+    opacity: 0.6
+    margin-bottom: rem(60)

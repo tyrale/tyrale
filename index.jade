@@ -10,11 +10,13 @@ mixin project(subline,name,href,src)
     h3.tk-chaparral-pro= subline
     h2.tk-chaparral-pro
       a(href=href)= name
-mixin archive(date, title)
+mixin archive(date, type, title, thing)
   li
     span.tk-chaparral-pro.title
       a()= title
+      span.type= type
     span.tk-chaparral-pro.date= date
+      span.thing= thing
 .bio
   h1.tk-chaparral-pro 
     span.line I'm generally known as,
@@ -26,15 +28,12 @@ mixin archive(date, title)
     span You came here to see what I can 
     span produce, or possibly see how I think. 
     span I have designed experiences for over a decade, 
-    span mentored and managed teams of +30, and 
+    span mentored and managed teams of +30 Designers, and 
     span focused my work on smart, fresh UX. 
-    span Below you will find a few short cases. 
-    span You can also tap this block if you are so inclined to read about me. My work history is on 
+    span Below you will find a few cases. 
+    span You can also tap this block if you are so inclined to read more about me. My work history is on 
       a(href="http://linkedin.com/in/tyrale") Linkedin
-    span  , for a few short thoughts check 
-    span 
-      a(href="http://twitter.com/tyrale") Twitter
-      |  and life choices 
+      |  and life choices can be seen on
     span 
       a(href="http://instagram.com/tyrale") Instagram.
       | &nbsp;Feel free to reach out anywhere.  
@@ -48,10 +47,14 @@ mixin archive(date, title)
     i.icon-down
 .work
   ul.cats
+    +project('The result of a deliberate & relentless pursuit of pure functionality.'
+    ,'nok'
+    ,'http://ordernok.com'
+    ,'img/nok.jpg')
     +project('Designing a new UX process.'
     ,'UX Triage'
     ,'uxtriage'
-    ,'img/ux-triage.png','1')
+    ,'img/ux-triage.png')
     +project('Build a delightful new way to wordplay.'
     ,'Wordplay +/-'
     ,'http://bit.ly/1GpePz8'
@@ -94,74 +97,75 @@ mixin archive(date, title)
     | More things I have built
     i.icon-down
   ul.timeline
-    +archive('April 2015'
-    ,'Joker Greeting')
-    +archive('Jan 2015'
-    ,'Story Shelf')
-    +archive('Dec 2014'
-    ,'CommonWell Medical')
-    +archive('Aug 2014'
-    ,'Point Clear Solutions')
-    +archive('July 2014'
-    ,'Spartan')
-    +archive('2013-14'
-    ,'Patient Logic')
-    +archive('Nov 2012'
-    ,'ColorShift')
-    +archive('Feb 2012'
-    ,'ProperCut')
-    +archive('Jan 2012'
-    ,'SongWriter+')
-    +archive('April 2014'
-    ,'LunchRadio')
-    +archive('Dec 2011'
-    ,'Army National Guard History')
-    +archive('Dec 2011'
-    ,'Soldier Fit')
-    +archive('Dec 2011'
-    ,'Your Anonymous Friend')
-    +archive('Nov 2011'
-    ,'Nossi College of Art')
-    +archive('Aug 2011'
-    ,'Noah for iPad')
-    +archive('Aug 2011'
-    ,'Bulwark')
-    +archive('July 2011'
-    ,'Semper Fi Fund')
-    +archive('July 2011'
-    ,'RedKap')
-    +archive('June 2011'
-    ,'Second Harvest Food Bank')
-    +archive('May 2011'
-    ,'TwiceDaily')
-    +archive('July 2011'
-    ,'Barrett')
-    +archive('June 2011'
-    ,'Kimber')
-    +archive('April 2011'
-    ,'ANG 1 Million Faces')
-    +archive('Dec 2010'
-    ,'Army National Guard Facebook')
-    +archive('Nov 2010'
-    ,'The Army National Guard')
-    +archive('Aug 2009'
-    ,'W hotel')
-    +archive('March 2009'
-    ,'City Center')
-    +archive('Feb 2008'
-    ,'Palms Fantasy')
-    +archive('Dec 2009'
-    ,'MGM Mirage')
-    +archive('Sept 2008'
-    ,'Palms Place')
-    +archive('Dec 2007'
-    ,'St. Regis')
-    +archive('Nov 2007'
-    ,'Planet Hollywood')
-    +archive('Jan 2007'
-    ,'Tyrale.com')
-    +archive('Dec 2006'
-    ,'Palazzolo Design')
+    +archive('April 2015', 'Gag Greeting Cards'
+    ,'Joker Greeting', 'Concept & Branding')
+    +archive('Jan 2015', 'Web App'
+    ,'Story Shelf', 'Concept, Branding, Design')
+    +archive('Dec 2014', 'Web App'
+    ,'CommonWell Medical', 'UX Audit')
+    +archive('Aug 2014', 'Web App'
+    ,'Point Clear Solutions', 'UX Audit')
+    +archive('July 2014', 'Mobile & Web Apps'
+    ,'Spartan', 'Full Stack')
+    +archive('2013-14', 'Web Apps'
+    ,'Patient Logic', 'Full Stack')
+    +archive('Nov 2012', 'iOS App'
+    ,'ColorShift', 'Full Stack')
+    +archive('Feb 2012', 'iOS App'
+    ,'ProperCut', 'Full Stack')
+    +archive('Jan 2012', 'iOS App'
+    ,'SongWriter+', 'Full Stack')
+    +archive('April 2014', 'iOS App'
+    ,'LunchRadio', 'Full Stack')
+    +archive('Dec 2011', 'Mobile & Web Apps'
+    ,'Army National Guard History', 'Concept, Design, Branding')
+    +archive('Dec 2011', 'iOS App'
+    ,'Soldier Fit', 'Concept, Design, Branding')
+    +archive('Dec 2011', 'iOS App'
+    ,'Your Anonymous Friend', 'Full Stack')
+    +archive('Nov 2011', 'Website'
+    ,'Nossi College of Art', 'Concept, UX, UI')
+    +archive('Aug 2011', 'iOS App'
+    ,'Noah for iPad', 'Full Stack')
+    +archive('Aug 2011', 'Website'
+    ,'Bulwark', 'Concept, UX, UI')
+    +archive('July 2011', 'Website'
+    ,'Semper Fi Fund', 'UX & UI')
+    +archive('July 2011', 'Website'
+    ,'RedKap', 'UX & UI')
+    +archive('June 2011', 'Website'
+    ,'Second Harvest Food Bank', 'UX & UI')
+    +archive('May 2011', 'Website'
+    ,'TwiceDaily', 'Concept, UX, UI')
+    +archive('July 2011', 'Website'
+    ,'Barrett', 'UX & UI')
+    +archive('June 2011', 'Website'
+    ,'Kimber', 'UX & UI')
+    +archive('April 2011', 'Facebook App'
+    ,'ANG 1 Million Faces', 'Concept, UX, UI')
+    +archive('Dec 2010', 'Website'
+    ,'Army National Guard Facebook', 'Concept, UX, UI')
+    +archive('Nov 2010', 'Website'
+    ,'The Army National Guard', 'Full Stack')
+    +archive('Aug 2009', 'Website'
+    ,'W hotel', 'UX & UI')
+    +archive('March 2009', 'Website'
+    ,'City Center', 'UX & UI')
+    +archive('Feb 2008', 'Website'
+    ,'Palms Fantasy', 'Concept, UX, UI, Branding')
+    +archive('Dec 2009', 'Website'
+    ,'MGM Mirage', 'UX & UI')
+    +archive('Sept 2008', 'Website & Branding'
+    ,'Palms Place', 'Concept, UX, UI, Branding')
+    +archive('Dec 2007', 'Website'
+    ,'St. Regis', 'Concept, UX, UI')
+    +archive('Nov 2007', 'Website & Branding'
+    ,'Planet Hollywood', 'Concept, UX, UI, Branding')
+    +archive('Jan 2007', 'Everything'
+    ,'Tyrale.com', 'Full Stack')
+    +archive('Dec 2006', 'Website & Branding'
+    ,'Palazzolo Design', 'Full Stack')
+p.foot Full Stack means anything and everything. From concept to coding, sales to support, social media to user encyclopedia.
     //- +archive('Dec 2007'
     //- ,'St. Regis'
     //- ,'http://www.stregisnewyork.com')
