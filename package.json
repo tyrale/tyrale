@@ -1,0 +1,29 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "My usual project setup.",
+  "main": "index.js",
+  "dependencies": {
+    "pug": "^2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "pug": "^2.0.0-rc.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyrale/tyrale.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyrale/tyrale/issues"
+  },
+  "homepage": "https://github.com/tyrale/tyrale#readme"
+}
