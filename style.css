@@ -2,6 +2,9 @@ body {
   height: 16000px;
   background: #fff;
   font-family: 'Halant', serif; }
+  @media only screen and (orientation: portrait) {
+    body {
+      height: 29600px; } }
 
 .container {
   width: 100%;
@@ -14,6 +17,9 @@ body {
   width: 800px;
   margin: 0 auto;
   height: 16000px; }
+  @media only screen and (orientation: portrait) {
+    .content-container {
+      height: 29600px; } }
 
 header {
   width: 100%;
@@ -30,6 +36,22 @@ header {
   background-color: #fff;
   top: 960px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
+  @media only screen and (orientation: portrait) {
+    .content-box-1 {
+      width: 100%;
+      position: relative; } }
+  @media only screen and (orientation: portrait) {
+    .content-box-1 {
+      position: absolute;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      top: 750px;
+      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .content-box-1 {
+      width: 100%;
+      position: relative; } }
 
 .content-box-2 {
   position: absolute;
@@ -38,6 +60,22 @@ header {
   background-color: #fff;
   top: 1920px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
+  @media only screen and (orientation: portrait) {
+    .content-box-2 {
+      width: 100%;
+      position: relative; } }
+  @media only screen and (orientation: portrait) {
+    .content-box-2 {
+      position: absolute;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      top: 1500px;
+      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .content-box-2 {
+      width: 100%;
+      position: relative; } }
 
 .content-box-3 {
   position: absolute;
@@ -46,6 +84,22 @@ header {
   background-color: #fff;
   top: 2880px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
+  @media only screen and (orientation: portrait) {
+    .content-box-3 {
+      width: 100%;
+      position: relative; } }
+  @media only screen and (orientation: portrait) {
+    .content-box-3 {
+      position: absolute;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      top: 2250px;
+      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .content-box-3 {
+      width: 100%;
+      position: relative; } }
 
 .content-box-4 {
   position: absolute;
@@ -54,6 +108,22 @@ header {
   background-color: #fff;
   top: 3840px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
+  @media only screen and (orientation: portrait) {
+    .content-box-4 {
+      width: 100%;
+      position: relative; } }
+  @media only screen and (orientation: portrait) {
+    .content-box-4 {
+      position: absolute;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      top: 3000px;
+      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .content-box-4 {
+      width: 100%;
+      position: relative; } }
 
 .content-box-5 {
   position: absolute;
@@ -62,6 +132,22 @@ header {
   background-color: #fff;
   top: 4800px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
+  @media only screen and (orientation: portrait) {
+    .content-box-5 {
+      width: 100%;
+      position: relative; } }
+  @media only screen and (orientation: portrait) {
+    .content-box-5 {
+      position: absolute;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      top: 3750px;
+      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .content-box-5 {
+      width: 100%;
+      position: relative; } }
 
 .content-box-6 {
   position: absolute;
@@ -70,6 +156,22 @@ header {
   background-color: #fff;
   top: 5760px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
+  @media only screen and (orientation: portrait) {
+    .content-box-6 {
+      width: 100%;
+      position: relative; } }
+  @media only screen and (orientation: portrait) {
+    .content-box-6 {
+      position: absolute;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      top: 4500px;
+      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .content-box-6 {
+      width: 100%;
+      position: relative; } }
 
 .content-box-7 {
   position: absolute;
@@ -78,6 +180,22 @@ header {
   background-color: #fff;
   top: 6720px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
+  @media only screen and (orientation: portrait) {
+    .content-box-7 {
+      width: 100%;
+      position: relative; } }
+  @media only screen and (orientation: portrait) {
+    .content-box-7 {
+      position: absolute;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      top: 5250px;
+      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .content-box-7 {
+      width: 100%;
+      position: relative; } }
 
 .content-box-8 {
   position: absolute;
@@ -86,6 +204,22 @@ header {
   background-color: #fff;
   top: 7680px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
+  @media only screen and (orientation: portrait) {
+    .content-box-8 {
+      width: 100%;
+      position: relative; } }
+  @media only screen and (orientation: portrait) {
+    .content-box-8 {
+      position: absolute;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      top: 6000px;
+      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .content-box-8 {
+      width: 100%;
+      position: relative; } }
 
 .content-box-9 {
   position: absolute;
@@ -94,6 +228,22 @@ header {
   background-color: #fff;
   top: 8640px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
+  @media only screen and (orientation: portrait) {
+    .content-box-9 {
+      width: 100%;
+      position: relative; } }
+  @media only screen and (orientation: portrait) {
+    .content-box-9 {
+      position: absolute;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      top: 6750px;
+      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .content-box-9 {
+      width: 100%;
+      position: relative; } }
 
 .content-box-10 {
   position: absolute;
@@ -102,6 +252,22 @@ header {
   background-color: #fff;
   top: 9600px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
+  @media only screen and (orientation: portrait) {
+    .content-box-10 {
+      width: 100%;
+      position: relative; } }
+  @media only screen and (orientation: portrait) {
+    .content-box-10 {
+      position: absolute;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      top: 7500px;
+      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .content-box-10 {
+      width: 100%;
+      position: relative; } }
 
 .content-box-11 {
   position: absolute;
@@ -110,6 +276,22 @@ header {
   background-color: #fff;
   top: 10560px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
+  @media only screen and (orientation: portrait) {
+    .content-box-11 {
+      width: 100%;
+      position: relative; } }
+  @media only screen and (orientation: portrait) {
+    .content-box-11 {
+      position: absolute;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      top: 8250px;
+      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .content-box-11 {
+      width: 100%;
+      position: relative; } }
 
 .box-12 {
   position: absolute;
@@ -121,6 +303,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   left: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-12 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-12 {
+      left: 0;
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-12 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-10 {
   position: absolute;
@@ -132,6 +334,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   left: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-10 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-10 {
+      left: 0;
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-10 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-8 {
   position: absolute;
@@ -143,6 +365,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   left: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-8 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-8 {
+      left: 0;
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-8 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-6 {
   position: absolute;
@@ -154,6 +396,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   left: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-6 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-6 {
+      left: 0;
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-6 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-4 {
   position: absolute;
@@ -165,6 +427,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   left: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-4 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-4 {
+      left: 0;
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-4 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-2 {
   position: absolute;
@@ -176,6 +458,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   left: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-2 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-2 {
+      left: 0;
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-2 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-13 {
   position: absolute;
@@ -187,6 +489,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   right: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-13 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-13 {
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important;
+      right: 0; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-13 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-11 {
   position: absolute;
@@ -198,6 +520,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   right: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-11 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-11 {
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important;
+      right: 0; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-11 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-9 {
   position: absolute;
@@ -209,6 +551,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   right: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-9 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-9 {
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important;
+      right: 0; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-9 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-7 {
   position: absolute;
@@ -220,6 +582,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   right: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-7 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-7 {
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important;
+      right: 0; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-7 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-5 {
   position: absolute;
@@ -231,6 +613,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   right: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-5 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-5 {
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important;
+      right: 0; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-5 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-3 {
   position: absolute;
@@ -242,6 +644,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   right: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-3 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-3 {
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important;
+      right: 0; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-3 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 .box-1 {
   position: absolute;
@@ -253,6 +675,26 @@ header {
   box-sizing: border-box;
   padding: 1rem 2rem 2rem;
   right: -160px; }
+  @media only screen and (orientation: portrait) {
+    .box-1 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
+  @media only screen and (orientation: portrait) {
+    .box-1 {
+      position: absolute;
+      top: 550px;
+      width: 400px;
+      display: block;
+      background: rgba(255, 255, 255, 0.93);
+      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      padding: 1rem 2rem 2rem;
+      transform: none !important;
+      right: 0; } }
+  @media only screen and (orientation: portrait) and (orientation: portrait) {
+    .box-1 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9); } }
 
 h1 {
   font-family: 'Halant', serif;
@@ -310,6 +752,10 @@ video {
   position: absolute;
   top: 7380px;
   display: block; }
+  @media only screen and (orientation: portrait) {
+    .stats {
+      top: 9900px;
+      margin-left: 4rem; } }
   .stats > h2 {
     opacity: 0.2; }
   .stats .numbers {
@@ -326,6 +772,9 @@ video {
       .stats .numbers > div p {
         opacity: 0.5;
         margin: 0; }
+        @media only screen and (orientation: portrait) {
+          .stats .numbers > div p {
+            font-size: 2.5rem; } }
 
 ul {
   list-style-type: none; }
@@ -334,6 +783,10 @@ ul {
   position: absolute;
   top: 7980px;
   display: block; }
+  @media only screen and (orientation: portrait) {
+    .timeline {
+      top: 10860px;
+      margin-left: 4rem; } }
   .timeline p {
     font-size: 0.9rem;
     margin: 0; }
@@ -353,14 +806,25 @@ ul {
         top: 0.8rem;
         left: -2.5rem;
         opacity: 0.3; }
+        @media only screen and (orientation: portrait) {
+          .timeline .dates li.archive:before {
+            top: 2rem;
+            left: -2.5rem;
+            border-bottom: 4px solid #000; } }
       .timeline .dates li.archive h3.title {
         margin-bottom: 0;
         opacity: 0.5; }
+        @media only screen and (orientation: portrait) {
+          .timeline .dates li.archive h3.title {
+            font-size: 3rem; } }
         .timeline .dates li.archive h3.title span.type {
           display: none;
           opacity: 0.5; }
       .timeline .dates li.archive p.date {
         opacity: 0.5; }
+        @media only screen and (orientation: portrait) {
+          .timeline .dates li.archive p.date {
+            font-size: 2.4rem; } }
         .timeline .dates li.archive p.date span.thing {
           margin-left: 1rem; }
     .timeline .dates li.role {
@@ -373,10 +837,22 @@ ul {
         position: absolute;
         top: 1.25rem;
         left: -2.5rem; }
+        @media only screen and (orientation: portrait) {
+          .timeline .dates li.role:before {
+            top: 1.5rem;
+            left: -2.5rem;
+            border-bottom: 4px solid #000; } }
       .timeline .dates li.role h2.title {
         font-size: 1.5rem; }
+        @media only screen and (orientation: portrait) {
+          .timeline .dates li.role h2.title {
+            font-size: 4rem;
+            margin-top: 3rem; } }
       .timeline .dates li.role p.company {
         opacity: 0.5; }
+        @media only screen and (orientation: portrait) {
+          .timeline .dates li.role p.company {
+            font-size: 2.4rem; } }
     .timeline .dates li.note {
       position: relative; }
       .timeline .dates li.note:before {
@@ -387,8 +863,15 @@ ul {
         position: absolute;
         top: 1.5rem;
         left: -2.5rem; }
+      @media only screen and (orientation: portrait) {
+        .timeline .dates li.note h2.title {
+          font-size: 3rem;
+          margin-top: 3rem; } }
       .timeline .dates li.note p.company {
         opacity: 0.5; }
+        @media only screen and (orientation: portrait) {
+          .timeline .dates li.note p.company {
+            font-size: 2.4rem; } }
   .timeline .social {
     margin-top: 15rem; }
     .timeline .social a {
@@ -398,3 +881,23 @@ ul {
       margin: 0;
       display: inline;
       margin: 0 1rem; }
+
+@media only screen and (orientation: portrait) {
+  h1 {
+    font-size: calc(36px + 8vw);
+    line-height: calc(36px + 7.6vw); }
+  h2 {
+    font-size: calc(36px + 3vw);
+    line-height: calc(36px + 3vw); }
+  p {
+    font-size: calc(36px + 1vw);
+    line-height: calc(36px + 2.4vw); }
+  a {
+    font-size: calc(36px + 1vw);
+    padding: 2rem; }
+  header {
+    max-width: 84vw; }
+  .content-container {
+    width: 100%; }
+  video {
+    width: 100%; } }

@@ -1,5 +1,7 @@
 =content-height()
   height: 16000px
+  @media only screen and (orientation: portrait) 
+    height: 29600px
 body
   +content-height
   background: #fff
@@ -29,6 +31,9 @@ header
 =box-size($top)
   position: absolute
   width: 800px
+  @media only screen and (orientation: portrait) 
+    width: 100%
+    position: relative
   margin: 0 auto
   background-color: #fff
   top: $top
@@ -37,7 +42,8 @@ header
 @for $i from 1 through 11
   .content-box-#{$i} 
     +box-size(960px * $i)
-
+    @media only screen and (orientation: portrait) 
+      +box-size(750px * $i)
 $i: 12;
 @while $i > 0 
   .content-box-#{$i} 
@@ -54,6 +60,9 @@ $n: 13;
     //Start position
     top: $top
     width: 400px
+    @media only screen and (orientation: portrait) 
+      width: 100%
+      background: rgba(255,255,255,0.9)  
     display: block
     background: rgba(255,255,255,0.93)
     box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.15)
@@ -65,6 +74,10 @@ $i: 12;
   .box-#{$i} 
     +box-position(1780px)
     left: -160px
+    @media only screen and (orientation: portrait) 
+      left: 0
+      +box-position(550px)
+      transform: none !important
   $i: $i - 2
 
 $n: 13;
@@ -72,6 +85,10 @@ $n: 13;
   .box-#{$n} 
     +box-position(1900px)
     right: -160px
+    @media only screen and (orientation: portrait) 
+      +box-position(550px)
+      transform: none !important
+      right: 0
   $n: $n - 2
 
 // TypeStyle
@@ -103,7 +120,6 @@ a
   font-size: 0.9rem
   line-height: 20px
 video
-  
   width: 800px
   
   
@@ -132,7 +148,9 @@ video
 .stats
   position: absolute
   top: 960px * 8 - 300px
-  
+  @media only screen and (orientation: portrait) 
+    top: 960px * 10 + 300px
+    margin-left: 4rem
   display: block
   > h2
     opacity: 0.2
@@ -148,6 +166,8 @@ video
         margin: 0 0 
         line-height: 5rem
       p
+        @media only screen and (orientation: portrait) 
+          font-size: 2.5rem
         opacity: 0.5
         margin: 0
 
@@ -159,6 +179,9 @@ ul
 .timeline
   position: absolute
   top: 960px * 8 + 300px
+  @media only screen and (orientation: portrait) 
+    top: 960px * 11 + 300px
+    margin-left: 4rem
   
   display: block
   p
@@ -180,14 +203,22 @@ ul
         top: 0.8rem
         left: -2.5rem
         opacity: 0.3
+        @media only screen and (orientation: portrait) 
+          top: 2rem
+          left: -2.5rem
+          border-bottom: 4px solid #000
       h3.title
         margin-bottom: 0
         opacity: 0.5
+        @media only screen and (orientation: portrait) 
+          font-size: 3rem
         span.type
           display: none
           opacity: 0.5
       p.date
         opacity: 0.5
+        @media only screen and (orientation: portrait) 
+          font-size: 2.4rem
         span.thing
           margin-left: 1rem
     li.role
@@ -200,10 +231,19 @@ ul
         position: absolute
         top: 1.25rem
         left: -2.5rem
+        @media only screen and (orientation: portrait) 
+          top: 1.5rem
+          left: -2.5rem
+          border-bottom: 4px solid #000
       h2.title
         font-size: 1.5rem
+        @media only screen and (orientation: portrait) 
+          font-size: 4rem
+          margin-top: 3rem
       p.company
         opacity: 0.5
+        @media only screen and (orientation: portrait) 
+          font-size: 2.4rem
     li.note
       position: relative
       &:before
@@ -215,10 +255,13 @@ ul
         top: 1.5rem
         left: -2.5rem
       h2.title
-        
+        @media only screen and (orientation: portrait) 
+          font-size: 3rem
+          margin-top: 3rem
       p.company
         opacity: 0.5
-        
+        @media only screen and (orientation: portrait) 
+          font-size: 2.4rem
   .social
     margin-top: 15rem
     a
@@ -238,9 +281,27 @@ ul
   // /* tablets and desktop */
   body
     
-@media only screen and (max-width: 1350px) 
+@media only screen and (orientation: portrait) 
   // /* phones */
-
+  
+  h1
+    font-size: calc(36px + 8vw)
+    line-height: calc(36px + 7.6vw)
+  h2
+    font-size: calc(36px + 3vw)
+    line-height: calc(36px + 3vw)
+  p 
+    font-size: calc(36px + 1vw)
+    line-height: calc(36px + 2.4vw)
+  a
+    font-size: calc(36px + 1vw)
+    padding: 2rem
+  header
+    max-width: 84vw
+  .content-container
+    width: 100%
+  video
+    width: 100%
 // @media only screen and (max-width: 767px) and (orientation: portrait)
 //   // /* portrait phones */
 //   body
