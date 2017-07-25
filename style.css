@@ -11,7 +11,8 @@ body {
   left: 0; }
 
 .content-container {
-  width: 100%;
+  width: 800px;
+  margin: 0 auto;
   height: 16000px; }
 
 header {
@@ -25,7 +26,7 @@ header {
 .content-box-1 {
   position: absolute;
   width: 800px;
-  margin-left: -100px;
+  margin: 0 auto;
   background-color: #fff;
   top: 960px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
@@ -33,7 +34,7 @@ header {
 .content-box-2 {
   position: absolute;
   width: 800px;
-  margin-left: -100px;
+  margin: 0 auto;
   background-color: #fff;
   top: 1920px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
@@ -41,7 +42,7 @@ header {
 .content-box-3 {
   position: absolute;
   width: 800px;
-  margin-left: -100px;
+  margin: 0 auto;
   background-color: #fff;
   top: 2880px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
@@ -49,7 +50,7 @@ header {
 .content-box-4 {
   position: absolute;
   width: 800px;
-  margin-left: -100px;
+  margin: 0 auto;
   background-color: #fff;
   top: 3840px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
@@ -57,7 +58,7 @@ header {
 .content-box-5 {
   position: absolute;
   width: 800px;
-  margin-left: -100px;
+  margin: 0 auto;
   background-color: #fff;
   top: 4800px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
@@ -65,7 +66,7 @@ header {
 .content-box-6 {
   position: absolute;
   width: 800px;
-  margin-left: -100px;
+  margin: 0 auto;
   background-color: #fff;
   top: 5760px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
@@ -73,7 +74,7 @@ header {
 .content-box-7 {
   position: absolute;
   width: 800px;
-  margin-left: -100px;
+  margin: 0 auto;
   background-color: #fff;
   top: 6720px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
@@ -81,7 +82,7 @@ header {
 .content-box-8 {
   position: absolute;
   width: 800px;
-  margin-left: -100px;
+  margin: 0 auto;
   background-color: #fff;
   top: 7680px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
@@ -89,7 +90,7 @@ header {
 .content-box-9 {
   position: absolute;
   width: 800px;
-  margin-left: -100px;
+  margin: 0 auto;
   background-color: #fff;
   top: 8640px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
@@ -97,7 +98,7 @@ header {
 .content-box-10 {
   position: absolute;
   width: 800px;
-  margin-left: -100px;
+  margin: 0 auto;
   background-color: #fff;
   top: 9600px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
@@ -105,53 +106,14 @@ header {
 .content-box-11 {
   position: absolute;
   width: 800px;
-  margin-left: -100px;
+  margin: 0 auto;
   background-color: #fff;
   top: 10560px;
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
 
-.content-box-12 {
-  left: 40%; }
-
-.content-box-10 {
-  left: 40%; }
-
-.content-box-8 {
-  left: 40%; }
-
-.content-box-6 {
-  left: 40%; }
-
-.content-box-4 {
-  left: 40%; }
-
-.content-box-2 {
-  left: 40%; }
-
-.content-box-13 {
-  left: 40%; }
-
-.content-box-11 {
-  left: 40%; }
-
-.content-box-9 {
-  left: 40%; }
-
-.content-box-7 {
-  left: 40%; }
-
-.content-box-5 {
-  left: 40%; }
-
-.content-box-3 {
-  left: 40%; }
-
-.content-box-1 {
-  left: 40%; }
-
 .box-12 {
   position: absolute;
-  top: 1600px;
+  top: 1780px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -162,7 +124,7 @@ header {
 
 .box-10 {
   position: absolute;
-  top: 1600px;
+  top: 1780px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -173,7 +135,7 @@ header {
 
 .box-8 {
   position: absolute;
-  top: 1600px;
+  top: 1780px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -184,7 +146,7 @@ header {
 
 .box-6 {
   position: absolute;
-  top: 1600px;
+  top: 1780px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -195,7 +157,7 @@ header {
 
 .box-4 {
   position: absolute;
-  top: 1600px;
+  top: 1780px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -206,7 +168,7 @@ header {
 
 .box-2 {
   position: absolute;
-  top: 1600px;
+  top: 1780px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -217,7 +179,7 @@ header {
 
 .box-13 {
   position: absolute;
-  top: 1680px;
+  top: 1900px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -228,7 +190,7 @@ header {
 
 .box-11 {
   position: absolute;
-  top: 1680px;
+  top: 1900px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -239,7 +201,7 @@ header {
 
 .box-9 {
   position: absolute;
-  top: 1680px;
+  top: 1900px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -250,7 +212,7 @@ header {
 
 .box-7 {
   position: absolute;
-  top: 1680px;
+  top: 1900px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -261,7 +223,7 @@ header {
 
 .box-5 {
   position: absolute;
-  top: 1680px;
+  top: 1900px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -272,7 +234,7 @@ header {
 
 .box-3 {
   position: absolute;
-  top: 1680px;
+  top: 1900px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -283,7 +245,7 @@ header {
 
 .box-1 {
   position: absolute;
-  top: 1680px;
+  top: 1900px;
   width: 400px;
   display: block;
   background: rgba(255, 255, 255, 0.93);
@@ -345,10 +307,8 @@ video {
   display: none; }
 
 .stats {
-  width: 50%;
   position: absolute;
   top: 7380px;
-  left: 25%;
   display: block; }
   .stats > h2 {
     opacity: 0.2; }
@@ -371,10 +331,8 @@ ul {
   list-style-type: none; }
 
 .timeline {
-  width: 50%;
   position: absolute;
   top: 7980px;
-  left: 25%;
   display: block; }
   .timeline p {
     font-size: 0.9rem;

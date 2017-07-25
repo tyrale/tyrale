@@ -13,7 +13,8 @@ body
   left: 0
 
 .content-container
-  width: 100%
+  width: 800px
+  margin: 0 auto
   +content-height
     
 header
@@ -28,7 +29,7 @@ header
 =box-size($top)
   position: absolute
   width: 800px
-  margin-left: -100px
+  margin: 0 auto
   background-color: #fff
   top: $top
   box-shadow: 0px 20px 80px 0px rgba(0,0,0,0.15)
@@ -40,13 +41,11 @@ header
 $i: 12;
 @while $i > 0 
   .content-box-#{$i} 
-    left: 40%
   $i: $i - 2
 
 $n: 13;
 @while $n > 0 
   .content-box-#{$n} 
-    left: 40%
   $n: $n - 2
 
 //putting the text in place
@@ -64,14 +63,14 @@ $n: 13;
 $i: 12;
 @while $i > 0 
   .box-#{$i} 
-    +box-position(1600px)
+    +box-position(1780px)
     left: -160px
   $i: $i - 2
 
 $n: 13;
 @while $n > 0 
   .box-#{$n} 
-    +box-position(1680px)
+    +box-position(1900px)
     right: -160px
   $n: $n - 2
 
@@ -131,10 +130,9 @@ video
 
 // Stat things
 .stats
-  width: 50%
   position: absolute
   top: 960px * 8 - 300px
-  left: 25%
+  
   display: block
   > h2
     opacity: 0.2
@@ -159,10 +157,9 @@ ul
   list-style-type: none
     
 .timeline
-  width: 50%
   position: absolute
   top: 960px * 8 + 300px
-  left: 25%
+  
   display: block
   p
     font-size: 0.9rem

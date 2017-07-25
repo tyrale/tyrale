@@ -23,7 +23,7 @@ html
         mixin right(title, src, link1, link2, link3)
           .scroll-content-box(class!=attributes.content factor="0")
             video(src=src autoplay loop)
-            .scroll-parallax-box.box-1(factor='1600')
+            .scroll-parallax-box.box-1(factor='1800')
               +content(title, link1, link2, link3)
                 if block
                   block
@@ -32,7 +32,7 @@ html
         mixin left(title, src, link1, link2, link3)
           .scroll-content-box(class!=attributes.content factor="0")
             video(src=src autoplay loop)
-            .scroll-parallax-box.box-2(factor='1600')  
+            .scroll-parallax-box.box-2(factor='1800')  
               +content(title, link1, link2, link3)
                 if block
                   block
