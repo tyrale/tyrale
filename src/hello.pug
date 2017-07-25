@@ -25,7 +25,7 @@ html
           a(href=link3) Press
       
         mixin right(title, src, link1, link2, link3)
-          .scroll-content-box(class!=attributes.content factor="150")
+          .scroll-content-box(class!=attributes.content factor="0")
             video(src=src autoplay loop)
             .scroll-parallax-box.box-1(factor='1600')
               +content(title, link1, link2, link3)
@@ -34,7 +34,7 @@ html
                 else
                   p No content provided
         mixin left(title, src, link1, link2, link3)
-          .scroll-content-box(class!=attributes.content factor="150")
+          .scroll-content-box(class!=attributes.content factor="0")
             video(src=src autoplay loop)
             .scroll-parallax-box.box-2(factor='1600')  
               +content(title, link1, link2, link3)
