@@ -15,6 +15,14 @@ body
 .content-container
   width: 100%
   +content-height
+    
+header
+  width: 100%
+  max-width: 52vw
+  margin: 0 auto
+  margin-bottom: 20vw
+  margin-top: 20vw
+  box-sizing: border-box
 
 //putting the image in place
 =box-size($top)
@@ -67,18 +75,13 @@ $n: 13;
     right: -160px
   $n: $n - 2
 
-    
-header
- width: 50%
- margin: 25% auto
 // TypeStyle
 h1 
   font-family: 'Halant', serif
   font-weight: 600
-  font-size: 5rem
-  margin: 0 auto
   text-align: left
-  line-height: 5rem
+  font-size: calc(36px + 3vw)
+  line-height: calc(36px + 3.7vw)
 h2
   font-family: 'Halant', serif;
   font-weight: 600
@@ -228,3 +231,20 @@ ul
       margin: 0
       display: inline
       margin: 0 1rem
+
+
+@media only screen and (min-width: 1700px)
+  // /* tablets and desktop */      
+  body
+    
+@media only screen and (max-width : 1699px) 
+  // /* tablets and desktop */
+  body
+    
+@media only screen and (max-width: 1350px) 
+  // /* phones */
+
+// @media only screen and (max-width: 767px) and (orientation: portrait)
+//   // /* portrait phones */
+//   body
+//       background: thistle

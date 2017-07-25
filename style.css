@@ -14,6 +14,14 @@ body {
   width: 100%;
   height: 16000px; }
 
+header {
+  width: 100%;
+  max-width: 52vw;
+  margin: 0 auto;
+  margin-bottom: 20vw;
+  margin-top: 20vw;
+  box-sizing: border-box; }
+
 .content-box-1 {
   position: absolute;
   width: 800px;
@@ -284,17 +292,12 @@ body {
   padding: 1rem 2rem 2rem;
   right: -160px; }
 
-header {
-  width: 50%;
-  margin: 25% auto; }
-
 h1 {
   font-family: 'Halant', serif;
   font-weight: 600;
-  font-size: 5rem;
-  margin: 0 auto;
   text-align: left;
-  line-height: 5rem; }
+  font-size: calc(36px + 3vw);
+  line-height: calc(36px + 3.7vw); }
 
 h2 {
   font-family: 'Halant', serif;
