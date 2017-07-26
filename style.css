@@ -1,10 +1,10 @@
 body {
-  height: 16000px;
+  height: 17000px;
   background: #fff;
   font-family: 'Halant', serif; }
   @media only screen and (orientation: portrait) {
     body {
-      height: 29600px; } }
+      height: 30000px; } }
 
 .container {
   width: 100%;
@@ -16,10 +16,10 @@ body {
 .content-container {
   width: 800px;
   margin: 0 auto;
-  height: 16000px; }
+  height: 17000px; }
   @media only screen and (orientation: portrait) {
     .content-container {
-      height: 29600px; } }
+      height: 30000px; } }
 
 header {
   width: 100%;
