@@ -763,31 +763,31 @@ video {
 .content-box-1 a:nth-of-type(2), .content-box-1 a:nth-of-type(3), .content-box-1 a:nth-of-type(1) {
   display: none; }
 
-.content-box-2 a:nth-of-type(2), .content-box-2 a:nth-of-type(3) {
+.content-box-3 a:nth-of-type(3), .content-box-3 a:nth-of-type(2) {
   display: none; }
 
-.content-box-3 a:nth-of-type(3) {
+.content-box-4 a:nth-of-type(2), .content-box-4 a:nth-of-type(3) {
   display: none; }
 
-.content-box-4 a:nth-of-type(2) {
-  display: none; }
-
-.content-box-5 a:nth-of-type(2) {
-  display: none; }
-
-.content-box-6 a:nth-of-type(3), .content-box-6 a:nth-of-type(1) {
+.content-box-6 a:nth-of-type(2) {
   display: none; }
 
 .content-box-7 a:nth-of-type(3), .content-box-7 a:nth-of-type(2) {
   display: none; }
 
+.content-box-8 a:nth-of-type(3) {
+  display: none; }
+
+.content-box-9 a:nth-of-type(3), .content-box-9 a:nth-of-type(2) {
+  display: none; }
+
 .stats {
   position: absolute;
-  top: 8340px;
+  top: 9300px;
   display: block; }
   @media only screen and (orientation: portrait) {
     .stats {
-      top: 11080px;
+      top: 12060px;
       margin-left: 4rem; } }
   .stats > h2 {
     opacity: 0.2; }
@@ -814,11 +814,11 @@ ul {
 
 .timeline {
   position: absolute;
-  top: 8940px;
+  top: 9900px;
   display: block; }
   @media only screen and (orientation: portrait) {
     .timeline {
-      top: 11820px;
+      top: 12780px;
       margin-left: 4rem; } }
   .timeline p {
     font-size: 0.9rem;

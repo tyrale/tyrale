@@ -134,29 +134,34 @@ video
     display: none
 .content-box-2
   a:nth-of-type(2), a:nth-of-type(3)
-    display: none
+    // display: none
 .content-box-3
-  a:nth-of-type(3)
+  a:nth-of-type(3), a:nth-of-type(2)
     display: none
 .content-box-4
-  a:nth-of-type(2)
+  a:nth-of-type(2), a:nth-of-type(3)
     display: none
 .content-box-5
   a:nth-of-type(2)
-    display: none
+    // display: none
 .content-box-6
-  a:nth-of-type(3), a:nth-of-type(1)
+  a:nth-of-type(2)
     display: none
 .content-box-7
   a:nth-of-type(3), a:nth-of-type(2)
     display: none
-
+.content-box-8
+  a:nth-of-type(3)
+    display: none
+.content-box-9
+  a:nth-of-type(3), a:nth-of-type(2)
+    display: none
 // Stat things
 .stats
   position: absolute
-  top: 960px * 9 - 300px
+  top: 960px * 10 - 300px
   @media only screen and (orientation: portrait) 
-    top: 980px * 11 + 300px
+    top: 980px * 12 + 300px
     margin-left: 4rem
   display: block
   > h2
@@ -185,9 +190,9 @@ ul
     
 .timeline
   position: absolute
-  top: 960px * 9 + 300px
+  top: 960px * 10 + 300px
   @media only screen and (orientation: portrait) 
-    top: 960px * 12 + 300px
+    top: 960px * 13 + 300px
     margin-left: 4rem
   
   display: block
