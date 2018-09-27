@@ -761,7 +761,8 @@ a {
   @media only screen and (orientation: portrait) {
     a {
       border: 3px solid;
-      border-radius: 3px; } }
+      border-radius: 8px;
+      text-decoration: none; } }
 
 video {
   width: 800px; }
@@ -793,7 +794,7 @@ video {
   display: block; }
   @media only screen and (orientation: portrait) {
     .stats {
-      top: 12060px;
+      top: 12460px;
       margin-left: 4rem; } }
   .stats > h2 {
     opacity: 0.2; }
@@ -824,7 +825,7 @@ ul {
   display: block; }
   @media only screen and (orientation: portrait) {
     .timeline {
-      top: 12780px;
+      top: 13180px;
       margin-left: 4rem; } }
   .timeline p {
     font-size: 0.9rem;
