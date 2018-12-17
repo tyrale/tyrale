@@ -1,917 +1,141 @@
+html {
+  font-size: 1rem; }
+
 body {
-  height: 18000px;
-  background: #fff;
-  font-family: 'Halant', serif; }
-  @media only screen and (orientation: portrait) {
-    body {
-      height: 32000px; } }
+  margin: 45vh 2.5rem 3rem;
+  background: #fff; }
 
-.container {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0; }
+@media (min-width: 600px) {
+  body {
+    margin: 45vh 11rem 3rem; } }
 
-.content-container {
-  width: 800px;
-  margin: 0 auto;
-  height: 18000px; }
-  @media only screen and (orientation: portrait) {
-    .content-container {
-      height: 32000px; } }
+body, h1, h2, p, blockquote {
+  font-style: normal;
+  font-variant: normal;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.45; }
 
-header {
-  width: 100%;
-  max-width: 52vw;
-  margin: 0 auto;
-  margin-bottom: 20vw;
-  margin-top: 20vw;
-  box-sizing: border-box; }
-
-.content-box-1 {
-  position: absolute;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  top: 960px;
-  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
-  @media only screen and (orientation: portrait) {
-    .content-box-1 {
-      width: 100%;
-      position: relative; } }
-  @media only screen and (orientation: portrait) {
-    .content-box-1 {
-      position: absolute;
-      width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      top: 750px;
-      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .content-box-1 {
-      width: 100%;
-      position: relative; } }
-
-.content-box-2 {
-  position: absolute;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  top: 1920px;
-  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
-  @media only screen and (orientation: portrait) {
-    .content-box-2 {
-      width: 100%;
-      position: relative; } }
-  @media only screen and (orientation: portrait) {
-    .content-box-2 {
-      position: absolute;
-      width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      top: 1500px;
-      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .content-box-2 {
-      width: 100%;
-      position: relative; } }
-
-.content-box-3 {
-  position: absolute;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  top: 2880px;
-  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
-  @media only screen and (orientation: portrait) {
-    .content-box-3 {
-      width: 100%;
-      position: relative; } }
-  @media only screen and (orientation: portrait) {
-    .content-box-3 {
-      position: absolute;
-      width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      top: 2250px;
-      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .content-box-3 {
-      width: 100%;
-      position: relative; } }
-
-.content-box-4 {
-  position: absolute;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  top: 3840px;
-  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
-  @media only screen and (orientation: portrait) {
-    .content-box-4 {
-      width: 100%;
-      position: relative; } }
-  @media only screen and (orientation: portrait) {
-    .content-box-4 {
-      position: absolute;
-      width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      top: 3000px;
-      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .content-box-4 {
-      width: 100%;
-      position: relative; } }
-
-.content-box-5 {
-  position: absolute;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  top: 4800px;
-  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
-  @media only screen and (orientation: portrait) {
-    .content-box-5 {
-      width: 100%;
-      position: relative; } }
-  @media only screen and (orientation: portrait) {
-    .content-box-5 {
-      position: absolute;
-      width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      top: 3750px;
-      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .content-box-5 {
-      width: 100%;
-      position: relative; } }
-
-.content-box-6 {
-  position: absolute;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  top: 5760px;
-  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
-  @media only screen and (orientation: portrait) {
-    .content-box-6 {
-      width: 100%;
-      position: relative; } }
-  @media only screen and (orientation: portrait) {
-    .content-box-6 {
-      position: absolute;
-      width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      top: 4500px;
-      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .content-box-6 {
-      width: 100%;
-      position: relative; } }
-
-.content-box-7 {
-  position: absolute;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  top: 6720px;
-  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
-  @media only screen and (orientation: portrait) {
-    .content-box-7 {
-      width: 100%;
-      position: relative; } }
-  @media only screen and (orientation: portrait) {
-    .content-box-7 {
-      position: absolute;
-      width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      top: 5250px;
-      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .content-box-7 {
-      width: 100%;
-      position: relative; } }
-
-.content-box-8 {
-  position: absolute;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  top: 7680px;
-  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
-  @media only screen and (orientation: portrait) {
-    .content-box-8 {
-      width: 100%;
-      position: relative; } }
-  @media only screen and (orientation: portrait) {
-    .content-box-8 {
-      position: absolute;
-      width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      top: 6000px;
-      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .content-box-8 {
-      width: 100%;
-      position: relative; } }
-
-.content-box-9 {
-  position: absolute;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  top: 8640px;
-  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
-  @media only screen and (orientation: portrait) {
-    .content-box-9 {
-      width: 100%;
-      position: relative; } }
-  @media only screen and (orientation: portrait) {
-    .content-box-9 {
-      position: absolute;
-      width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      top: 6750px;
-      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .content-box-9 {
-      width: 100%;
-      position: relative; } }
-
-.content-box-10 {
-  position: absolute;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  top: 9600px;
-  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
-  @media only screen and (orientation: portrait) {
-    .content-box-10 {
-      width: 100%;
-      position: relative; } }
-  @media only screen and (orientation: portrait) {
-    .content-box-10 {
-      position: absolute;
-      width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      top: 7500px;
-      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .content-box-10 {
-      width: 100%;
-      position: relative; } }
-
-.content-box-11 {
-  position: absolute;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  top: 10560px;
-  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); }
-  @media only screen and (orientation: portrait) {
-    .content-box-11 {
-      width: 100%;
-      position: relative; } }
-  @media only screen and (orientation: portrait) {
-    .content-box-11 {
-      position: absolute;
-      width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      top: 8250px;
-      box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15); } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .content-box-11 {
-      width: 100%;
-      position: relative; } }
-
-.box-12 {
-  position: absolute;
-  top: 1780px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  left: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-12 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-12 {
-      left: 0;
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-12 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-10 {
-  position: absolute;
-  top: 1780px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  left: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-10 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-10 {
-      left: 0;
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-10 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-8 {
-  position: absolute;
-  top: 1780px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  left: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-8 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-8 {
-      left: 0;
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-8 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-6 {
-  position: absolute;
-  top: 1780px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  left: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-6 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-6 {
-      left: 0;
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-6 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-4 {
-  position: absolute;
-  top: 1780px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  left: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-4 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-4 {
-      left: 0;
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-4 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-2 {
-  position: absolute;
-  top: 1780px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  left: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-2 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-2 {
-      left: 0;
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-2 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-13 {
-  position: absolute;
-  top: 1900px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  right: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-13 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-13 {
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important;
-      right: 0; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-13 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-11 {
-  position: absolute;
-  top: 1900px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  right: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-11 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-11 {
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important;
-      right: 0; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-11 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-9 {
-  position: absolute;
-  top: 1900px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  right: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-9 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-9 {
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important;
-      right: 0; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-9 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-7 {
-  position: absolute;
-  top: 1900px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  right: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-7 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-7 {
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important;
-      right: 0; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-7 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-5 {
-  position: absolute;
-  top: 1900px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  right: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-5 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-5 {
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important;
-      right: 0; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-5 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-3 {
-  position: absolute;
-  top: 1900px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  right: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-3 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-3 {
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important;
-      right: 0; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-3 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-
-.box-1 {
-  position: absolute;
-  top: 1900px;
-  width: 400px;
-  display: block;
-  background: rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  padding: 1rem 2rem 2rem;
-  right: -160px; }
-  @media only screen and (orientation: portrait) {
-    .box-1 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
-  @media only screen and (orientation: portrait) {
-    .box-1 {
-      position: absolute;
-      top: 550px;
-      width: 400px;
-      display: block;
-      background: rgba(255, 255, 255, 0.93);
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      padding: 1rem 2rem 2rem;
-      transform: none !important;
-      right: 0; } }
-  @media only screen and (orientation: portrait) and (orientation: portrait) {
-    .box-1 {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 3rem; } }
+h1, h2, h3, h4 {
+  font-weight: inherit;
+  line-height: 1.2; }
 
 h1 {
-  font-family: 'Halant', serif;
-  font-weight: 600;
-  text-align: left;
-  font-size: calc(36px + 3vw);
-  line-height: calc(36px + 3.7vw); }
+  font-size: 1.81em;
+  font-weight: 700;
+  line-height: 1.6rem; }
+
+@media (min-width: 600px) {
+  h1 {
+    line-height: 2rem; } }
 
 h2 {
-  font-family: 'Halant', serif;
-  font-weight: 600;
-  font-size: 2rem;
-  margin-bottom: -10px;
-  margin-top: 10px; }
-  @media only screen and (orientation: portrait) {
-    h2 {
-      font-size: 4rem; } }
+  line-height: 1.4rem;
+  font-size: 1.9em; }
+
+h3 {
+  font-size: 1.81em;
+  font-weight: 700;
+  line-height: 1.6rem; }
+  h3 span {
+    font-weight: 400;
+    padding-left: 1rem;
+    font-size: 0.8em; }
+
+h4 {
+  font-size: 1.414em;
+  margin-top: 41vh; }
 
 p {
-  font-family: Helvetica, san-serif;
-  font-weight: 100;
-  line-height: 1.5rem; }
-  @media only screen and (orientation: portrait) {
-    p {
-      font-size: 2rem; } }
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 1.3em; }
+  p + .strong {
+    font-weight: 700; }
+    p + .strong span {
+      font-weight: 400;
+      margin-left: 1rem; }
 
-a {
-  border: 1px solid;
-  height: 2rem;
-  display: inline-block;
-  padding: 10px 10px 0 10px;
-  margin-right: 1rem;
-  margin-top: 0.4rem;
-  font-family: Helvetica, san-serif;
-  font-weight: 100;
-  font-size: 0.9rem;
-  line-height: 20px; }
-  @media only screen and (orientation: portrait) {
-    a {
-      border: 3px solid;
-      border-radius: 8px;
-      text-decoration: none; } }
-
-video {
-  width: 800px; }
-
-.content-box-1 a:nth-of-type(2) {
-  display: none; }
-
-.content-box-3 a:nth-of-type(3), .content-box-3 a:nth-of-type(2) {
-  display: none; }
-
-.content-box-4 a:nth-of-type(2), .content-box-4 a:nth-of-type(3) {
-  display: none; }
-
-.content-box-6 a:nth-of-type(2) {
-  display: none; }
-
-.content-box-7 a:nth-of-type(3), .content-box-7 a:nth-of-type(2) {
-  display: none; }
-
-.content-box-8 a:nth-of-type(3) {
-  display: none; }
-
-.content-box-9 a:nth-of-type(3), .content-box-9 a:nth-of-type(2) {
-  display: none; }
-
-.stats {
-  position: absolute;
-  top: 9300px;
-  display: block; }
-  @media only screen and (orientation: portrait) {
-    .stats {
-      top: 12460px;
-      margin-left: 4rem; } }
-  .stats > h2 {
-    opacity: 0.2; }
-  .stats .numbers {
-    width: 100%;
-    padding-top: 2rem; }
-    .stats .numbers > div {
-      display: inline-block;
-      width: 30%;
-      margin-bottom: 3rem; }
-      .stats .numbers > div h3 {
-        font-size: 7rem;
-        margin: 0 0;
-        line-height: 5rem; }
-      .stats .numbers > div p {
-        opacity: 0.5;
-        margin: 0; }
-        @media only screen and (orientation: portrait) {
-          .stats .numbers > div p {
-            font-size: 2.5rem; } }
+blockquote {
+  font-weight: 400;
+  line-height: 30px; }
 
 ul {
   list-style-type: none; }
 
 .timeline {
-  position: absolute;
-  top: 9900px;
   display: block; }
-  @media only screen and (orientation: portrait) {
-    .timeline {
-      top: 13180px;
-      margin-left: 4rem; } }
   .timeline p {
-    font-size: 0.9rem;
     margin: 0; }
-  .timeline > h2 {
-    opacity: 0.2; }
   .timeline .dates {
-    border-left: 1px solid #000; }
+    border-left: 1px solid #aaa; }
     .timeline .dates li.archive {
       position: relative;
       margin-top: 1.4rem; }
       .timeline .dates li.archive:before {
         content: "";
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #aaa;
         width: 0.75rem;
         display: block;
         position: absolute;
         top: 0.8rem;
-        left: -2.5rem;
-        opacity: 0.3; }
-        @media only screen and (orientation: portrait) {
-          .timeline .dates li.archive:before {
-            top: 2rem;
-            left: -2.5rem;
-            border-bottom: 4px solid #000; } }
+        left: -2.5rem; }
       .timeline .dates li.archive h3.title {
-        margin-bottom: 0;
-        opacity: 0.5; }
-        @media only screen and (orientation: portrait) {
-          .timeline .dates li.archive h3.title {
-            font-size: 3rem; } }
+        margin-bottom: 0; }
         .timeline .dates li.archive h3.title span.type {
-          display: none;
-          opacity: 0.5; }
-      .timeline .dates li.archive p.date {
-        opacity: 0.5; }
-        @media only screen and (orientation: portrait) {
-          .timeline .dates li.archive p.date {
-            font-size: 2.4rem; } }
-        .timeline .dates li.archive p.date span.thing {
-          margin-left: 1rem; }
+          display: none; }
+      .timeline .dates li.archive p.date span.thing {
+        margin-left: 1rem; }
     .timeline .dates li.role {
       position: relative; }
       .timeline .dates li.role:before {
         content: "";
-        border-bottom: 2px solid #000;
+        border-bottom: 1px solid #aaa;
         width: 1.25rem;
         display: block;
         position: absolute;
-        top: 1.25rem;
+        top: 0.8rem;
         left: -2.5rem; }
-        @media only screen and (orientation: portrait) {
-          .timeline .dates li.role:before {
-            top: 1.5rem;
-            left: -2.5rem;
-            border-bottom: 4px solid #000; } }
-      .timeline .dates li.role h2.title {
-        font-size: 1.5rem; }
-        @media only screen and (orientation: portrait) {
-          .timeline .dates li.role h2.title {
-            font-size: 4rem;
-            margin-top: 3rem; } }
-      .timeline .dates li.role p.company {
-        opacity: 0.5; }
-        @media only screen and (orientation: portrait) {
-          .timeline .dates li.role p.company {
-            font-size: 2.4rem; } }
+      .timeline .dates li.role h3.title {
+        margin-bottom: 0rem; }
     .timeline .dates li.note {
       position: relative; }
       .timeline .dates li.note:before {
         content: "";
-        border-bottom: 3px solid #000;
+        border-bottom: 1px solid #aaa;
         width: 1.5rem;
         display: block;
         position: absolute;
-        top: 1.5rem;
+        top: 0.8rem;
         left: -2.5rem; }
-      @media only screen and (orientation: portrait) {
-        .timeline .dates li.note h2.title {
-          font-size: 3rem;
-          margin-top: 3rem; } }
-      .timeline .dates li.note p.company {
-        opacity: 0.5; }
-        @media only screen and (orientation: portrait) {
-          .timeline .dates li.note p.company {
-            font-size: 2.4rem; } }
+      .timeline .dates li.note h3.title {
+        margin-bottom: 0rem; }
+    .timeline .dates .project {
+      display: block; }
+      .timeline .dates .project video {
+        width: 87vw;
+        height: 28vh;
+        position: absolute;
+        right: 0;
+        margin-left: -1.5rem; }
+      .timeline .dates .project > p {
+        margin-top: 1rem;
+        padding-top: 14rem; }
+      .timeline .dates .project > a {
+        margin: 1rem 1rem 0 0;
+        display: inline-block; }
+      @media (min-width: 600px) {
+        .timeline .dates .project video {
+          width: 600px;
+          height: 300px;
+          position: static;
+          margin-left: -2.1rem;
+          margin-top: 1rem; }
+        .timeline .dates .project > p {
+          margin-top: 1rem;
+          padding-top: 1rem;
+          width: 540px; } }
   .timeline .social {
     margin-top: 15rem; }
     .timeline .social a {
@@ -921,23 +145,57 @@ ul {
       margin: 0;
       display: inline;
       margin: 0 1rem; }
-
-@media only screen and (orientation: portrait) {
-  h1 {
-    font-size: calc(36px + 8vw);
-    line-height: calc(36px + 7.6vw); }
-  h2 {
-    font-size: calc(36px + 3vw);
-    line-height: calc(36px + 3vw); }
-  p {
-    font-size: calc(36px + 1vw);
-    line-height: calc(36px + 2.4vw); }
-  a {
-    font-size: calc(36px + 1vw);
-    padding: 2rem; }
-  header {
-    max-width: 84vw; }
-  .content-container {
-    width: 100%; }
-  video {
-    width: 100%; } }
+  .timeline .content-box-1 > a:nth-child(3) {
+    display: ""; }
+  .timeline .content-box-1 > a:nth-child(4) {
+    display: ""; }
+  .timeline .content-box-1 > a:nth-child(5) {
+    display: none; }
+  .timeline .content-box-2 > a:nth-child(3) {
+    display: ""; }
+  .timeline .content-box-2 > a:nth-child(4) {
+    display: none; }
+  .timeline .content-box-2 > a:nth-child(5) {
+    display: none; }
+  .timeline .content-box-3 > a:nth-child(3) {
+    display: ""; }
+  .timeline .content-box-3 > a:nth-child(4) {
+    display: ""; }
+  .timeline .content-box-3 > a:nth-child(5) {
+    display: ""; }
+  .timeline .content-box-4 > a:nth-child(3) {
+    display: ""; }
+  .timeline .content-box-4 > a:nth-child(4) {
+    display: none; }
+  .timeline .content-box-4 > a:nth-child(5) {
+    display: none; }
+  .timeline .content-box-5 > a:nth-child(3) {
+    display: ""; }
+  .timeline .content-box-5 > a:nth-child(4) {
+    display: ""; }
+  .timeline .content-box-5 > a:nth-child(5) {
+    display: ""; }
+  .timeline .content-box-6 > a:nth-child(3) {
+    display: ""; }
+  .timeline .content-box-6 > a:nth-child(4) {
+    display: ""; }
+  .timeline .content-box-6 > a:nth-child(5) {
+    display: none; }
+  .timeline .content-box-7 > a:nth-child(3) {
+    display: ""; }
+  .timeline .content-box-7 > a:nth-child(4) {
+    display: ""; }
+  .timeline .content-box-7 > a:nth-child(5) {
+    display: none; }
+  .timeline .content-box-8 > a:nth-child(3) {
+    display: ""; }
+  .timeline .content-box-8 > a:nth-child(4) {
+    display: none; }
+  .timeline .content-box-8 > a:nth-child(5) {
+    display: none; }
+  .timeline .content-box-9 > a:nth-child(3) {
+    display: ""; }
+  .timeline .content-box-9 > a:nth-child(4) {
+    display: none; }
+  .timeline .content-box-9 > a:nth-child(5) {
+    display: ""; }

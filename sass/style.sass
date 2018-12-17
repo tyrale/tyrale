@@ -1,285 +1,151 @@
-=content-height()
-  height: 18000px
-  @media only screen and (orientation: portrait) 
-    height: 32000px
+html
+  font-size: 1rem
 body
-  +content-height
+  margin: 45vh 2.5rem 3rem
   background: #fff
-  font-family: 'Halant', serif
-
-.container
-  width: 100%
-  height: 100%
-  position: fixed
-  top: 0
-  left: 0
-
-.content-container
-  width: 800px
-  margin: 0 auto
-  +content-height
-    
-header
-  width: 100%
-  max-width: 52vw
-  margin: 0 auto
-  margin-bottom: 20vw
-  margin-top: 20vw
-  box-sizing: border-box
-
-//putting the image in place
-=box-size($top)
-  position: absolute
-  width: 800px
-  @media only screen and (orientation: portrait) 
-    width: 100%
-    position: relative
-  margin: 0 auto
-  background-color: #fff
-  top: $top
-  box-shadow: 0px 20px 80px 0px rgba(0,0,0,0.15)
-
-@for $i from 1 through 11
-  .content-box-#{$i} 
-    +box-size(960px * $i)
-    @media only screen and (orientation: portrait) 
-      +box-size(750px * $i)
-$i: 12;
-@while $i > 0 
-  .content-box-#{$i} 
-  $i: $i - 2
-
-$n: 13;
-@while $n > 0 
-  .content-box-#{$n} 
-  $n: $n - 2
-
-//putting the text in place
-=box-position($top)
-    position: absolute
-    //Start position
-    top: $top
-    width: 400px
-    display: block
-    background: rgba(255,255,255,0.93)
-    box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.15)
-    box-sizing: border-box
-    padding: 1rem 2rem 2rem
-    @media only screen and (orientation: portrait) 
-      width: 100%
-      background: rgba(255,255,255,0.9)  
-      padding: 3rem
-
-$i: 12;
-@while $i > 0 
-  .box-#{$i} 
-    +box-position(1780px)
-    left: -160px
-    @media only screen and (orientation: portrait) 
-      left: 0
-      +box-position(550px)
-      transform: none !important
-  $i: $i - 2
-
-$n: 13;
-@while $n > 0 
-  .box-#{$n} 
-    +box-position(1900px)
-    right: -160px
-    @media only screen and (orientation: portrait) 
-      +box-position(550px)
-      transform: none !important
-      right: 0
-  $n: $n - 2
+@media(min-width: 600px)
+  body
+    margin: 45vh 11rem 3rem
+  
 
 // TypeStyle
-h1 
-  font-family: 'Halant', serif
-  font-weight: 600
+body, h1, h2, p, blockquote
+  font-style: normal
+  font-variant: normal
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace
+  font-size: 1rem
   text-align: left
-  font-size: calc(36px + 3vw)
-  
-  line-height: calc(36px + 3.7vw)
+  line-height: 1.45
+  // calc(36px + 3vw)
+h1, h2, h3, h4 
+  font-weight: inherit
+  line-height: 1.2
+h1 
+  font-size: 1.81em
+  font-weight: 700  
+  line-height: 1.6rem
+@media(min-width: 600px)
+  h1
+    line-height: 2rem
 h2
-  font-family: 'Halant', serif;
-  font-weight: 600
-  font-size: 2rem
-  @media only screen and (orientation: portrait) 
-    font-size: 4rem
-  margin-bottom: -10px
-  margin-top: 10px
-p
-  font-family: Helvetica, san-serif
-  font-weight: 100
-  line-height: 1.5rem
-  @media only screen and (orientation: portrait) 
-    font-size: 2rem
+  line-height: 1.4rem
+  font-size: 1.9em
+h3
+  font-size: 1.81em
+  font-weight: 700  
+  line-height: 1.6rem
+  span
+    font-weight: 400
+    padding-left: 1rem
+    font-size: 0.8em
+h4
+  font-size: 1.414em
+  margin-top: 41vh
+p 
+  font-weight: 400  
+  line-height: 20px  
+  margin-bottom: 1.3em
+  + .strong
+    font-weight: 700
+    span 
+      font-weight: 400
+      margin-left: 1rem
+blockquote 
+  
+  font-weight: 400  
+  line-height: 30px  
 a
-  border: 1px solid 
-  height: 2rem
-  display: inline-block
-  padding: 10px 10px 0 10px
-  margin-right: 1rem
-  margin-top: 0.4rem
-  font-family: Helvetica, san-serif
-  font-weight: 100
-  font-size: 0.9rem
-  line-height: 20px
-  @media only screen and (orientation: portrait) 
-    border: 3px solid 
-    border-radius: 8px
-    text-decoration: none
-video
-  width: 800px
-  
-  
-  
+
 // Hide link styles
 .content-box-1
   a:nth-of-type(2)
-    display: none
-.content-box-2
-  a:nth-of-type(2), a:nth-of-type(3)
-    // display: none
-.content-box-3
-  a:nth-of-type(3), a:nth-of-type(2)
-    display: none
-.content-box-4
-  a:nth-of-type(2), a:nth-of-type(3)
-    display: none
-.content-box-5
-  a:nth-of-type(2), a:nth-of-type(3)
-    // display: none
-.content-box-6
-  a:nth-of-type(2)
-    display: none
-.content-box-7
-  a:nth-of-type(3), a:nth-of-type(2)
-    display: none
-.content-box-8
-  a:nth-of-type(3)
-    display: none
-.content-box-9
-  a:nth-of-type(3), a:nth-of-type(2)
-    display: none
-// Stat things
-.stats
-  position: absolute
-  top: 960px * 10 - 300px
-  @media only screen and (orientation: portrait) 
-    top: 980px * 12 + 700px
-    margin-left: 4rem
-  display: block
-  > h2
-    opacity: 0.2
-  .numbers
-    width: 100% 
-    padding-top: 2rem
-    > div 
-      display: inline-block
-      width: 30%
-      margin-bottom: 3rem
-      h3
-        font-size: 7rem
-        margin: 0 0 
-        line-height: 5rem
-      p
-        @media only screen and (orientation: portrait) 
-          font-size: 2.5rem
-        opacity: 0.5
-        margin: 0
 
-    
+// Stat things
+
 //Timeline Things
 ul
   list-style-type: none
     
 .timeline
-  position: absolute
-  top: 960px * 10 + 300px
-  @media only screen and (orientation: portrait) 
-    top: 960px * 13 + 700px
-    margin-left: 4rem
-  
   display: block
   p
-    font-size: 0.9rem
     margin: 0
-  > h2
-    opacity: 0.2
   .dates
-    border-left: 1px solid #000
+    border-left: 1px solid #aaa
     li.archive
       position: relative
       margin-top: 1.4rem
       &:before
         content: ""
-        border-bottom: 1px solid #000
+        border-bottom: 1px solid #aaa
         width: 0.75rem
         display: block
         position: absolute
         top: 0.8rem
         left: -2.5rem
-        opacity: 0.3
-        @media only screen and (orientation: portrait) 
-          top: 2rem
-          left: -2.5rem
-          border-bottom: 4px solid #000
       h3.title
         margin-bottom: 0
-        opacity: 0.5
-        @media only screen and (orientation: portrait) 
-          font-size: 3rem
         span.type
           display: none
-          opacity: 0.5
+          
       p.date
-        opacity: 0.5
-        @media only screen and (orientation: portrait) 
-          font-size: 2.4rem
+         
         span.thing
           margin-left: 1rem
     li.role
       position: relative
       &:before
         content: ""
-        border-bottom: 2px solid #000
+        border-bottom: 1px solid #aaa
         width: 1.25rem
         display: block
         position: absolute
-        top: 1.25rem
+        top: 0.8rem
         left: -2.5rem
-        @media only screen and (orientation: portrait) 
-          top: 1.5rem
-          left: -2.5rem
-          border-bottom: 4px solid #000
-      h2.title
-        font-size: 1.5rem
-        @media only screen and (orientation: portrait) 
-          font-size: 4rem
-          margin-top: 3rem
+      h3.title
+        margin-bottom: 0rem
       p.company
-        opacity: 0.5
-        @media only screen and (orientation: portrait) 
-          font-size: 2.4rem
+         
     li.note
       position: relative
       &:before
         content: ""
-        border-bottom: 3px solid #000
+        border-bottom: 1px solid #aaa
         width: 1.5rem
         display: block
         position: absolute
-        top: 1.5rem
+        top: 0.8rem
         left: -2.5rem
-      h2.title
-        @media only screen and (orientation: portrait) 
-          font-size: 3rem
-          margin-top: 3rem
+      h3.title
+        margin-bottom: 0rem
       p.company
-        opacity: 0.5
-        @media only screen and (orientation: portrait) 
-          font-size: 2.4rem
+    .project
+      display: block
+    
+      video
+        width: 87vw
+        height: 28vh
+        position: absolute
+        right: 0
+        margin-left: -1.5rem
+      > p
+        margin-top: 1rem
+        padding-top: 14rem
+      > a
+        margin: 1rem 1rem 0 0
+        display: inline-block
+      @media(min-width: 600px)
+        video
+          width: 600px
+          height: 300px
+          position: static
+          margin-left: -2.1rem
+          margin-top: 1rem
+        > p
+          margin-top: 1rem
+          padding-top: 1rem
+          width: 540px
+        
   .social
     margin-top: 15rem
     a
@@ -289,34 +155,32 @@ ul
       margin: 0
       display: inline
       margin: 0 1rem
-
-
-@media only screen and (min-width: 1700px)
-  // /* tablets and desktop */      
-  body
+      
+  @mixin links($web, $press, $case)    
+    a:nth-child(3)
+      display: $web
+    a:nth-child(4)
+      display: $press
+    a:nth-child(5)
+      display: $case
     
-@media only screen and (max-width : 1699px) 
-  // /* tablets and desktop */
-  body
     
-@media only screen and (orientation: portrait) 
-  // /* phones */
-  
-  h1
-    font-size: calc(36px + 8vw)
-    line-height: calc(36px + 7.6vw)
-  h2
-    font-size: calc(36px + 3vw)
-    line-height: calc(36px + 3vw)
-  p 
-    font-size: calc(36px + 1vw)
-    line-height: calc(36px + 2.4vw)
-  a
-    font-size: calc(36px + 1vw)
-    padding: 2rem
-  header
-    max-width: 84vw
-  .content-container
-    width: 100%
-  video
-    width: 100%
+  .content-
+    &box-1 >
+      @include links ("", "", none)
+    &box-2 >
+      @include links ("", none, none)
+    &box-3 >
+      @include links ("", "", "")
+    &box-4 >
+      @include links ("", none, none)
+    &box-5 >
+      @include links ("", "", "")
+    &box-6 >
+      @include links ("", "", none)
+    &box-7 >
+      @include links ("", "", none)
+    &box-8 >
+      @include links ("", none, none)
+    &box-9 >
+      @include links ("", none, "")

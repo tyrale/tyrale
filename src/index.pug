@@ -1,240 +1,223 @@
 html
-  
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
   link(href="style.css" rel="stylesheet")
   link(href="https://fonts.googleapis.com/css?family=Halant:400,600" rel="stylesheet")
   
   body
     header
-      h1 Tyrale is a creative leader focused on User Experience.
-    
-    .container
-      .content-container
+      h1 Tyrale is a creative leader focused on building Products.
       
-        mixin content(title, link1, link2, link3)
-          h2= title 
+    mixin content(title, link1, link2, link3)
+      // h2= title 
+      if block
+        block
+      else
+        p No content provided
+      a(href=link1) Web
+      a(href=link3) Press
+      a(href=link2) Case Study
+              
+    mixin project(title, src, link1, link2, link3)
+      .project(class!=attributes.content factor="0")
+        video(src=src autoplay loop muted)
+        +content(title, link1, link2, link3)
           if block
             block
           else
             p No content provided
-          a(href=link1) Web
-          a(href=link2) Case Study
-          a(href=link3) Press
-      
-        mixin right(title, src, link1, link2, link3)
-          .scroll-content-box(class!=attributes.content factor="0")
-            video(src=src autoplay loop)
-            .scroll-parallax-box.box-1(factor='1800')
-              +content(title, link1, link2, link3)
-                if block
-                  block
-                else
-                  p No content provided
-        mixin left(title, src, link1, link2, link3)
-          .scroll-content-box(class!=attributes.content factor="0")
-            video(src=src autoplay loop)
-            .scroll-parallax-box.box-2(factor='1800')  
-              +content(title, link1, link2, link3)
-                if block
-                  block
-                else
-                  p No content provided
-        
-        
-        +left("Avenel", "./img/medical.mp4", "http://avenel.com", "thing.com", "https://ehrintelligence.com/news/allscripts-debuts-machine-learning-cloud-based-ehr-system-avenel")(content="content-box-1")
-          p NDA hush hush, Crafting the next evolution of medical something. Announcing in Q4 2017.
-        +right("Shade.io", "./img/shade.mp4", "http://shade.io", "https://verypossible.com/case-studies/shade", "https://lupusnewstoday.com/2016/09/22/wearable-uv-sensor-shade-may-help-control-lupus-symptoms")(content="content-box-2")
-          p The Shade UV sensor is the only scientific way to control your sunlight exposure.
-        +left("Identity Card", "./img/identity.mp4", "http://identitycard.com", "thing.com", "thing.com")(content="content-box-3")
-          p Security in the palm of your hand. Welcome to the future of password & identity management.
- 
- 
-        +right("The Open Shift", "./img/theopenshift.mp4", "http://theopenshift.com", "tyrale.com", "./img/theopenshift.jpg")(content="content-box-4")
-          p A service industry chatbot to help fill open shifts. Simple, clever, and clear.
-        +left("Wordplay", "./img/wordplay.mp4", "https://itunes.apple.com/us/app/wordplay/id936938798?ls=1&mt=8", "https://medium.com/@tyrale/designing-wordplay-104d143ba05c", "http://bit.ly/letswordplay")(content="content-box-5")
-          p The new way to word play. Both players are given a word where in turn they can add, remove, or rearrange the letters to create a new word.
-        
-        +right("Joker Greeting", "./img/joker4.mp4", "http://jokergreeting.com", "tyrale.com", "http://abcnews.go.com/US/diabolical-joker-birthday-card-plays-music-destroyed-battery/story?id=30143302")(content="content-box-6")
-          p Truly, the gift that keeps giving... 
-            br
-            | you heartache.  
-        +left("Very", "./img/very.mp4", "http://verypossible.com", "tyrale.com","https://verypossible.com/blog/goodbye-spartan-hello-very")(content="content-box-7")
-          p 28 Design Sprints in 2 years for various startups. Before it was Very, it was Spartan. 
-        
-        +right("UX Triage", "./img/uxtriage.mp4", "http://uxtriage.com", "https://medium.com/startup-grind/3-day-design-sprint-ux-triage-e9c2b251664a", "tyrale.com")(content="content-box-8")
-          p UX Triage is the result of a deliberate & relentless pursuit to simplify the problem solving workflow for designers. Through the use of thoughtfully pure simplicity.
-        +left("nok", "./img/nok.mp4", "http://ordernok.com", "tyrale.com", "tyrale.com")(content="content-box-9")
-          p We set out to make a wallet that carries ONLY what you need. 3 cards, 1 ID, weighing 1gm. 
-            br 
-            | Plus, a pocket for cash.
-        
 
+    .stats
+      h4 Build Stats
+      mixin number(value,title)
+        div
+          h3= value
+            span= title
+      .numbers
+        +number("55","Design Sprints")
+        +number("63","Brands Built")
+        +number("66","Websites")
+        +number("14","Web Apps")
+        +number("30","Mobile Apps")
+        +number("5","AI/ML Projects")
+        +number("4","Wearables")
+        +number("2","EHR's")
+        +number("2","Chatbots")
         
-        .stats
-          h2 Creative Efforts
-          mixin number(value,title)
-            div
-              h3= value
-              p= title
-          .numbers
-            +number("52","Design Sprints")
-            +number("63","Brands Built")
-            +number("65","Websites")
-            +number("14","Web Apps")
-            +number("28","Mobile Apps")
-            +number("4","Wearables")
-            +number("2","EHR's")
-            +number("2","Chatbots")
+          
+    .timeline
+      h4 History
+      ul.dates
+        mixin archive(date, type, title)
+          li.archive
+            p.date= date
               
-        .timeline
-          h2 Timeline
-          ul.dates
-            mixin archive(date, type, title, thing)
-              li.archive
-                h3.title= title
-                  span.type= type
-                p.date= date
-                  span.thing= thing
-            mixin role(title, company)
-              li.role
-                h2.title= title
-                p.company= company
-            mixin note(title, company)
-              li.note
-                h2.title= title
-                p.company= company
+            p.strong.title= title
+              span.type= type
             
-
-            +archive('Mar 2018', 'iOS App','Avenel', 'Full Stack - mobile')
-            +note("First AI/Machine Learning Product", "Avenel")
+        mixin role(title, company)
+          li.role
+            h3.title= title
+            p.company= company
             
-            +archive('Aug 2017', 'Web App','The Open Shift', 'Full Stack - chatbot')
-            +archive('July 2017', 'Web App','Wordplay', 'Full Stack - iOS')
-            +archive('June 2017', 'Hardware','Cybergate/Identity Card', 'Design Sprint - hardware/mobile/web')
-            +archive('May 2017', 'Web App','HMP Metrics', 'Design Sprint - web')
-            +archive('May 2015 - Current', 'Web App','Stealth Medical Startup', 'Design Sprint - mobile/web')
-            +role("Director of UX", "Stealth Medical Startup -  announcing soonish")
-            
-            +archive('April 2016', 'Web App','Empact', 'Design Sprint - web')
-            +archive('April 2016', 'Web App','EMJ', 'Design Sprint - web')
-            +archive('Feb 2016', 'Web App','Built Not Born', 'Design Sprint - mobile')
-            +archive('Jan 2016', 'Web App','TransCard', 'Design Sprint - mobile')
-            +archive('Jan 2016', 'Web App','Mahdi', 'Design Sprint - mobile')
-            
-            +archive('Dec 2015', 'Web App','EIA Global', 'Design Sprint - web')
-            +archive('Dec 2015', 'Web App','Whurk', 'Design Sprint - mobile')
-            +archive('Dec 2015', 'Web App','PromoSherpas', 'Design Sprint - web')
-            +archive('Nov 2015', 'Web App','Insatiable', 'Design Sprint - mobile')
-            +archive('Nov 2015', 'Web App','Project DNA', 'Design Sprint - web')
-            +archive('Oct 2015', 'Web App','MyManny', 'Design Sprint - web')
-            +archive('Oct 2015', 'Web App','ReadyCart', 'Design Sprint - web')
-            +archive('Sept 2015', 'Web App','ShopKeep', 'Design Sprint - mobile')
-            +archive('Sept 2015', 'Web App','MyMemory', 'Design Sprint - mobile')
-            +archive('Sept 2015', 'Web App','PckShp', 'Design Sprint - mobile')
-            +archive('Sept 2015', 'Web App','JABB', 'Design Sprint - mobile')
-            +archive('Aug 2015', 'Web App','Unum', 'Design Sprint - web')
-            +archive('Aug 2015', 'Web App','uLiv', 'Design Sprint - hardware/iOS')
-            +archive('Aug 2015', 'Web App','Shade.io', 'Design Sprint - hardware/iOS')
-            +note("First Wearable", "Shade.io")
-            
-            +archive('June 2015', 'Web App','SaveTheTrees', 'Design Sprint - web/sms')
-            +note("First SMS App", "EIA Global - SaveTheTrees")
-            
-            +archive('June 2015', 'Web App','Choice', 'Design Sprint - product/web')
-            +archive('May 2015', 'Web App','ND&P Universal Fiber', 'Design Sprint - web')
-            +archive('May 2015', 'Web App','SHP', 'Design Sprint - web')
-            +archive('May 2015', 'Web App','JoinSpartan.com', 'Design Sprint - web')
-            +archive('April 2015', 'Web App','Ver', 'Design Sprint - web')
-            +archive('Mar 2015', 'Web App','Brand Vault', 'Design Sprint - web')
-          
-            +archive('April 2015', 'Gag Greeting Cards','Joker Greeting', 'Branding')
-            +note("First Medium.com Feature", "Your Content Feed is Broken")
-            +archive('Jan 2015', 'Web App','Story Shelf', 'UX Triage')
-            
-            +archive('Dec 2014', 'Web App','CommonWell Medical', 'UX Triage')
-            +archive('Aug 2014', 'Web App','Point Clear Solutions', 'UX Triage')
-            +archive('July 2014', 'Mobile & Web Apps','Feetz', 'Design Sprint - mobile')
-          
-            +archive('July 2014', 'Mobile & Web Apps','Spartan', 'Full Stack')
-            +role("UX Lead", "Spartan (now Very)")
-            
-            +note("First Enterprise EHR", "Patient Logic")
-            +archive('May 2014', 'UX Audit','Medhost- Documentation', 'Design Sprint')
-            +archive('April 2014', 'UX Audit','Medhost-Registration', 'Design Sprint')
-            +archive('March 2014', 'UX Audit','Medhost-CPOE', 'Design Sprint')
-            +note("First 3-D Printed Product", "nok")
-            
-            +archive('Feb 2014', 'UX Audit','Patient Logic', 'Design Sprint')
-            +note("First Design Sprint", "UX Traige")
-            +archive('2013-14', 'Web Apps','Patient Logic', 'Full Stack')
-            +role("Team Lead UX", "Medhost")
-            
-            +archive('Nov 2012', 'iOS App','ColorShift', 'Full Stack')
-            +archive('Feb 2012', 'iOS App','ProperCut', 'Full Stack')
-            +archive('Jan 2012', 'iOS App','SongWriter+', 'Full Stack')
-            +archive('April 2014', 'iOS App','LunchRadio', 'Full Stack')
-            +archive('Dec 2011', 'Mobile & Web Apps','Army National Guard History', 'Concept, Design, Branding')
-            +archive('Dec 2011', 'iOS App','Soldier Fit', 'Concept, Design, Branding')
-            +archive('Dec 2011', 'iOS App','Your Anonymous Friend', 'Full Stack')
-            +archive('Nov 2011', 'Website','Nossi College of Art', 'Concept, UX, UI')
-            +archive('Aug 2011', 'iOS App','Noah for iPad', 'Full Stack')
-            +note("First Mobile App", "AddSubtract")
-            
-            +archive('Aug 2011', 'Website','Bulwark', 'Concept, UX, UI')
-            +archive('July 2011', 'Website','Semper Fi Fund', 'UX & UI')
-            +archive('July 2011', 'Website','RedKap', 'UX & UI')
-            +archive('June 2011', 'Website','Second Harvest Food Bank', 'UX & UI')
-            +archive('May 2011', 'Website','TwiceDaily', 'Concept, UX, UI')
-            +note("First Enterprise Webapp", "Path to Honor")
-            +archive('May 2011', 'Website','Army National Guard Online Enlistment', 'UX, UI')
-            +archive('July 2011', 'Website','Barrett', 'UX & UI')
-            +archive('June 2011', 'Website','Kimber', 'UX & UI')
-            +archive('April 2011', 'Facebook App','ANG 1 Million Faces', 'Concept, UX, UI')
-            +note("First Social App", "Facebook National Guard State Pride")
-            
-            +archive('Dec 2010', 'Website','Army National Guard Facebook', 'Concept, UX, UI')
-            +archive('Dec 2010', 'Team','SMRT NG', 'Team building')
-            +archive('Nov 2010', 'Website','The Army National Guard', 'Full Stack')
-            +role("Creative Director", "iOStudio")
-            
-            +archive('Sept 2009', 'Web App','TutorSource', 'Full Stack')
-            +note("First Web App", "TutorSource (aquired)")
-            +role("Lead Web Designer", "Revolution Prep")
-            
-            +archive('Dec 2009', 'Website','MGM Mirage', 'UX & UI')
-            +archive('Aug 2009', 'Website','W hotel', 'UX & UI')
-            +archive('March 2009', 'Website','City Center', 'UX & UI')
-            +archive('Feb 2008', 'Website','Palms Fantasy', 'Concept, UX, UI, Branding')
-            +archive('Sept 2008', 'Website & Branding','Palms Place', 'Concept, UX, UI, Branding')
-            +archive('May 2008', 'Website','Silverton Hotel & Casino', 'UX & UI')
-            +archive('Feb 2008', 'Website','Palms Place', 'Concept, UX, UI, Branding')
-            +archive('Dec 2007', 'Website','St. Regis', 'Concept, UX, UI')
-            +archive('Nov 2007', 'Website & Branding','Planet Hollywood', 'Concept, UX, UI, Branding')
-            +role("Interactive Art Director", "SK+G")
-            
-            +archive('2006', 'Website & Branding','Palazzolo Design', 'Full Stack')
-            +archive('2006~ish', 'Everything','Terrace & Trellace', 'Web')
-            +archive('2006~ish', 'Everything','West Michigans Center for Womans Health', 'Brand')
-            +archive('2006~ish', 'Everything','Solomon Homes', 'Brand/Web')
-            +archive('2006~ish', 'Everything','ResCom Eletrical', 'Brand/Web')
-            +archive('2006~ish', 'Everything','Solomon Homes', 'Brand/Web')
-            +archive('2006~ish', 'Everything','West Michigan Sports Commission', 'Brand/Web')
-            +archive('2006~ish', 'Everything','Creative Learning Center', 'Brand')
-            +archive('2006~ish', 'Everything','Norman Payne', 'Brand')
-            +archive('2006~ish', 'Everything','Davids House', 'Brand')
-            +archive('2006~ish', 'Everything','Third Wave', 'Brand')
-            +archive('2006~ish', 'Everything','Universal Sign Company', 'Brand')
-            +role("Designer", "Palazzolo Design")
-            +archive('2006~ish', 'Everything','Tyrale.com', 'Full Stack')
-            +note("First Website", "tyrale.com")
-            +note("First Brand", "Community Media Center")
-            
-          .social
-            p
-              a(href="http://medium.com/@tyrale") Medium
-              | /
-              a(href="http://instagram.com/tyrale") Instagram
-              | /
-              a(href="http://twitter.com/tyrale") Twitter
+        mixin note(title, company)
+          li.note
+            h3.title= title
+            p.company= company
+        
+        +archive('Aug 2018', 'Webapp/AI','Patient Insights', 'Full Stack - mobile')
+        +archive('Apr 2018', 'Webapp/AI','Cognition', 'Full Stack - mobile')
+        +archive('Mar 2018', 'iOS App','Avenel', 'Full Stack - mobile')
+        +project("Avenel", "./img/medical.mp4", "http://avenel.com", "thing.com", "https://ehrintelligence.com/news/allscripts-debuts-machine-learning-cloud-based-ehr-system-avenel")(content="content-box-1")
+          p The first AI/Machine Learning EHR that assists Providers in the office. 
+        +archive('Jan 2018', 'Webapp/AI','Customer Insights', 'Full Stack - mobile')
+        +archive('Jan 2018', 'Webapp/AI','Cognition Insights', 'Full Stack - mobile')
+        +role("Director of Product Design", "Digital Reasoning")
+        +note("First AI/Machine Learning Product", "Avenel")
+        
+        +archive('Aug 2017', 'Web App','The Open Shift', 'Full Stack - chatbot')
+        +project("The Open Shift", "./img/theopenshift.mp4", "http://theopenshift.com", "tyrale.com", "./img/theopenshift.jpg")(content="content-box-2")
+          p A service industry chatbot to help fill open shifts. Simple, clever, and clear.
+        +archive('July 2017', 'Web App','Wordplay', 'Full Stack - iOS')
+        +project("Wordplay", "./img/wordplay.mp4", "https://itunes.apple.com/us/app/wordplay/id936938798?ls=1&mt=8", "https://medium.com/@tyrale/designing-wordplay-104d143ba05c", "http://bit.ly/letswordplay")(content="content-box-3")
+          p The new way to word play. Both players are given a word where in turn they can add, remove, or rearrange the letters to create a new word.
+        +archive('June 2017', 'Hardware','Cybergate/Identity Card', 'Design Sprint - hardware/mobile/web')
+        +project("Identity Card", "./img/identity.mp4", "http://identitycard.com", "thing.com", "thing.com")(content="content-box-4")
+          p Security in the palm of your hand. Welcome to the future of password & identity management.
+        +archive('May 2017', 'Web App','HMP Metrics', 'Design Sprint - web')
+        +archive('May 2015 - Current', 'Web App','Stealth Medical Startup', 'Design Sprint - mobile/web')
+        +role("Director of UX", "Stealth Medical Startup")
+        
+        +archive('April 2016', 'Web App','Empact', 'Design Sprint - web')
+        +archive('April 2016', 'Web App','EMJ', 'Design Sprint - web')
+        +archive('Feb 2016', 'Web App','Built Not Born', 'Design Sprint - mobile')
+        +archive('Jan 2016', 'Web App','TransCard', 'Design Sprint - mobile')
+        +archive('Jan 2016', 'Web App','Mahdi', 'Design Sprint - mobile')
+        
+        +archive('Dec 2015', 'Web App','EIA Global', 'Design Sprint - web')
+        +archive('Dec 2015', 'Web App','Whurk', 'Design Sprint - mobile')
+        +archive('Dec 2015', 'Web App','PromoSherpas', 'Design Sprint - web')
+        +archive('Nov 2015', 'Web App','Insatiable', 'Design Sprint - mobile')
+        +archive('Nov 2015', 'Web App','Project DNA', 'Design Sprint - web')
+        +archive('Oct 2015', 'Web App','MyManny', 'Design Sprint - web')
+        +archive('Oct 2015', 'Web App','ReadyCart', 'Design Sprint - web')
+        +archive('Sept 2015', 'Web App','ShopKeep', 'Design Sprint - mobile')
+        +archive('Sept 2015', 'Web App','MyMemory', 'Design Sprint - mobile')
+        +archive('Sept 2015', 'Web App','PckShp', 'Design Sprint - mobile')
+        +archive('Sept 2015', 'Web App','JABB', 'Design Sprint - mobile')
+        +archive('Aug 2015', 'Web App','Unum', 'Design Sprint - web')
+        +archive('Aug 2015', 'Web App','uLiv', 'Design Sprint - hardware/iOS')
+        +archive('Aug 2015', 'Web App','Shade.io', 'Design Sprint - hardware/iOS')
+        +note("First Wearable", "Shade.io")
+        +project("Shade.io", "./img/shade.mp4", "http://shade.io", "https://verypossible.com/case-studies/shade", "https://lupusnewstoday.com/2016/09/22/wearable-uv-sensor-shade-may-help-control-lupus-symptoms")(content="content-box-5")
+          p The Shade UV sensor is the only scientific way to control your sunlight exposure.
+        
+        +archive('June 2015', 'Web App','SaveTheTrees', 'Design Sprint - web/sms')
+        +note("First SMS App", "EIA Global - SaveTheTrees")
+        
+        +archive('June 2015', 'Web App','Choice', 'Design Sprint - product/web')
+        +archive('May 2015', 'Web App','ND&P Universal Fiber', 'Design Sprint - web')
+        +archive('May 2015', 'Web App','SHP', 'Design Sprint - web')
+        +archive('May 2015', 'Web App','JoinSpartan.com', 'Design Sprint - web')
+        +archive('April 2015', 'Web App','Ver', 'Design Sprint - web')
+        +archive('Mar 2015', 'Web App','Brand Vault', 'Design Sprint - web')
+      
+        +archive('April 2015', 'Gag Greeting Cards','Joker Greeting', 'Branding')
+        +project("Joker Greeting", "./img/joker4.mp4", "http://jokergreeting.com", "tyrale.com", "http://abcnews.go.com/US/diabolical-joker-birthday-card-plays-music-destroyed-battery/story?id=30143302")(content="content-box-6")
+          p Truly, the gift that keeps giving... you heartache. 
+        +note("First Medium.com Front Page", "Your Content Feed is Broken")
+        +archive('Jan 2015', 'Web App','Story Shelf', 'UX Triage')
+        
+        +archive('Dec 2014', 'Web App','CommonWell Medical', 'UX Triage')
+        +archive('Aug 2014', 'Web App','Point Clear Solutions', 'UX Triage')
+        +archive('July 2014', 'Mobile & Web Apps','Feetz', 'Design Sprint - mobile')
+      
+        +archive('July 2014', 'Mobile & Web Apps','Spartan', 'Full Stack')
+        +role("UX Lead", "Spartan (now Very)")
+        +project("Very", "./img/very.mp4", "http://verypossible.com", "tyrale.com","https://verypossible.com/blog/goodbye-spartan-hello-very")(content="content-box-7")
+          p 28 Design Sprints in 2 years for various startups. Before it was Very, it was Spartan. 
+    
+        
+        +note("First Enterprise EHR", "Patient Logic")
+        +archive('May 2014', 'UX Audit','Medhost- Documentation', 'Design Sprint')
+        +archive('April 2014', 'UX Audit','Medhost-Registration', 'Design Sprint')
+        +archive('March 2014', 'UX Audit','Medhost-CPOE', 'Design Sprint')
+        +note("First 3-D Printed Product", "nok")
+        +project("nok", "./img/nok.mp4", "http://ordernok.com", "tyrale.com", "tyrale.com")(content="content-box-8")
+          p We set out to make a wallet that carries ONLY what you need. 3 cards, 1 ID, weighing 1gm. Plus, a pocket for cash.
+        +archive('Feb 2014', 'UX Audit','Patient Logic', 'Design Sprint')
+        +note("First Design Sprint", "UX Traige")
+        +project("UX Triage", "./img/uxtriage.mp4", "http://uxtriage.com", "https://medium.com/startup-grind/3-day-design-sprint-ux-triage-e9c2b251664a", "tyrale.com")(content="content-box-9")
+          p UX Triage is the result of a deliberate & relentless pursuit to simplify the problem solving workflow for designers. Through the use of thoughtfully pure simplicity.
+        +archive('2013-14', 'Web Apps','Patient Logic', 'Full Stack')
+        +role("Team Lead UX", "Medhost")
+        
+        +archive('Nov 2012', 'iOS App','ColorShift', 'Full Stack')
+        +archive('Feb 2012', 'iOS App','ProperCut', 'Full Stack')
+        +archive('Jan 2012', 'iOS App','SongWriter+', 'Full Stack')
+        +archive('April 2014', 'iOS App','LunchRadio', 'Full Stack')
+        +archive('Dec 2011', 'Mobile & Web Apps','Army National Guard History', 'Concept, Design, Branding')
+        +archive('Dec 2011', 'iOS App','Soldier Fit', 'Concept, Design, Branding')
+        +archive('Dec 2011', 'iOS App','Your Anonymous Friend', 'Full Stack')
+        +archive('Nov 2011', 'Website','Nossi College of Art', 'Concept, UX, UI')
+        +archive('Aug 2011', 'iOS App','Noah for iPad', 'Full Stack')
+        +note("First Mobile App", "AddSubtract")
+        
+        +archive('Aug 2011', 'Website','Bulwark', 'Concept, UX, UI')
+        +archive('July 2011', 'Website','Semper Fi Fund', 'UX & UI')
+        +archive('July 2011', 'Website','RedKap', 'UX & UI')
+        +archive('June 2011', 'Website','Second Harvest Food Bank', 'UX & UI')
+        +archive('May 2011', 'Website','TwiceDaily', 'Concept, UX, UI')
+        +note("First Enterprise Webapp", "Path to Honor")
+        +archive('May 2011', 'Website','Army National Guard Online Enlistment', 'UX, UI')
+        +archive('July 2011', 'Website','Barrett', 'UX & UI')
+        +archive('June 2011', 'Website','Kimber', 'UX & UI')
+        +archive('April 2011', 'Facebook App','ANG 1 Million Faces', 'Concept, UX, UI')
+        +note("First Social App", "Facebook National Guard State Pride")
+        
+        +archive('Dec 2010', 'Website','Army National Guard Facebook', 'Concept, UX, UI')
+        +archive('Dec 2010', 'Team','SMRT NG', 'Team building')
+        +archive('Nov 2010', 'Website','The Army National Guard', 'Full Stack')
+        +role("Creative Director", "iOStudio")
+        
+        +archive('Sept 2009', 'Web App','TutorSource', 'Full Stack')
+        +note("First Web App", "TutorSource (aquired)")
+        +role("Lead Web Designer", "Revolution Prep")
+        
+        +archive('Dec 2009', 'Website','MGM Mirage', 'UX & UI')
+        +archive('Aug 2009', 'Website','W hotel', 'UX & UI')
+        +archive('March 2009', 'Website','City Center', 'UX & UI')
+        +archive('Feb 2008', 'Website','Palms Fantasy', 'Concept, UX, UI, Branding')
+        +archive('Sept 2008', 'Website & Branding','Palms Place', 'Concept, UX, UI, Branding')
+        +archive('May 2008', 'Website','Silverton Hotel & Casino', 'UX & UI')
+        +archive('Feb 2008', 'Website','Palms Place', 'Concept, UX, UI, Branding')
+        +archive('Dec 2007', 'Website','St. Regis', 'Concept, UX, UI')
+        +archive('Nov 2007', 'Website & Branding','Planet Hollywood', 'Concept, UX, UI, Branding')
+        +role("Interactive Art Director", "SK+G")
+        
+        +archive('2006', 'Website & Branding','Palazzolo Design', 'Full Stack')
+        +archive('2006~ish', 'Everything','Terrace & Trellace', 'Web')
+        +archive('2006~ish', 'Everything','West Michigans Center for Womans Health', 'Brand')
+        +archive('2006~ish', 'Everything','Solomon Homes', 'Brand/Web')
+        +archive('2006~ish', 'Everything','ResCom Eletrical', 'Brand/Web')
+        +archive('2006~ish', 'Everything','Solomon Homes', 'Brand/Web')
+        +archive('2006~ish', 'Everything','West Michigan Sports Commission', 'Brand/Web')
+        +archive('2006~ish', 'Everything','Creative Learning Center', 'Brand')
+        +archive('2006~ish', 'Everything','Norman Payne', 'Brand')
+        +archive('2006~ish', 'Everything','Davids House', 'Brand')
+        +archive('2006~ish', 'Everything','Third Wave', 'Brand')
+        +archive('2006~ish', 'Everything','Universal Sign Company', 'Brand')
+        +role("Designer", "Palazzolo Design")
+        +archive('2006~ish', 'Everything','Tyrale.com', 'Full Stack')
+        +note("First Website", "tyrale.com")
+        +note("First Brand", "Community Media Center")
+        
+      .social
+        p
+          a(href="http://medium.com/@tyrale") Medium
+          | /
+          a(href="http://instagram.com/tyrale") Instagram
+          | /
+          a(href="http://twitter.com/tyrale") Twitter
 
           
   script(src="js/jquery.js" type="text/javascript")
