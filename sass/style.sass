@@ -157,30 +157,32 @@ ul
       margin: 0 1rem
       
   @mixin links($web, $press, $case)    
-    a:nth-child(3)
-      display: $web
     a:nth-child(4)
-      display: $press
+      display: $web
     a:nth-child(5)
+      display: $press
+    a:nth-child(6)
       display: $case
     
     
   .content-
-    &box-1 >
-      @include links ("", "", none)
+    &box-sb >
+      @include links ("", none, none)
     &box-2 >
-      @include links ("", none, none)
+      @include links ("", "", none)
     &box-3 >
-      @include links ("", "", "")
-    &box-4 >
       @include links ("", none, none)
+    &box-4 >
+      @include links ("", "", "")
     &box-5 >
       @include links ("", "", "")
     &box-6 >
-      @include links ("", "", none)
+      @include links ("", "", "")
     &box-7 >
       @include links ("", "", none)
     &box-8 >
-      @include links ("", none, none)
+      @include links ("", "", none)
     &box-9 >
+      @include links ("", none, none)
+    &box-10 >
       @include links ("", none, "")
