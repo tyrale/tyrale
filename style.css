@@ -145,6 +145,12 @@ ul {
       margin: 0;
       display: inline;
       margin: 0 1rem; }
+  .timeline .content-box-dr > a:nth-child(4) {
+    display: ""; }
+  .timeline .content-box-dr > a:nth-child(5) {
+    display: none; }
+  .timeline .content-box-dr > a:nth-child(6) {
+    display: none; }
   .timeline .content-box-sb > a:nth-child(4) {
     display: ""; }
   .timeline .content-box-sb > a:nth-child(5) {
