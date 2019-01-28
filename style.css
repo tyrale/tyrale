@@ -156,7 +156,7 @@ ul {
   .timeline .content-box-dr > a:nth-child(5) {
     display: none; }
   .timeline .content-box-sb > a:nth-child(3) {
-    display: none; }
+    display: ""; }
   .timeline .content-box-sb > a:nth-child(4) {
     display: none; }
   .timeline .content-box-sb > a:nth-child(5) {
