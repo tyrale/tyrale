@@ -88,7 +88,9 @@ ul {
       .timeline .dates li.archive p.date span.thing {
         margin-left: 1rem; }
     .timeline .dates li.role {
-      position: relative; }
+      position: relative;
+      padding-bottom: 1.5rem;
+      margin-top: 1.5rem; }
       .timeline .dates li.role:before {
         content: "";
         border-bottom: 1px solid #aaa;
@@ -100,7 +102,8 @@ ul {
       .timeline .dates li.role h3.title {
         margin-bottom: 0rem; }
     .timeline .dates li.note {
-      position: relative; }
+      position: relative;
+      padding-bottom: 1rem; }
       .timeline .dates li.note:before {
         content: "";
         border-bottom: 1px solid #aaa;
@@ -112,7 +115,8 @@ ul {
       .timeline .dates li.note h3.title {
         margin-bottom: 0rem; }
     .timeline .dates .project {
-      display: block; }
+      display: block;
+      padding-bottom: 3rem; }
       .timeline .dates .project video {
         width: 87vw;
         height: 28vh;
