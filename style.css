@@ -149,69 +149,75 @@ ul {
       margin: 0;
       display: inline;
       margin: 0 1rem; }
-  .timeline .content-box-dr > a:nth-child(3) {
-    display: ""; }
-  .timeline .content-box-dr > a:nth-child(4) {
+  .timeline .content-box-sb > a.web {
+    display: inline-block; }
+  .timeline .content-box-sb > a.press {
     display: none; }
-  .timeline .content-box-dr > a:nth-child(5) {
+  .timeline .content-box-sb > a.case {
     display: none; }
-  .timeline .content-box-sb > a:nth-child(3) {
-    display: ""; }
-  .timeline .content-box-sb > a:nth-child(4) {
+  .timeline .content-box-dr > a.web {
+    display: inline-block; }
+  .timeline .content-box-dr > a.press {
     display: none; }
-  .timeline .content-box-sb > a:nth-child(5) {
+  .timeline .content-box-dr > a.case {
+    display: inline-block; }
+  .timeline .content-box-av > a.web {
+    display: inline-block; }
+  .timeline .content-box-av > a.press {
+    display: inline-block; }
+  .timeline .content-box-av > a.case {
     display: none; }
-  .timeline .content-box-av > a:nth-child(3) {
-    display: ""; }
-  .timeline .content-box-av > a:nth-child(4) {
-    display: ""; }
-  .timeline .content-box-av > a:nth-child(5) {
+  .timeline .content-box-os > a.web {
+    display: inline-block; }
+  .timeline .content-box-os > a.press {
     display: none; }
-  .timeline .content-box-os > a:nth-child(3) {
-    display: ""; }
-  .timeline .content-box-os > a:nth-child(4) {
+  .timeline .content-box-os > a.case {
     display: none; }
-  .timeline .content-box-os > a:nth-child(5) {
+  .timeline .content-box-3 > a.web {
+    display: inline-block; }
+  .timeline .content-box-3 > a.press {
+    display: inline-block; }
+  .timeline .content-box-3 > a.case {
     display: none; }
-  .timeline .content-box-4 > a:nth-child(3) {
-    display: ""; }
-  .timeline .content-box-4 > a:nth-child(4) {
-    display: ""; }
-  .timeline .content-box-4 > a:nth-child(5) {
+  .timeline .content-box-4 > a.web {
+    display: inline-block; }
+  .timeline .content-box-4 > a.press {
+    display: inline-block; }
+  .timeline .content-box-4 > a.case {
     display: none; }
-  .timeline .content-box-5 > a:nth-child(3) {
-    display: ""; }
-  .timeline .content-box-5 > a:nth-child(4) {
-    display: ""; }
-  .timeline .content-box-5 > a:nth-child(5) {
-    display: ""; }
-  .timeline .content-box-6 > a:nth-child(3) {
-    display: ""; }
-  .timeline .content-box-6 > a:nth-child(4) {
+  .timeline .content-box-5 > a.web {
+    display: inline-block; }
+  .timeline .content-box-5 > a.press {
+    display: inline-block; }
+  .timeline .content-box-5 > a.case {
+    display: inline-block; }
+  .timeline .content-box-6 > a.web {
+    display: inline-block; }
+  .timeline .content-box-6 > a.press {
     display: none; }
-  .timeline .content-box-6 > a:nth-child(5) {
+  .timeline .content-box-6 > a.case {
     display: none; }
-  .timeline .content-box-7 > a:nth-child(3) {
-    display: ""; }
-  .timeline .content-box-7 > a:nth-child(4) {
-    display: ""; }
-  .timeline .content-box-7 > a:nth-child(5) {
-    display: ""; }
-  .timeline .content-box-8 > a:nth-child(3) {
+  .timeline .content-box-7 > a.web {
+    display: inline-block; }
+  .timeline .content-box-7 > a.press {
+    display: inline-block; }
+  .timeline .content-box-7 > a.case {
+    display: inline-block; }
+  .timeline .content-box-8 > a.web {
     display: none; }
-  .timeline .content-box-8 > a:nth-child(4) {
+  .timeline .content-box-8 > a.press {
     display: none; }
-  .timeline .content-box-8 > a:nth-child(5) {
+  .timeline .content-box-8 > a.case {
     display: none; }
-  .timeline .content-box-9 > a:nth-child(3) {
-    display: ""; }
-  .timeline .content-box-9 > a:nth-child(4) {
+  .timeline .content-box-9 > a.web {
+    display: inline-block; }
+  .timeline .content-box-9 > a.press {
     display: none; }
-  .timeline .content-box-9 > a:nth-child(5) {
+  .timeline .content-box-9 > a.case {
     display: none; }
-  .timeline .content-box-10 > a:nth-child(3) {
-    display: ""; }
-  .timeline .content-box-10 > a:nth-child(4) {
+  .timeline .content-box-10 > a.web {
+    display: inline-block; }
+  .timeline .content-box-10 > a.press {
     display: none; }
-  .timeline .content-box-10 > a:nth-child(5) {
-    display: ""; }
+  .timeline .content-box-10 > a.case {
+    display: inline-block; }

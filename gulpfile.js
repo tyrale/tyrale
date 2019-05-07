@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 // Pug to HTML
 
 gulp.task('pug', function(){
-    gulp.src('./src/*.pug')
+    return gulp.src('./src/*.pug')
     .pipe(pug({
         pretty: true
     }))
@@ -13,7 +13,7 @@ gulp.task('pug', function(){
 })
 
 gulp.task('sass', function(){
-    gulp.src('./sass/*.sass')
+    return gulp.src('./sass/*.sass')
     .pipe(sass({
         pretty: true
     }))
@@ -21,8 +21,8 @@ gulp.task('sass', function(){
 })
 
 gulp.task('watch', function(){
-    gulp.watch('./src/*.pug', ['pug'])
-    gulp.watch('./sass/*.sass', ['sass'])
+    gulp.watch('./src/*.pug', gulp.series(['pug']))
+    gulp.watch('./sass/*.sass', gulp.series(['sass']))
 });
 
-gulp.task('default', ['pug', 'sass', 'watch']);
+gulp.task('default', gulp.series(['pug', 'sass', 'watch']));

@@ -6,7 +6,7 @@ body
 @media(min-width: 600px)
   body
     margin: 45vh 11rem 3rem
-  
+
 
 // TypeStyle
 body, h1, h2, p, blockquote
@@ -17,12 +17,12 @@ body, h1, h2, p, blockquote
   text-align: left
   line-height: 1.45
   // calc(36px + 3vw)
-h1, h2, h3, h4 
+h1, h2, h3, h4
   font-weight: inherit
   line-height: 1.2
-h1 
+h1
   font-size: 1.81em
-  font-weight: 700  
+  font-weight: 700
   line-height: 1.6rem
 @media(min-width: 600px)
   h1
@@ -32,7 +32,7 @@ h2
   font-size: 1.9em
 h3
   font-size: 1.81em
-  font-weight: 700  
+  font-weight: 700
   line-height: 1.6rem
   span
     font-weight: 400
@@ -41,19 +41,19 @@ h3
 h4
   font-size: 1.414em
   margin-top: 41vh
-p 
-  font-weight: 400  
-  line-height: 20px  
+p
+  font-weight: 400
+  line-height: 20px
   margin-bottom: 1.3em
   + .strong
     font-weight: 700
-    span 
+    span
       font-weight: 400
       margin-left: 1rem
-blockquote 
-  
-  font-weight: 400  
-  line-height: 30px  
+blockquote
+
+  font-weight: 400
+  line-height: 30px
 a
 
 // Hide link styles
@@ -65,7 +65,7 @@ a
 //Timeline Things
 ul
   list-style-type: none
-    
+
 .timeline
   display: block
   p
@@ -87,9 +87,9 @@ ul
         margin-bottom: 0
         span.type
           display: none
-          
+
       p.date
-         
+
         span.thing
           margin-left: 1rem
     li.role
@@ -107,7 +107,7 @@ ul
       h3.title
         margin-bottom: 0rem
       p.company
-         
+
     li.note
       position: relative
       padding-bottom: 1rem
@@ -148,7 +148,7 @@ ul
           margin-top: 1rem
           padding-top: 1rem
           width: 540px
-        
+
   .social
     margin-top: 15rem
     a
@@ -158,36 +158,38 @@ ul
       margin: 0
       display: inline
       margin: 0 1rem
-      
-  @mixin links($web, $press, $case)    
-    a:nth-child(3)
+
+  @mixin links($web, $press, $case)
+    a.web
       display: $web
-    a:nth-child(4)
+    a.press
       display: $press
-    a:nth-child(5)
+    a.case
       display: $case
-    
-    
+
+
   .content-
-    &box-dr >
-      @include links ("", none, none)
     &box-sb >
-      @include links ("", none, none)
+      @include links (inline-block, none, none)
+    &box-dr >
+      @include links (inline-block, none, inline-block)
     &box-av >
-      @include links ("", "", none)
+      @include links (inline-block, inline-block, none)
     &box-os >
-      @include links ("", none, none)
+      @include links (inline-block, none, none)
+    &box-3 >
+      @include links (inline-block, inline-block, none)
     &box-4 >
-      @include links ("", "", none)
+      @include links (inline-block, inline-block, none)
     &box-5 >
-      @include links ("", "", "")
+      @include links (inline-block, inline-block, inline-block)
     &box-6 >
-      @include links ("", none, none)
+      @include links (inline-block, none, none)
     &box-7 >
-      @include links ("", "", "")
+      @include links (inline-block, inline-block, inline-block)
     &box-8 >
       @include links (none, none,  none)
     &box-9 >
-      @include links ("", none, none)
+      @include links (inline-block, none, none)
     &box-10 >
-      @include links ("", none, "")
+      @include links (inline-block, none, inline-block)
