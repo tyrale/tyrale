@@ -26,6 +26,15 @@ npm
           else
             p No content provided
 
+    mixin article(title, src, link1, link2, link3)
+      .project(class!=attributes.content factor="0")
+        a(src=src autoplay loop muted)
+        +content(title, link1, link2, link3)
+          if block
+            block
+          else
+            p No content provided
+
     .stats
       h4 Build Stats
       mixin number(value,title)
@@ -67,6 +76,7 @@ npm
             p.company= company
 
 
+        +article('May 2019', 'Testpost', 'http://tyrale.com')
         +archive('Oct 2018', 'iOS/Webapp', 'StartBox', 'Product Design')
         +project("Startbox", "./img/startbox.mp4", "http://startboxor.com", "thing.com", "thing.com")(content="content-box-sb")
           p Prevent wrong-site surgery and capture near misses through a real-time, data-driven approach.
