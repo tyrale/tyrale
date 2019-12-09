@@ -28,7 +28,7 @@ npm
 
     mixin article(title, src, link1)
       .project(class!=attributes.content factor="0")
-        a(src=src autoplay loop muted)
+        img(src=src)
         +content(title, link1)
           if block
             block
@@ -81,7 +81,7 @@ npm
           p Empowering enterprise users to become experience advocates
 
         +archive('May 2019', 'Article', 'Product Design')
-        +article("Article", "./img/reactions_2.0.mp4", "https://medium.com/@tyrale/9-opportunities-for-the-new-head-of-news-feed-facebook-design-dcfb91ff4414")(content="content-box-med")
+        +project("Article", "./img/reactions_2.0.mp4", "https://medium.com/@tyrale/9-opportunities-for-the-new-head-of-news-feed-facebook-design-dcfb91ff4414")(content="content-box-med-vid")
           p 9 Opportunities for the new Head of News Feed @Facebook Design
 
         +archive('Feb 2019', 'Article', 'Machine Learning')
