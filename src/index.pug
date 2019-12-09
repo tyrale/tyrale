@@ -26,10 +26,10 @@ npm
           else
             p No content provided
 
-    mixin article(title, src, link1, link2, link3)
+    mixin article(title, src, link1)
       .project(class!=attributes.content factor="0")
         a(src=src autoplay loop muted)
-        +content(title, link1, link2, link3)
+        +content(title, link1)
           if block
             block
           else
@@ -50,7 +50,7 @@ npm
         +number("30","Mobile Apps")
         +number("5","AI/ML Projects")
         +number("4","Hardware/Wearables")
-        +number("2","Enterprise Helath Records")
+        +number("2","Enterprise Health Records")
         +number("2","Chatbots")
         +number("2","Enterprise Research Programs")
 
@@ -76,17 +76,36 @@ npm
             p.company= company
 
 
-        +article('May 2019', 'Testpost', 'http://tyrale.com')
+        +archive('Nov 2019', 'Article', 'User Research')
+        +article("Article", "./img/research.png", "https://uxdesign.cc/empowering-enterprise-users-to-become-experience-advocates-181b2a0e82e")(content="content-box-med")
+          p Empowering enterprise users to become experience advocates
+
+        +archive('May 2019', 'Article', 'Product Design')
+        +article("Article", "./img/reactions_2.0.mp4", "https://medium.com/@tyrale/9-opportunities-for-the-new-head-of-news-feed-facebook-design-dcfb91ff4414")(content="content-box-med")
+          p 9 Opportunities for the new Head of News Feed @Facebook Design
+
+        +archive('Feb 2019', 'Article', 'Machine Learning')
+        +article("Article", "./img/non-linear.png", "https://uxdesign.cc/designing-non-linear-navigation-for-machine-learning-and-topic-modeling-experiences-4ee969875ebe")(content="content-box-med")
+          p Designing non-linear navigation for machine learning and topic modeling experiences
+          
+        +archive('Feb 2019', 'Article', 'Design Process')
+        +article("Article", "./img/non-linear.png", "https://uxdesign.cc/idea-to-validation-and-decision-one-design-process-in-practice-5ed689b83159")(content="content-box-med")
+          p Idea to validation and decision: one design process in practice
+
+        +archive('Jan 2019', 'Webapp', 'DigitalReasoning', 'Product Design')
+        +project("Startbox", "./img/drvideo.mp4", "http://digitalreasoning.com", "thing.com", "https://www.businesswire.com/news/home/20170925006170/en/ADDING-MULTIMEDIA-BluStor%E2%80%99s-Breakthrough-Technology-Prevents-Identity")(content="content-box-dr")
+          p Conduct Surveillance uses patented AI to turn all forms of communications and structured data into discoverable, understandable, and actionable insights.
+
+
+        //+article('May 2019', 'Testpost', 'http://tyrale.com')
         +archive('Oct 2018', 'iOS/Webapp', 'StartBox', 'Product Design')
         +project("Startbox", "./img/startbox.mp4", "http://startboxor.com", "thing.com", "thing.com")(content="content-box-sb")
           p Prevent wrong-site surgery and capture near misses through a real-time, data-driven approach.
 
         +archive('Aug 2018', 'Webapp/AI','Patient Insights', 'Product Design')
         +archive('Apr 2018', 'Webapp/AI','Cognition', 'Product Design')
-        +archive('Jan 201', 'Webapp', 'DigitalReasoning', 'Product Design')
-        +project("Startbox", "./img/drvideo.mp4", "http://digitalreasoning.com", "thing.com", "https://www.businesswire.com/news/home/20170925006170/en/ADDING-MULTIMEDIA-BluStor%E2%80%99s-Breakthrough-Technology-Prevents-Identity")(content="content-box-dr")
-          p Conduct Surveillance uses patented AI to turn all forms of communications and structured data into discoverable, understandable, and actionable insights.
-
+        
+        
         +role("Director of Product Design", "Digital Reasoning")
 
         +archive('Mar 2018', 'iOS App','Avenel', 'Product Design')
@@ -108,6 +127,10 @@ npm
         +archive('June 2017', 'Hardware','Cybergate/Identity Card', 'Design Sprint - hardware/mobile/web')
         +project("Identity Card", "./img/identity.mp4", "http://blustor.co", "https://www.businesswire.", "https://www.businesswire.com/news/home/20170925006170/en/ADDING-MULTIMEDIA-BluStor%E2%80%99s-Breakthrough-Technology-Prevents-Identity")(content="content-box-4")
           p Security in the palm of your hand. Welcome to the future of password & identity management.
+
+        +archive('May 2017', 'Article', 'Design Process')
+        +article("Article", "./img/sketch-figma.png", "https://medium.com/@tyrale/why-i-left-sketch-invision-like-a-old-sock-or-why-i-love-figma-86373ee3f21d")(content="content-box-med")
+          p Why I left Sketch + Invision like a old sock. (or why I love Figma)
 
         +archive('May 2017', 'Web App','HMP Metrics', 'Design Sprint - web')
         +archive('May 2015 - Current', 'Web App','Stealth Medical Startup', 'Design Sprint - mobile/web')

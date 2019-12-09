@@ -69,13 +69,13 @@ ul {
   .timeline p {
     margin: 0; }
   .timeline .dates {
-    border-left: 1px solid #aaa; }
+    border-left: 1px solid #eee; }
     .timeline .dates li.archive {
       position: relative;
       margin-top: 1.4rem; }
       .timeline .dates li.archive:before {
         content: "";
-        border-bottom: 1px solid #aaa;
+        border-bottom: 1px solid #eee;
         width: 0.75rem;
         display: block;
         position: absolute;
@@ -93,7 +93,7 @@ ul {
       margin-top: 1.5rem; }
       .timeline .dates li.role:before {
         content: "";
-        border-bottom: 1px solid #aaa;
+        border-bottom: 1px solid #eee;
         width: 1.25rem;
         display: block;
         position: absolute;
@@ -106,7 +106,7 @@ ul {
       padding-bottom: 1rem; }
       .timeline .dates li.note:before {
         content: "";
-        border-bottom: 1px solid #aaa;
+        border-bottom: 1px solid #eee;
         width: 1.5rem;
         display: block;
         position: absolute;
@@ -149,6 +149,12 @@ ul {
       margin: 0;
       display: inline;
       margin: 0 1rem; }
+  .timeline .content-box-med > a.web {
+    display: inline-block; }
+  .timeline .content-box-med > a.press {
+    display: none; }
+  .timeline .content-box-med > a.case {
+    display: none; }
   .timeline .content-box-sb > a.web {
     display: inline-block; }
   .timeline .content-box-sb > a.press {
