@@ -126,6 +126,11 @@ ul {
         position: absolute;
         right: 0;
         margin-left: -1.5rem; }
+      .timeline .dates .project img {
+        width: 87vw;
+        position: absolute;
+        right: 0;
+        margin-left: -1.5rem; }
       .timeline .dates .project > p {
         margin-top: 1rem;
         padding-top: 14rem; }
@@ -136,6 +141,11 @@ ul {
         .timeline .dates .project video {
           width: 600px;
           height: 300px;
+          position: static;
+          margin-left: -2.1rem;
+          margin-top: 1rem; }
+        .timeline .dates .project img {
+          width: 600px;
           position: static;
           margin-left: -2.1rem;
           margin-top: 1rem; }
@@ -157,6 +167,12 @@ ul {
   .timeline .content-box-med > a.press {
     display: none; }
   .timeline .content-box-med > a.case {
+    display: none; }
+  .timeline .content-box-med-vid > a.web {
+    display: inline-block; }
+  .timeline .content-box-med-vid > a.press {
+    display: none; }
+  .timeline .content-box-med-vid > a.case {
     display: none; }
   .timeline .content-box-sb > a.web {
     display: inline-block; }

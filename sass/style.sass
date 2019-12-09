@@ -133,6 +133,11 @@ ul
         position: absolute
         right: 0
         margin-left: -1.5rem
+      img
+        width: 87vw
+        position: absolute
+        right: 0
+        margin-left: -1.5rem
       > p
         margin-top: 1rem
         padding-top: 14rem
@@ -143,6 +148,11 @@ ul
         video
           width: 600px
           height: 300px
+          position: static
+          margin-left: -2.1rem
+          margin-top: 1rem
+        img
+          width: 600px
           position: static
           margin-left: -2.1rem
           margin-top: 1rem
@@ -172,6 +182,8 @@ ul
 
   .content-
     &box-med >
+      @include links (inline-block, none, none)
+    &box-med-vid >
       @include links (inline-block, none, none)
     &box-sb >
       @include links (inline-block, none, none)
