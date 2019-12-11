@@ -32,7 +32,7 @@ h2
   font-size: 1.9em
 h3
   font-size: 1.81em
-  font-weight: 700
+  font-weight: 500
   line-height: 1.6rem
   span
     font-weight: 400
@@ -63,6 +63,9 @@ img
   a:nth-of-type(2)
 
 // Stat things
+.numbers
+  h3
+    font-weight: 700
 
 //Timeline Things
 ul
@@ -76,10 +79,10 @@ ul
     border-left: 1px solid #eee
     li.archive
       position: relative
-      margin-top: 1.4rem
+      margin-top: 2.6rem
       &:before
         content: ""
-        border-bottom: 1px solid #eee
+        border-bottom: 1px solid #ddd
         width: 0.75rem
         display: block
         position: absolute
@@ -96,8 +99,7 @@ ul
           margin-left: 1rem
     li.role
       position: relative
-      padding-bottom: 1.5rem
-      margin-top: 1.5rem
+      margin-top: 2.6rem
       &:before
         content: ""
         border-bottom: 1px solid #eee
@@ -137,7 +139,7 @@ ul
         width: 87vw
         position: absolute
         right: 0
-        margin-left: -1.5rem
+        //margin-left: -1.5rem
       > p
         margin-top: 1rem
         padding-top: 14rem
@@ -154,7 +156,7 @@ ul
         img
           width: 600px
           position: static
-          margin-left: -2.1rem
+          // margin-left: -2.1rem
           margin-top: 1rem
         > p
           margin-top: 1rem
@@ -188,15 +190,15 @@ ul
     &box-sb >
       @include links (inline-block, none, none)
     &box-dr >
-      @include links (inline-block, none, inline-block)
+      @include links (inline-block, inline-block, none)
     &box-av >
       @include links (inline-block, inline-block, none)
     &box-os >
-      @include links (inline-block, none, none)
+      @include links (none, none, none)
     &box-3 >
-      @include links (inline-block, inline-block, none)
+      @include links (none, none, inline-block)
     &box-4 >
-      @include links (inline-block, inline-block, none)
+      @include links (none, inline-block, none)
     &box-5 >
       @include links (inline-block, inline-block, inline-block)
     &box-6 >

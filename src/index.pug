@@ -17,6 +17,14 @@ npm
       a.press(href=link3) Press
       a.case(href=link2) Case Study
 
+    mixin content-vid(title, link1)
+      //h2= title
+      if block
+        block
+      else
+        p No content provided
+      a.web(href=link1) Article
+
     mixin project(title, src, link1, link2, link3)
       .project(class!=attributes.content factor="0")
         video(src=src autoplay loop muted)
@@ -29,7 +37,7 @@ npm
     mixin article(title, src, link1)
       .project(class!=attributes.content factor="0")
         img(src=src)
-        +content(title, link1)
+        +content-vid(title, link1)
           if block
             block
           else
@@ -75,35 +83,34 @@ npm
             p.company= company
 
 
-        +archive('Nov 2019', 'Article', 'User Research')
+        +archive('Nov 2019', '', 'User Research')
         +article("Article", "./img/research.png", "https://uxdesign.cc/empowering-enterprise-users-to-become-experience-advocates-181b2a0e82e")(content="content-box-med")
           p Empowering enterprise users to become experience advocates
 
-        +archive('May 2019', 'Article', 'Product Design')
+        +archive('May 2019', '', 'Product Design')
         +project("Article", "./img/reactions_2.0.mp4", "https://medium.com/@tyrale/9-opportunities-for-the-new-head-of-news-feed-facebook-design-dcfb91ff4414")(content="content-box-med-vid")
           p 9 Opportunities for the new Head of News Feed @Facebook Design
 
-        +archive('Feb 2019', 'Article', 'Machine Learning')
+        +archive('Feb 2019', '', 'Machine Learning')
         +article("Article", "./img/non-linear.png", "https://uxdesign.cc/designing-non-linear-navigation-for-machine-learning-and-topic-modeling-experiences-4ee969875ebe")(content="content-box-med")
           p Designing non-linear navigation for machine learning and topic modeling experiences
           
-        +archive('Feb 2019', 'Article', 'Design Process')
+        +archive('Feb 2019', '', 'Design Process')
         +article("Article", "./img/process.png", "https://uxdesign.cc/idea-to-validation-and-decision-one-design-process-in-practice-5ed689b83159")(content="content-box-med")
           p Idea to validation and decision: one design process in practice
 
         +archive('Jan 2019', 'Webapp', 'DigitalReasoning', 'Product Design')
-        +project("Startbox", "./img/drvideo.mp4", "http://digitalreasoning.com", "thing.com", "https://www.businesswire.com/news/home/20170925006170/en/ADDING-MULTIMEDIA-BluStor%E2%80%99s-Breakthrough-Technology-Prevents-Identity")(content="content-box-dr")
+        +project("Startbox", "./img/drvideo.mp4", "http://digitalreasoning.com", "#", "https://www.forbes.com/companies/digital-reasoning/#9e3b3f619b69")(content="content-box-dr")
           p Conduct Surveillance uses patented AI to turn all forms of communications and structured data into discoverable, understandable, and actionable insights.
 
-
         //+article('May 2019', 'Testpost', 'http://tyrale.com')
+
         +archive('Oct 2018', 'iOS/Webapp', 'StartBox', 'Product Design')
         +project("Startbox", "./img/startbox.mp4", "http://startboxor.com", "thing.com", "thing.com")(content="content-box-sb")
           p Prevent wrong-site surgery and capture near misses through a real-time, data-driven approach.
 
         +archive('Aug 2018', 'Webapp/AI','Patient Insights', 'Product Design')
         +archive('Apr 2018', 'Webapp/AI','Cognition', 'Product Design')
-        
         
         +role("Director of Product Design", "Digital Reasoning")
 
@@ -112,6 +119,10 @@ npm
           p The first AI/Machine Learning EHR that assists Providers in the office.
 
         +archive('Jan 2018', 'Webapp/AI','Customer Insights', 'Product Design')
+
+        +archive('Nov 2017', '', 'Entrepreneur')
+        +article("Article", "./img/guilt.jpg", "https://medium.com/@tyrale/ambitious-guilt-no-longer-feeling-guilt-when-a-side-product-idea-dies-97c04d939ee0?source=your_stories_page")(content="content-box-med")
+          p Ambitious Guilt: No longer feeling guilt when a side product/idea dies.
 
         +note("First AI/Machine Learning Product", "Avenel")
 
@@ -127,7 +138,7 @@ npm
         +project("Identity Card", "./img/identity.mp4", "http://blustor.co", "https://www.businesswire.", "https://www.businesswire.com/news/home/20170925006170/en/ADDING-MULTIMEDIA-BluStor%E2%80%99s-Breakthrough-Technology-Prevents-Identity")(content="content-box-4")
           p Security in the palm of your hand. Welcome to the future of password & identity management.
 
-        +archive('May 2017', 'Article', 'Design Process')
+        +archive('May 2017', '', 'Design Process')
         +article("Article", "./img/sketch-figma.png", "https://medium.com/@tyrale/why-i-left-sketch-invision-like-a-old-sock-or-why-i-love-figma-86373ee3f21d")(content="content-box-med")
           p Why I left Sketch + Invision like a old sock. (or why I love Figma)
 

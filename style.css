@@ -36,7 +36,7 @@ h2 {
 
 h3 {
   font-size: 1.81em;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.6rem; }
   h3 span {
     font-weight: 400;
@@ -64,6 +64,9 @@ blockquote {
 img {
   max-width: 600; }
 
+.numbers h3 {
+  font-weight: 700; }
+
 ul {
   list-style-type: none; }
 
@@ -75,10 +78,10 @@ ul {
     border-left: 1px solid #eee; }
     .timeline .dates li.archive {
       position: relative;
-      margin-top: 1.4rem; }
+      margin-top: 2.6rem; }
       .timeline .dates li.archive:before {
         content: "";
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #ddd;
         width: 0.75rem;
         display: block;
         position: absolute;
@@ -92,8 +95,7 @@ ul {
         margin-left: 1rem; }
     .timeline .dates li.role {
       position: relative;
-      padding-bottom: 1.5rem;
-      margin-top: 1.5rem; }
+      margin-top: 2.6rem; }
       .timeline .dates li.role:before {
         content: "";
         border-bottom: 1px solid #eee;
@@ -129,8 +131,7 @@ ul {
       .timeline .dates .project img {
         width: 87vw;
         position: absolute;
-        right: 0;
-        margin-left: -1.5rem; }
+        right: 0; }
       .timeline .dates .project > p {
         margin-top: 1rem;
         padding-top: 14rem; }
@@ -147,7 +148,6 @@ ul {
         .timeline .dates .project img {
           width: 600px;
           position: static;
-          margin-left: -2.1rem;
           margin-top: 1rem; }
         .timeline .dates .project > p {
           margin-top: 1rem;
@@ -183,9 +183,9 @@ ul {
   .timeline .content-box-dr > a.web {
     display: inline-block; }
   .timeline .content-box-dr > a.press {
-    display: none; }
-  .timeline .content-box-dr > a.case {
     display: inline-block; }
+  .timeline .content-box-dr > a.case {
+    display: none; }
   .timeline .content-box-av > a.web {
     display: inline-block; }
   .timeline .content-box-av > a.press {
@@ -193,19 +193,19 @@ ul {
   .timeline .content-box-av > a.case {
     display: none; }
   .timeline .content-box-os > a.web {
-    display: inline-block; }
+    display: none; }
   .timeline .content-box-os > a.press {
     display: none; }
   .timeline .content-box-os > a.case {
     display: none; }
   .timeline .content-box-3 > a.web {
-    display: inline-block; }
-  .timeline .content-box-3 > a.press {
-    display: inline-block; }
-  .timeline .content-box-3 > a.case {
     display: none; }
-  .timeline .content-box-4 > a.web {
+  .timeline .content-box-3 > a.press {
+    display: none; }
+  .timeline .content-box-3 > a.case {
     display: inline-block; }
+  .timeline .content-box-4 > a.web {
+    display: none; }
   .timeline .content-box-4 > a.press {
     display: inline-block; }
   .timeline .content-box-4 > a.case {
