@@ -67,9 +67,76 @@ img
   h3
     font-weight: 700
 
+p.strong    
+    font-weight: 700
+
 //Timeline Things
 ul
   list-style-type: none
+.recent
+    ul  
+        border-left: 1px solid #eee
+    li  
+        position: relative
+        &:before
+            content: ""
+            border-bottom: 1px solid #eee
+            width: 0.75rem
+            display: block
+            position: absolute
+            top: 0.8rem
+            left: -2.5rem
+.articles
+    h4
+    .articles
+        border-left: 1px solid #eee
+        li.article
+            position: relative
+            margin-top: 2rem
+            &:before
+                content: ""
+                border-bottom: 1px solid #eee
+                width: 1.25rem
+                display: block
+                position: absolute
+                top: 0.8rem
+                left: -2.5rem
+            a.web
+                text-decoration: none
+                
+.project
+    display: block
+    margin-bottom: 3rem
+    video
+        width: 87vw
+        height: 28vh
+    img
+        width: 87vw
+        position: absolute
+        right: 0
+        //margin-left: -1.5rem
+    > p
+        margin-top: 1rem
+        padding-top: 14rem
+    > a
+        margin: 0.5rem 1rem 0 0
+        display: inline-block
+    @media(min-width: 600px)
+        video
+            width: 600px
+            height: 300px
+            position: static
+            margin-left: -2.1rem
+            margin-top: 1rem
+        img
+            width: 600px
+            position: static
+            // margin-left: -2.1rem
+            margin-top: 1rem
+        > p
+            margin-top: 1rem
+            padding-top: 1rem
+            width: 540px
 
 .timeline
   display: block
@@ -93,75 +160,45 @@ ul
         span.type
           display: none
 
-      p.date
-
-        span.thing
-          margin-left: 1rem
+      p
+        span
+            margin-right: 1rem
+        span.title  
+            font-weight: 700
     li.role
       position: relative
       margin-top: 2.6rem
       &:before
         content: ""
         border-bottom: 1px solid #eee
-        width: 1.25rem
+        width: 0.75rem
         display: block
         position: absolute
         top: 0.8rem
         left: -2.5rem
-      h3.title
+      h4.title
         margin-bottom: 0rem
+        margin-top: 0rem
+        font-weight: 700
       p.company
 
     li.note
       position: relative
-      padding-bottom: 1rem
+      margin-top: 2.6rem
+      
       &:before
         content: ""
         border-bottom: 1px solid #eee
-        width: 1.5rem
+        width: 0.75rem
         display: block
         position: absolute
         top: 0.8rem
         left: -2.5rem
-      h3.title
+      h4.title
         margin-bottom: 0rem
+        margin-top: 0rem
+        font-weight: 700
       p.company
-    .project
-      display: block
-      padding-bottom: 3rem
-      video
-        width: 87vw
-        height: 28vh
-        position: absolute
-        right: 0
-        margin-left: -1.5rem
-      img
-        width: 87vw
-        position: absolute
-        right: 0
-        //margin-left: -1.5rem
-      > p
-        margin-top: 1rem
-        padding-top: 14rem
-      > a
-        margin: 1rem 1rem 0 0
-        display: inline-block
-      @media(min-width: 600px)
-        video
-          width: 600px
-          height: 300px
-          position: static
-          margin-left: -2.1rem
-          margin-top: 1rem
-        img
-          width: 600px
-          position: static
-          // margin-left: -2.1rem
-          margin-top: 1rem
-        > p
-          margin-top: 1rem
-          padding-top: 1rem
-          width: 540px
 
   .social
     margin-top: 15rem
@@ -173,41 +210,41 @@ ul
       display: inline
       margin: 0 1rem
 
-  @mixin links($web, $press, $case)
+@mixin links($web, $press, $case)
     a.web
-      display: $web
+        display: $web
     a.press
-      display: $press
+        display: $press
     a.case
-      display: $case
+        display: $case
 
 
-  .content-
+.content-
     &box-med >
-      @include links (inline-block, none, none)
+        @include links (inline-block, none, none)
     &box-med-vid >
-      @include links (inline-block, none, none)
+        @include links (inline-block, none, none)
     &box-sb >
-      @include links (inline-block, none, none)
+        @include links (inline-block, none, none)
     &box-dr >
-      @include links (inline-block, inline-block, none)
+        @include links (inline-block, inline-block, none)
     &box-av >
-      @include links (inline-block, inline-block, none)
+        @include links (inline-block, inline-block, none)
     &box-os >
-      @include links (none, none, none)
+        @include links (none, none, none)
     &box-3 >
-      @include links (none, none, inline-block)
+        @include links (none, none, inline-block)
     &box-4 >
-      @include links (none, inline-block, none)
+        @include links (none, inline-block, none)
     &box-5 >
-      @include links (inline-block, inline-block, inline-block)
+        @include links (inline-block, inline-block, inline-block)
     &box-6 >
-      @include links (inline-block, none, none)
+        @include links (inline-block, none, none)
     &box-7 >
-      @include links (inline-block, inline-block, inline-block)
+        @include links (inline-block, inline-block, inline-block)
     &box-8 >
-      @include links (none, none,  none)
+        @include links (inline-block, none,  none)
     &box-9 >
-      @include links (inline-block, none, none)
+        @include links (inline-block, none, none)
     &box-10 >
-      @include links (inline-block, none, inline-block)
+        @include links (inline-block, none, inline-block)

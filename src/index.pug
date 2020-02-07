@@ -7,42 +7,6 @@ npm
     header
       h1 Tyrale is a creative leader focused on building Products.
 
-    mixin content(title, link1, link2, link3)
-      // h2= title
-      if block
-        block
-      else
-        p No content provided
-      a.web(href=link1) Web
-      a.press(href=link3) Press
-      a.case(href=link2) Case Study
-
-    mixin content-vid(title, link1)
-      //h2= title
-      if block
-        block
-      else
-        p No content provided
-      a.web(href=link1) Article
-
-    mixin project(title, src, link1, link2, link3)
-      .project(class!=attributes.content factor="0")
-        video(src=src autoplay loop muted)
-        +content(title, link1, link2, link3)
-          if block
-            block
-          else
-            p No content provided
-
-    mixin article(title, src, link1)
-      .project(class!=attributes.content factor="0")
-        img(src=src)
-        +content-vid(title, link1)
-          if block
-            block
-          else
-            p No content provided
-
     .stats
       h4 Build Stats
       mixin number(value,title)
@@ -62,24 +26,157 @@ npm
         +number("2","Chatbots")
         +number("2","Enterprise Research Programs")
 
+
+    .recent
+        h4 Recent Projects
+        p The majority of my projects over the last few years are underneath layers of verbose NDA's. Here is a succinct list of these projects, with product names witheld. 
+        mixin recent-project(title, body)
+            .recent-project
+                p.strong.title= title
+                p= body
+                ul
+                    if block
+                        block
+                    else
+                        p No content provided
+
+        +recent-project('Industry Agnostic Design System', 
+        'Design Systems are a dime a dozen, the unique challenge here was a system that could support multiple use cases across different industries. FinTech, Customer Support, Healthcare, Human Trafficking, and Community moderation are among the high level industry categories. Each with their respective regulatory and configuration needs.')
+            li 9 countries
+            li 7+ languages
+            li 5 pm &amp; dev teams
+            li HSBC, Wells Fargo, Barclays, UBS, HCA, et. al.
+            li Focused on analyzing Human communication
+            li End user agnostic workflows
+
+        +recent-project('Enterprise Remote User Research Program',
+        'Limited access to user data, end users globally located, and bespoke on-premise configurations created a challenge when creating a User Research program from zero. Solving the problem required some creative problem solving, layered over logistic hurdles, and resulted in a third-party integration on some cheap Chromebooks.')
+            li 1503 mins recorded
+            li 583 actionable task
+            li 89 Sessions in 1st mth
+            li 24 Chromebooks
+            li 6 prototype/session updates
+            li 0 to 68 End Users in 1st mth
+
+        +recent-project('AI/ML Model Building',
+        'Building quality models for Artificial Intelligence and Machine Learning is extensively labor intensive. A single model can require hundreds of user hours just to get to the first iteration. A tool was needed to help Data Scientist and Subject Matter Experts collaboratively iterate and build models. ')
+            li 80% time reduction on end users
+            li Introduced the opportunity for rapid iteration and versioning
+            li Dramatically reduced the cognitive load on DS & SME’s 
+            li Creation of a community for model sharing
+
+        +recent-project('AI/ML Surveillance Platform',
+        'Teaching a machine to understand Human communication is challenging. The application here is a tool that allows the machine to alert users to concerning communication language and patterns of monitored users at scale.')
+            li 10+ million emails daily
+            li 120+ hours of audio hourly
+            li Agnostic workflows across comms, and behavioral patterns
+            li Multiple UX Design patents (audio, timeline, profile, comm review, etc)
+
+        +recent-project('AI/ML Electronic Health Record',
+        'The EHR has grown into a mess with the heavy regulation, insurance reqs, complicated interactions, and developer lead design. This project was a radical departure from the standard. Using simplified workflows, user centering design, and Machine Learning I created a new paradigm for Physician software. ')
+            li Tablet forced workflows
+            li Created a National Physician User Group
+            li Reduced “Time in EHR” from > 4 hrs daily to < 30 min daily
+            li Multiple UX Design patents (timeline, ordering, reconciliation, shared collaborative experience)
+
+    .projects-clients        
+        h4 Highlights
+        mixin content(title, link1, link2, link3)
+            // h2= title
+            if block
+                block
+            else
+                p No content provided
+            a.web(href=link1) Web
+            a.press(href=link3) Press
+            a.case(href=link2) Case Study
+
+        mixin project(title, src, link1, link2, link3)
+            .project(class!=attributes.content factor="0")
+                video(src=src autoplay loop muted)
+                +content(title, link1, link2, link3)
+                    if block
+                        block
+                    else
+                        p No content provided
+                        
+        +project("Startbox", "./img/drvideo.mp4", "http://digitalreasoning.com", "#", "https://www.forbes.com/companies/digital-reasoning/#9e3b3f619b69")(content="content-box-dr")
+            p Conduct Surveillance uses patented AI to turn all forms of communications and structured data into discoverable, understandable, and actionable insights.
+        //- +project("Startbox", "./img/startbox.mp4", "http://startboxor.com", "thing.com", "thing.com")(content="content-box-sb")
+        //-     p Prevent wrong-site surgery and capture near misses through a real-time, data-driven approach.
+        +project("Avenel", "./img/medical.mp4", "http://avenel.com", "thing.com", "https://ehrintelligence.com/news/allscripts-debuts-machine-learning-cloud-based-ehr-system-avenel")(content="content-box-av")
+            p The first AI/Machine Learning EHR that assists Providers in the office.
+        //- +project("The Open Shift", "./img/theopenshift.mp4", "http://theopenshift.com", "tyrale.com", "./img/theopenshift.jpg")(content="content-box-os")
+        //-     p A service industry chatbot to help fill open shifts. Simple, clever, and clear.
+        +project("Wordplay", "./img/wordplay.mp4", "https://itunes.apple.com/us/app/wordplay/id936938798?ls=1&mt=8", "https://medium.com/@tyrale/designing-wordplay-104d143ba05c", "http://bit.ly/letswordplay")(content="content-box-3")
+            p The new way to word play. Both players are given a word where in turn they can add, remove, or rearrange the letters to create a new word.
+        +project("Identity Card", "./img/identity.mp4", "http://blustor.co", "https://www.businesswire.", "https://www.businesswire.com/news/home/20170925006170/en/ADDING-MULTIMEDIA-BluStor%E2%80%99s-Breakthrough-Technology-Prevents-Identity")(content="content-box-4")
+            p Security in the palm of your hand. Welcome to the future of password & identity management.
+        +project("Shade.io", "./img/shade.mp4", "http://shade.io", "https://verypossible.com/case-studies/shade", "https://lupusnewstoday.com/2016/09/22/wearable-uv-sensor-shade-may-help-control-lupus-symptoms")(content="content-box-5")
+            p The Shade UV sensor is the only scientific way to control your sunlight exposure.
+        //- +project("Joker Greeting", "./img/joker4.mp4", "http://jokergreeting.com", "tyrale.com", "http://abcnews.go.com/US/diabolical-joker-birthday-card-plays-music-destroyed-battery/story?id=30143302")(content="content-box-6")
+        //-     p Truly, the gift that keeps giving... you heartache.
+        //- +project("Very", "./img/very.mp4", "http://verypossible.com","https://verypossible.com/blog/goodbye-spartan-hello-very","https://www.verypossible.com/blog")(content="content-box-7")
+        //-     p 28 Design Sprints in 2 years for various startups. Before it was Very, it was Spartan.
+        +project("nok", "./img/nok.mp4", "http://ordernok.com", "tyrale.com", "tyrale.com")(content="content-box-8")
+            p We set out to make a wallet that carries ONLY what you need. 3 cards, 1 ID, weighing 1gm. Plus, a pocket for cash.
+        //- +project("UX Triage", "./img/uxtriage.mp4", "http://uxtriage.com", "https://medium.com/startup-grind/3-day-design-sprint-ux-triage-e9c2b251664a", "https://medium.com/startup-grind/3-day-design-sprint-ux-triage-e9c2b251664a")(content="content-box-9")
+        //-     p UX Triage is the result of a deliberate & relentless pursuit to simplify the problem solving workflow for designers. Through the use of thoughtfully pure simplicity.
+
+    .articles
+        h4 Articles
+        ul.articles
+            mixin article(title, link1)
+                li.article(class!=attributes.content factor="0")
+                    a.web(href=link1)=title
+
+            +article(
+                "Empowering enterprise users to become experience advocates",
+                "http://bit.ly/2GTtA64")
+            +article(
+                "9 Opportunities for the new Head of News Feed @Facebook Design",
+                "http://bit.ly/2GX7Ypn")
+            +article(
+                "Designing non-linear navigation for machine learning and topic modeling experiences",
+                "http://bit.ly/2Umzfty")
+            +article(
+                "Idea to validation and decision: one design process in practice",
+                "http://bit.ly/3baY6pV")
+            +article(
+                "Ambitious Guilt: No longer feeling guilt when a side product/idea dies.",
+                "http://bit.ly/2Ullwmz")
+            +article(
+                "Designing Wordplay +/-",
+                "http://bit.ly/2RWESNa")
+            +article(
+                "Why I left Sketch + Invision like a old sock. (or why I love Figma)",
+                "http://bit.ly/2qtQ3xb")
+            +article(
+                "3 Day Design Sprint: UX Triage",
+                "http://bit.ly/399gptN")
+            +article(
+                "Your Content Feed is Broken",
+                "http://bit.ly/1HkMRKS")
+    
+    
     .timeline
-      h4 History
+      h4 Verbose Historical List
       ul.dates
         mixin archive(date, type, title)
           li.archive
-            p.date= date
-
-            p.strong.title= title
-              span.type= type
+            p
+                span.date= date
+                span.title= title
+                //span.type= type
 
         mixin role(title, company)
           li.role
-            h3.title= title
+            h4.title= title
             p.company= company
 
         mixin note(title, company)
           li.note
-            h3.title= title
+            h4.title= title
             p.company= company
 
 
@@ -87,81 +184,31 @@ npm
         //- +article("Article", "./img/sketch-figma.jpeg", "link")(content="content-box-med")
         //-   p title
 
-
-        +archive('Nov 2019', '', 'User Research')
-        +article("Article", "./img/research.png", "https://uxdesign.cc/empowering-enterprise-users-to-become-experience-advocates-181b2a0e82e")(content="content-box-med")
-          p Empowering enterprise users to become experience advocates
-
-        +archive('May 2019', '', 'Product Design')
-        +project("Article", "./img/reactions_2.0.mp4", "https://medium.com/@tyrale/9-opportunities-for-the-new-head-of-news-feed-facebook-design-dcfb91ff4414")(content="content-box-med-vid")
-          p 9 Opportunities for the new Head of News Feed @Facebook Design
-
-        +archive('Feb 2019', '', 'Machine Learning')
-        +article("Article", "./img/non-linear.png", "https://uxdesign.cc/designing-non-linear-navigation-for-machine-learning-and-topic-modeling-experiences-4ee969875ebe")(content="content-box-med")
-          p Designing non-linear navigation for machine learning and topic modeling experiences
-          
-        +archive('Feb 2019', '', 'Design Process')
-        +article("Article", "./img/process.png", "https://uxdesign.cc/idea-to-validation-and-decision-one-design-process-in-practice-5ed689b83159")(content="content-box-med")
-          p Idea to validation and decision: one design process in practice
-
         +archive('Jan 2019', 'Webapp', 'DigitalReasoning', 'Product Design')
-        +project("Startbox", "./img/drvideo.mp4", "http://digitalreasoning.com", "#", "https://www.forbes.com/companies/digital-reasoning/#9e3b3f619b69")(content="content-box-dr")
-          p Conduct Surveillance uses patented AI to turn all forms of communications and structured data into discoverable, understandable, and actionable insights.
-
-        //+article('May 2019', 'Testpost', 'http://tyrale.com')
-
         +archive('Oct 2018', 'iOS/Webapp', 'StartBox', 'Product Design')
-        +project("Startbox", "./img/startbox.mp4", "http://startboxor.com", "thing.com", "thing.com")(content="content-box-sb")
-          p Prevent wrong-site surgery and capture near misses through a real-time, data-driven approach.
-
         +archive('Aug 2018', 'Webapp/AI','Patient Insights', 'Product Design')
         +archive('Apr 2018', 'Webapp/AI','Cognition', 'Product Design')
         
         +role("Director of Product Design", "Digital Reasoning")
 
         +archive('Mar 2018', 'iOS App','Avenel', 'Product Design')
-        +project("Avenel", "./img/medical.mp4", "http://avenel.com", "thing.com", "https://ehrintelligence.com/news/allscripts-debuts-machine-learning-cloud-based-ehr-system-avenel")(content="content-box-av")
-          p The first AI/Machine Learning EHR that assists Providers in the office.
-
         +archive('Jan 2018', 'Webapp/AI','Customer Insights', 'Product Design')
-
-        +archive('Nov 2017', '', 'Entrepreneur')
-        +article("Article", "./img/guilt.jpg", "https://medium.com/@tyrale/ambitious-guilt-no-longer-feeling-guilt-when-a-side-product-idea-dies-97c04d939ee0?source=your_stories_page")(content="content-box-med")
-          p Ambitious Guilt: No longer feeling guilt when a side product/idea dies.
 
         +note("First AI/Machine Learning Product", "Avenel")
 
         +archive('Aug 2017', 'Web App','The Open Shift', 'Full Stack - chatbot')
-        +project("The Open Shift", "./img/theopenshift.mp4", "http://theopenshift.com", "tyrale.com", "./img/theopenshift.jpg")(content="content-box-os")
-          p A service industry chatbot to help fill open shifts. Simple, clever, and clear.
-
         +archive('July 2017', 'Web App','Wordplay', 'Full Stack - iOS')
-        +project("Wordplay", "./img/wordplay.mp4", "https://itunes.apple.com/us/app/wordplay/id936938798?ls=1&mt=8", "https://medium.com/@tyrale/designing-wordplay-104d143ba05c", "http://bit.ly/letswordplay")(content="content-box-3")
-          p The new way to word play. Both players are given a word where in turn they can add, remove, or rearrange the letters to create a new word.
-
         +archive('June 2017', 'Hardware','Cybergate/Identity Card', 'Design Sprint - hardware/mobile/web')
-        +project("Identity Card", "./img/identity.mp4", "http://blustor.co", "https://www.businesswire.", "https://www.businesswire.com/news/home/20170925006170/en/ADDING-MULTIMEDIA-BluStor%E2%80%99s-Breakthrough-Technology-Prevents-Identity")(content="content-box-4")
-          p Security in the palm of your hand. Welcome to the future of password & identity management.
-
-        +archive('May 2017', '', 'Design Process')
-        +article("Article", "./img/sketch-figma.jpeg", "https://medium.com/@tyrale/why-i-left-sketch-invision-like-a-old-sock-or-why-i-love-figma-86373ee3f21d")(content="content-box-med")
-          p Why I left Sketch + Invision like a old sock. (or why I love Figma)
-
         +archive('May 2017', 'Web App','HMP Metrics', 'Design Sprint - web')
-        +archive('May 2015 - Current', 'Web App','Stealth Medical Startup', 'Design Sprint - mobile/web')
+        +archive('May 2015', 'Web App','Stealth Medical Startup', 'Design Sprint - mobile/web')
 
         +role("Director of UX", "Stealth Medical Startup")
-
-        +archive('April 2017', '', 'Design Process')
-        +article("Article", "./img/sprint.jpeg", "https://medium.com/startup-grind/3-day-design-sprint-ux-triage-e9c2b251664a")(content="content-box-med")
-          p 3 Day Design Sprint: UX Triage
 
         +archive('April 2016', 'Web App','Empact', 'Design Sprint - web')
         +archive('April 2016', 'Web App','EMJ', 'Design Sprint - web')
         +archive('Feb 2016', 'Web App','Built Not Born', 'Design Sprint - mobile')
         +archive('Jan 2016', 'Web App','TransCard', 'Design Sprint - mobile')
         +archive('Jan 2016', 'Web App','Mahdi', 'Design Sprint - mobile')
-
         +archive('Dec 2015', 'Web App','EIA Global', 'Design Sprint - web')
         +archive('Dec 2015', 'Web App','Whurk', 'Design Sprint - mobile')
         +archive('Dec 2015', 'Web App','PromoSherpas', 'Design Sprint - web')
@@ -173,24 +220,14 @@ npm
         +archive('Sept 2015', 'Web App','MyMemory', 'Design Sprint - mobile')
         +archive('Sept 2015', 'Web App','PckShp', 'Design Sprint - mobile')
         +archive('Sept 2015', 'Web App','JABB', 'Design Sprint - mobile')
-
-        +archive('Aug 2015', '', 'Design Process')
-        +article("Article", "./img/triage.png", "https://medium.com/swlh/ux-triage-moving-from-see-do-to-grays-b9f3e8692d04")(content="content-box-med")
-          p UX Triage: Moving from See|Do to Grays.
-
         +archive('Aug 2015', 'Web App','Unum', 'Design Sprint - web')
         +archive('Aug 2015', 'Web App','uLiv', 'Design Sprint - hardware/iOS')
-
-        +archive('July 2015', '', 'Design Process')
-        +article("Article", "./img/seedo.png", "https://medium.com/@tyrale/ux-triage-what-i-have-learned-performing-ux-audits-around-the-globe-250266ac95a5")(content="content-box-med")
-          p UX Triage; What I have learned performing UX Audits around the globe.
-
         +archive('Aug 2015', 'Web App','Shade.io', 'Design Sprint - hardware/iOS')
+        
         +note("First Wearable", "Shade.io")
-        +project("Shade.io", "./img/shade.mp4", "http://shade.io", "https://verypossible.com/case-studies/shade", "https://lupusnewstoday.com/2016/09/22/wearable-uv-sensor-shade-may-help-control-lupus-symptoms")(content="content-box-5")
-          p The Shade UV sensor is the only scientific way to control your sunlight exposure.
 
         +archive('June 2015', 'Web App','SaveTheTrees', 'Design Sprint - web/sms')
+        
         +note("First SMS App", "EIA Global - SaveTheTrees")
 
         +archive('June 2015', 'Web App','Choice', 'Design Sprint - product/web')
@@ -199,55 +236,33 @@ npm
         +archive('May 2015', 'Web App','JoinSpartan.com', 'Design Sprint - web')
         +archive('April 2015', 'Web App','Ver', 'Design Sprint - web')
         +archive('Mar 2015', 'Web App','Brand Vault', 'Design Sprint - web')
-
         +archive('April 2015', 'Gag Greeting Cards','Joker Greeting', 'Branding')
-        +project("Joker Greeting", "./img/joker4.mp4", "http://jokergreeting.com", "tyrale.com", "http://abcnews.go.com/US/diabolical-joker-birthday-card-plays-music-destroyed-battery/story?id=30143302")(content="content-box-6")
-          p Truly, the gift that keeps giving... you heartache.
-
+        
         +note("First Medium.com Front Page", "Your Content Feed is Broken")
-        +archive('Jan 2015', '', 'Design Thinking')
-        +article("Article", "./img/yourcontent.gif", "https://medium.com/strategic-content-marketing/your-content-feed-is-broken-f8c6576077c2")(content="content-box-med")
-          p Your Content Feed is Broken
 
         +archive('Jan 2015', 'Web App','Story Shelf', 'UX Triage')
-
         +archive('Dec 2014', 'Web App','CommonWell Medical', 'UX Triage')
         +archive('Aug 2014', 'Web App','Point Clear Solutions', 'UX Triage')
         +archive('July 2014', 'Mobile & Web Apps','Feetz', 'Design Sprint - mobile')
-
         +archive('July 2014', 'Mobile & Web Apps','Spartan', 'Full Stack')
-        +role("UX Lead", "Spartan (now Very)")
-        +project("Very", "./img/very.mp4", "http://verypossible.com","https://verypossible.com/blog/goodbye-spartan-hello-very","https://www.verypossible.com/blog")(content="content-box-7")
-          p 28 Design Sprints in 2 years for various startups. Before it was Very, it was Spartan.
-
-        +archive('May 2014', '', 'Case Study')
-        +article("Article", "./img/medhots.png", "https://medium.com/@tyrale/healthcare-software-has-been-a-sorry-joke-37894701e62e")(content="content-box-med")
-          p Healthcare software has been a sorry joke.
-
+        
+        +role("UX Lead", "Very")
+        
         +note("First Enterprise EHR", "Patient Logic")
+        
         +archive('May 2014', 'UX Audit','Medhost- Documentation', 'Design Sprint')
         +archive('April 2014', 'UX Audit','Medhost-Registration', 'Design Sprint')
-
         +archive('March 2014', 'UX Audit','Medhost-CPOE', 'Design Sprint')
+        
         +note("First 3-D Printed Product", "nok")
-        +project("nok", "./img/nok.mp4", "http://ordernok.com", "tyrale.com", "tyrale.com")(content="content-box-8")
-          p We set out to make a wallet that carries ONLY what you need. 3 cards, 1 ID, weighing 1gm. Plus, a pocket for cash.
-
+        
         +archive('Feb 2014', 'UX Audit','Patient Logic', 'Design Sprint')
+        
         +note("First Design Sprint", "UX Traige")
-        +project("UX Triage", "./img/uxtriage.mp4", "http://uxtriage.com", "https://medium.com/startup-grind/3-day-design-sprint-ux-triage-e9c2b251664a", "https://medium.com/startup-grind/3-day-design-sprint-ux-triage-e9c2b251664a")(content="content-box-9")
-          p UX Triage is the result of a deliberate & relentless pursuit to simplify the problem solving workflow for designers. Through the use of thoughtfully pure simplicity.
-
+        
         +archive('2013-14', 'Web Apps','Patient Logic', 'Full Stack')
+        
         +role("Team Lead UX", "Medhost")
-
-        +archive('June 2014', '', 'Design Thinking')
-        +article("Article", "./img/speed.png", "https://medium.com/i-m-h-o/speed-the-hell-up-298091df4761")(content="content-box-med")
-          p Speed the Hell Up!
-
-        +archive('May 2014', '', 'Design Thinking')
-        +article("Article", "./img/idea.png", "https://medium.com/@tyrale/its-not-your-idea-c5a5c8657c78")(content="content-box-med")
-          p It’s not your idea.
 
         +archive('Nov 2012', 'iOS App','ColorShift', 'Full Stack')
         +archive('Feb 2012', 'iOS App','ProperCut', 'Full Stack')
@@ -258,6 +273,7 @@ npm
         +archive('Dec 2011', 'iOS App','Your Anonymous Friend', 'Full Stack')
         +archive('Nov 2011', 'Website','Nossi College of Art', 'Concept, UX, UI')
         +archive('Aug 2011', 'iOS App','Noah for iPad', 'Full Stack')
+        
         +note("First Mobile App", "AddSubtract")
 
         +archive('Aug 2011', 'Website','Bulwark', 'Concept, UX, UI')
@@ -266,28 +282,25 @@ npm
         +archive('June 2011', 'Website','Second Harvest Food Bank', 'UX & UI')
         +archive('May 2011', 'Website','TwiceDaily', 'Concept, UX, UI')
 
-        +archive('May 2011', '', 'Case Study')
-        +article("Article", "./img/guard.png", "https://medium.com/@tyrale/creating-the-digital-brand-of-the-army-national-guard-16ebcbb926c6")(content="content-box-med")
-          p Creating the digital brand of the Army National Guard.
-
         +note("First Enterprise Webapp", "Path to Honor")
+        
         +archive('May 2011', 'Website','Army National Guard Online Enlistment', 'UX, UI')
         +archive('July 2011', 'Website','Barrett', 'UX & UI')
         +archive('June 2011', 'Website','Kimber', 'UX & UI')
         +archive('April 2011', 'Facebook App','ANG 1 Million Faces', 'Concept, UX, UI')
+        
         +note("First Social App", "Facebook National Guard State Pride")
 
         +archive('Dec 2010', 'Website','Army National Guard Facebook', 'Concept, UX, UI')
         +archive('Dec 2010', 'Team','SMRT NG', 'Team building')
         +archive('Nov 2010', 'Website','The Army National Guard', 'Full Stack')
 
-
-
-
         +role("Creative Director", "iOStudio")
 
         +archive('Sept 2009', 'Web App','TutorSource', 'Full Stack')
+        
         +note("First Web App", "TutorSource (aquired)")
+        
         +role("Lead Web Designer", "Revolution Prep")
 
         +archive('Dec 2009', 'Website','MGM Mirage', 'UX & UI')
@@ -299,6 +312,7 @@ npm
         +archive('Feb 2008', 'Website','Palms Place', 'Concept, UX, UI, Branding')
         +archive('Dec 2007', 'Website','St. Regis', 'Concept, UX, UI')
         +archive('Nov 2007', 'Website & Branding','Planet Hollywood', 'Concept, UX, UI, Branding')
+        
         +role("Interactive Art Director", "SK+G")
 
         +archive('2006', 'Website & Branding','Palazzolo Design', 'Full Stack')
@@ -313,9 +327,13 @@ npm
         +archive('2006~ish', 'Everything','Davids House', 'Brand')
         +archive('2006~ish', 'Everything','Third Wave', 'Brand')
         +archive('2006~ish', 'Everything','Universal Sign Company', 'Brand')
+        
         +role("Designer", "Palazzolo Design")
+        
         +archive('2006~ish', 'Everything','Tyrale.com', 'Full Stack')
+        
         +note("First Website", "tyrale.com")
+        
         +note("First Brand", "Community Media Center")
 
       .social
@@ -328,4 +346,4 @@ npm
 
 
   script(src="js/jquery.js" type="text/javascript")
-  script(src="js/client.js" type="text/javascript" )
+  script(src="js/client.js" type="text/javascript")
