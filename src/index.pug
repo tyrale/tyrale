@@ -5,7 +5,10 @@ npm
 
   body
     header
-      h1 Tyrale is a creative leader focused on building Products.
+      
+      h1 
+        .headshot dem,jo1sjmmss
+        span Tyrale is a creative leader focused on building User Focused Products.
 
     .stats
       h4 Build Stats
@@ -78,9 +81,18 @@ npm
             li Created a National Physician User Group
             li Reduced “Time in EHR” from > 4 hrs daily to < 30 min daily
             li Multiple UX Design patents (timeline, ordering, reconciliation, shared collaborative experience)
-
+    
+    ul.highlights
+        li.highlight testing
+        li.highlight testind
+        li.highlight testi
+        li.highlight testms
+        li.highlight tes
+        li.highlight tedk
+    
+    
     .projects-clients        
-        h4 Highlights
+        h4 Projects
         mixin content(title, link1, link2, link3)
             h2= title
             if block
@@ -99,7 +111,9 @@ npm
                         block
                     else
                         p No content provided
-                        
+
+        
+
         +project("Digital Reasoning", "./img/drvideo.mp4", "http://digitalreasoning.com", "#", "https://www.forbes.com/companies/digital-reasoning/#9e3b3f619b69")(content="content-box-dr")
             p Conduct Surveillance uses patented AI to turn all forms of communications and structured data into discoverable, understandable, and actionable insights.
         //- +project("Startbox", "./img/startbox.mp4", "http://startboxor.com", "thing.com", "thing.com")(content="content-box-sb")

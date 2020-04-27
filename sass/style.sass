@@ -73,6 +73,26 @@ p.strong
 //Timeline Things
 ul
   list-style-type: none
+
+// Header
+h1
+    display: flex
+.headshot 
+    background-color: black
+    height: 240px
+    width: 240px
+    border-radius: 240px
+    display: flex
+    flex-direction: column
+    border: 8px white solid
+    box-shadow: 0px 0px 0px 2px black
+    + span
+        width: 50vw
+        position: relative
+        left: 4rem
+        padding-top: 5.5rem
+    
+
 .recent
     p.strong
         margin-top: 4rem
@@ -105,7 +125,15 @@ ul
                 left: -2.5rem
             a.web
                 text-decoration: none
-                
+.highlights  
+    display: flex
+    flex-flow: row wrap
+    align-content: flex-start
+    .highlight 
+        background: red
+        height: 240px
+        width: 200px
+
 .project
     display: block
     margin-bottom: 3rem

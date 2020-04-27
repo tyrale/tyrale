@@ -4,7 +4,8 @@
   "description": "My usual project setup.",
   "main": "index.js",
   "dependencies": {
-    "sass": "^1.23.7"
+    "sass": "^1.26.3",
+    "stylus": "^0.54.7"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
