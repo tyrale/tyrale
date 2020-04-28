@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 1rem; }
 
@@ -77,16 +78,16 @@ h1 {
   display: flex; }
 
 .headshot {
-  background-color: black;
+  background-image: url("./img/profile2.jpg");
+  background-size: cover;
   height: 240px;
   width: 240px;
   border-radius: 240px;
   display: flex;
   flex-direction: column;
-  border: 8px white solid;
-  box-shadow: 0px 0px 0px 2px black; }
+  border: 6px solid black; }
   .headshot + span {
-    width: 50vw;
+    width: 45vw;
     position: relative;
     left: 4rem;
     padding-top: 5.5rem; }
@@ -124,25 +125,64 @@ h1 {
     .articles .articles li.article a.web {
       text-decoration: none; }
 
-.highlights {
+.items {
   display: flex;
   flex-flow: row wrap;
-  align-content: flex-start; }
-  .highlights .highlight {
-    background: red;
-    height: 240px;
-    width: 200px; }
+  padding: 0; }
+  .items .video {
+    margin-right: 2rem; }
+  .items .content {
+    width: 40%; }
+
+#slideshow {
+  position: relative; }
+  #slideshow button {
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    text-decoration: underline;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.slide {
+  position: absolute;
+  padding: 2rem;
+  width: 100%; }
+  .slide .quote {
+    font-size: 1.1rem; }
+  .slide .credit {
+    font-size: 0.8rem; }
+  .slide:before {
+    content: "“";
+    font-size: 4rem;
+    opacity: 0.2;
+    width: 0.75rem;
+    display: block;
+    position: absolute;
+    top: 0rem;
+    left: 0rem; }
+
+.project-list, .leadership-list {
+  border-left: 1px solid #eee; }
 
 .project {
-  display: block;
-  margin-bottom: 3rem; }
-  .project video {
-    width: 87vw;
-    height: 28vh; }
-  .project img {
-    width: 87vw;
+  margin-bottom: 3rem;
+  position: relative; }
+  .project:before {
+    content: "";
+    border-bottom: 1px solid #ddd;
+    width: 0.75rem;
+    display: block;
     position: absolute;
-    right: 0; }
+    top: 0.8rem;
+    left: -2.5rem; }
+  .project video {
+    background: #efefef;
+    order: 0; }
+  .project img {
+    width: 87vw; }
   .project > p {
     margin-top: 1rem;
     padding-top: 14rem; }
@@ -150,16 +190,8 @@ h1 {
     margin: 0.5rem 1rem 0 0;
     display: inline-block; }
   @media (min-width: 600px) {
-    .project video {
-      width: 600px;
-      height: 300px;
-      position: static;
-      margin-left: -2.1rem;
-      margin-top: 1rem; }
     .project img {
-      width: 600px;
-      position: static;
-      margin-top: 1rem; }
+      width: 600px; }
     .project > p {
       margin-top: 1rem;
       padding-top: 1rem;
@@ -220,15 +252,16 @@ h1 {
         margin-bottom: 0rem;
         margin-top: 0rem;
         font-weight: 700; }
-  .timeline .social {
-    margin-top: 15rem; }
-    .timeline .social a {
-      border: none;
-      color: black;
-      padding: 0;
-      margin: 0;
-      display: inline;
-      margin: 0 1rem; }
+
+.social {
+  margin-top: 15rem; }
+  .social a {
+    border: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    margin: 0 1rem; }
 
 .content-box-med > a.web {
   display: inline-block; }
