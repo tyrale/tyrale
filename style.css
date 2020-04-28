@@ -25,11 +25,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 1.81em;
   font-weight: 700;
-  line-height: 1.6rem; }
-
-@media (min-width: 600px) {
-  h1 {
-    line-height: 2rem; } }
+  line-height: 2rem; }
 
 h2 {
   line-height: 1.4rem;
@@ -74,23 +70,56 @@ p.strong {
 ul {
   list-style-type: none; }
 
-h1 {
-  display: flex; }
+.items {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0; }
+  .items .video video {
+    width: 100%; }
+  .items .content {
+    width: 100%; }
+  @media (min-width: 600px) {
+    .items .video {
+      margin-right: 2rem; }
+    .items .content {
+      width: 50%; } }
 
-.headshot {
+header .video {
+  width: 100%; }
+
+header .headshot {
   background-image: url("./img/profile2.jpg");
   background-size: cover;
   height: 240px;
-  width: 240px;
+  min-width: 240px;
+  max-width: 240px;
   border-radius: 240px;
-  display: flex;
-  flex-direction: column;
   border: 6px solid black; }
-  .headshot + span {
-    width: 45vw;
-    position: relative;
-    left: 4rem;
-    padding-top: 5.5rem; }
+
+header .content {
+  padding-top: 5.5rem; }
+
+@media (max-width: 590px) {
+  header .headshot {
+    margin: 0 auto; } }
+
+@media (min-width: 600px) {
+  header li.video {
+    width: 45%; }
+  header .headshot {
+    margin-right: 4rem; }
+  header .items li.content {
+    padding-top: 3.5rem;
+    width: 100%; } }
+
+@media (min-width: 1024px) {
+  header li.video {
+    width: 260px; }
+  header .headshot {
+    margin-right: 4rem; }
+  header .items li.content {
+    padding-top: 5.5rem;
+    width: 50%; } }
 
 .recent p.strong {
   margin-top: 4rem; }
@@ -125,14 +154,8 @@ h1 {
     .articles .articles li.article a.web {
       text-decoration: none; }
 
-.items {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 0; }
-  .items .video {
-    margin-right: 2rem; }
-  .items .content {
-    width: 40%; }
+.leadership .content {
+  height: 100px; }
 
 #slideshow {
   position: relative; }
@@ -150,8 +173,10 @@ h1 {
 
 .slide {
   position: absolute;
-  padding: 2rem;
-  width: 120%; }
+  padding: 2rem; }
+  @media (min-width: 600px) {
+    .slide {
+      width: 100%; } }
   .slide .quote {
     font-size: 1.1rem; }
   .slide .credit {

@@ -5,10 +5,11 @@ npm
 
   body
     header
-      
-      h1 
-        .headshot 
-        span Tyrale is a Creative Leader focused on building Products.
+        ul.items
+            li.video
+                .headshot
+            li.content
+                h1 Tyrale is a Creative Leader focused on building Products.
 
     .stats
       h4 Build Stats
@@ -34,19 +35,20 @@ npm
         ul.items
             li.video
                 video(src=("./img/drvideo.mp4") poster=("https://source.unsplash.com/500x300") autoplay loop muted)
-            li.content#slideshow
-                button(onclick="plusDivs(+1)") one more
-                mixin slide(credit,quote)
-                    .slide
-                        p.quote=quote
-                        p.credit=credit
-                +slide("Nikki Davis | Senior UX Designer","I truly appreciate how often Tyrale takes the time to provide constructive feedback on how I can become the best version of myself. I appreciate his ability to remove emotion and help me see things objectively to ultimately derive the best solution.")
-                +slide("Brandon Carl | Chief Product Officer","Tyrale brings a strong mix of opinion, humor, and passion to conversations. He takes time to compliment and constructively critique his fellow co-workers. He is not afraid to deliver a tough conversation, and yet does not make it personal.")
-                +slide("Josh Goodwin | Senior Principle UX Designer","I respect Tyrale's opinions and welcome his feedback.  He provides positive feedback when appropriate, but certainly doesn't overdue it.  I really appreciate this aspect of Tyrale's feedback.  His constructive feedback is important, as he identifies issues and raises the concern. ")
-                +slide("Jena Acuff | Director of Product Management","There have been numerous times where the design has been challenged with feature parity. Each time, Tyrale has devised creative solutions to improve the user experience, and set the product up for success. His ability to think through problems and features with the broader context in mind has led to a simple, yet robust designs.")
-                +slide("Jeff Franks | President","Tyrale strives for excellence in everything he does. This is evident in the tools he chooses, the processes he creates, and his work itself. He has taken an active role in leading others forward. He knows what 'great' looks like, and can infuse the drive for excellence in others. Consistently channels frustration towards transformation.")
-                +slide("Kate Palazzolo | VP Solution Sales","Tyrale has done a fantastic job leveraging product design principles to persuade the right people to produce optimal results. By focusing on intent and removing emotion from the equation, all people involved can objectively debate how best to solve the problem at hand.")
-                +slide("Jim Hewitt | EVP, Solutions","Tyrale doesn't bring his own agenda. Rather, he brings his talents towards helping us win our market, and the hearts and minds of our customers.")
+            li.content
+                #slideshow
+                    button(onclick="plusDivs(+1)") one more
+                    mixin slide(credit,quote)
+                        .slide
+                            p.quote=quote
+                            p.credit=credit
+                    +slide("Nikki Davis | Senior UX Designer","I truly appreciate how often Tyrale takes the time to provide constructive feedback on how I can become the best version of myself. I appreciate his ability to remove emotion and help me see things objectively to ultimately derive the best solution.")
+                    +slide("Brandon Carl | Chief Product Officer","Tyrale brings a strong mix of opinion, humor, and passion to conversations. He takes time to compliment and constructively critique his fellow co-workers. He is not afraid to deliver a tough conversation, and yet does not make it personal.")
+                    +slide("Josh Goodwin | Senior Principle UX Designer","I respect Tyrale's opinions and welcome his feedback.  He provides positive feedback when appropriate, but certainly doesn't overdue it.  I really appreciate this aspect of Tyrale's feedback.  His constructive feedback is important, as he identifies issues and raises the concern. ")
+                    +slide("Jena Acuff | Director of Product Management","There have been numerous times where the design has been challenged with feature parity. Each time, Tyrale has devised creative solutions to improve the user experience, and set the product up for success. His ability to think through problems and features with the broader context in mind has led to a simple, yet robust designs.")
+                    +slide("Jeff Franks | President","Tyrale strives for excellence in everything he does. This is evident in the tools he chooses, the processes he creates, and his work itself. He has taken an active role in leading others forward. He knows what 'great' looks like, and can infuse the drive for excellence in others. Consistently channels frustration towards transformation.")
+                    +slide("Kate Palazzolo | VP Solution Sales","Tyrale has done a fantastic job leveraging product design principles to persuade the right people to produce optimal results. By focusing on intent and removing emotion from the equation, all people involved can objectively debate how best to solve the problem at hand.")
+                    +slide("Jim Hewitt | EVP, Solutions","Tyrale doesn't bring his own agenda. Rather, he brings his talents towards helping us win our market, and the hearts and minds of our customers.")
             
     .recent
         h4 Recent Projects

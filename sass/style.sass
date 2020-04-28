@@ -23,10 +23,8 @@ h1, h2, h3, h4
 h1
   font-size: 1.81em
   font-weight: 700
-  line-height: 1.6rem
-@media(min-width: 600px)
-  h1
-    line-height: 2rem
+  line-height: 2rem
+
 h2
   line-height: 1.4rem
   font-size: 1.9em
@@ -74,23 +72,58 @@ p.strong
 ul
   list-style-type: none
 
+.items
+    display: flex
+    flex-flow: row wrap
+    padding: 0
+    .video
+        video 
+            width: 100%
+    .content    
+        width: 100%
+    @media(min-width: 600px)
+        .video
+            margin-right: 2rem
+        .content    
+            width: 50%
+
 // Header
-h1
-    display: flex
-.headshot 
-    background-image: url("./img/profile2.jpg")
-    background-size: cover
-    height: 240px
-    width: 240px
-    border-radius: 240px
-    display: flex
-    flex-direction: column
-    border: 6px solid black
-    + span
-        width: 45vw
-        position: relative
-        left: 4rem
+
+header 
+    .video   
+        width: 100%
+    .headshot 
+        background-image: url("./img/profile2.jpg")
+        background-size: cover
+        height: 240px
+        min-width: 240px
+        max-width: 240px
+        border-radius: 240px
+        border: 6px solid black
+        
+    .content
         padding-top: 5.5rem
+    @media(max-width: 590px)
+        .headshot
+            margin: 0 auto
+    @media(min-width: 600px)
+        li.video 
+            width: 45%
+        .headshot 
+            margin-right: 4rem
+        .items li.content
+            padding-top: 3.5rem
+            width: 100%
+    @media(min-width: 1024px)
+        li.video 
+            width: 260px
+        .headshot 
+            margin-right: 4rem
+        .items li.content
+            padding-top: 5.5rem
+            width: 50%
+
+
     
 
 .recent
@@ -126,15 +159,10 @@ h1
             a.web
                 text-decoration: none
 
-.items
-    display: flex
-    flex-flow: row wrap
-    padding: 0
-    .video
-        margin-right: 2rem
-    .content    
-        width: 40%
 
+.leadership 
+    .content    
+        height: 100px
 #slideshow
     position: relative 
     button
@@ -151,7 +179,8 @@ h1
 .slide
     position: absolute
     padding: 2rem
-    width: 120%
+    @media(min-width: 600px)
+        width: 100%
     .quote
         font-size: 1.1rem
     .credit
@@ -171,9 +200,7 @@ h1
 
 .project
     margin-bottom: 3rem
-    position: relative
-    
-            
+    position: relative      
     &:before
         content: ""
         border-bottom: 1px solid #ddd
