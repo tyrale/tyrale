@@ -75,7 +75,9 @@ ul {
   flex-flow: row wrap;
   padding: 0; }
   .items .video video {
-    width: 100%; }
+    width: 100%;
+    max-width: 500px;
+    max-height: 300px; }
   .items .content {
     width: 100%; }
   @media (min-width: 600px) {
