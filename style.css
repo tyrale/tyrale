@@ -162,16 +162,17 @@ header .content {
 #slideshow {
   position: relative; }
   #slideshow button {
-    font-size: 0.8rem;
+    font-size: 2.4rem;
     font-family: inherit;
     border: 0;
     padding: 0;
-    text-decoration: underline;
     position: absolute;
-    top: 17rem;
-    left: 2rem;
+    top: 0.6rem;
+    right: 0rem;
     z-index: 1;
-    outline: none; }
+    outline: none;
+    color: blue;
+    cursor: pointer; }
 
 .slide {
   position: absolute;
