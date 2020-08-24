@@ -23,7 +23,7 @@ h1, h2, h3, h4
 h1
   font-size: 1.81em
   font-weight: 700
-  line-height: 2rem
+  line-height: 2.2rem
 
 h2
   line-height: 1.4rem
@@ -67,6 +67,18 @@ img
 
 p.strong    
     font-weight: 700
+
+//Header
+header
+    ul.intro
+        margin-left: 0
+        padding: 0
+        width: 900px
+        li.picture
+            .headshot 
+                width: 100px 
+        li.content
+            h1
 
 //Timeline Things
 ul
@@ -174,16 +186,17 @@ header
         padding: 0   
         position: absolute
         top: 0.6rem
-        right: 0rem 
+        right: -24rem 
         z-index: 1
         outline: none
         color: blue
         cursor: pointer
+        background: none
 .slide
     position: absolute
     padding: 2rem
     @media(min-width: 600px)
-        width: 100%
+        width: 200%
     .quote
         font-size: 1.1rem
     .credit
