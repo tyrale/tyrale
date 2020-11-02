@@ -1,12 +1,16 @@
 html
-  font-size: 1rem
+    font-size: 1rem
 body
-  margin: 35vh 2.5rem 3rem
-  background: #fff
+    margin: 35vh 2.5rem 3rem
+    background: #fff
 @media(min-width: 600px)
-  body
-    margin: 45vh 11rem 3rem
+    body
+        margin: 45vh 11rem 3rem
+    p
+        max-width: 600px
 
+p 
+    background-color: red
 
 // TypeStyle
 body, h1, h2, p, blockquote
@@ -43,6 +47,7 @@ p
   font-weight: 400
   line-height: 20px
   margin-bottom: 1.3em
+  max-width: 600px
   + .strong
     font-weight: 700
     span
@@ -73,7 +78,7 @@ header
     ul.intro
         margin-left: 0
         padding: 0
-        width: 900px
+        max-width: 750px
         li.picture
             .headshot 
                 width: 100px 
@@ -185,11 +190,11 @@ header
         border: 0
         padding: 0   
         position: absolute
-        top: 0.6rem
-        right: -24rem 
+        top: 0rem
+        left: 3rem 
         z-index: 1
         outline: none
-        color: blue
+        color: #ccc
         cursor: pointer
         background: none
 .slide
@@ -203,7 +208,7 @@ header
         font-size: 0.8rem
     &:before
         content: "“"
-        font-size: 4rem
+        font-size: 3rem
         opacity: 0.2
         width: 0.75rem
         display: block
