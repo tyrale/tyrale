@@ -4,16 +4,43 @@ npm
   link(href="https://fonts.googleapis.com/css?family=Halant:400,600" rel="stylesheet")
 
   body
-    header
-        ul.intro
-            li.picture
-                .headshot
-            li.content
-                h1 Tyrale is a Creative Leader. Focused on building confident design teams, that are capable of building amazing products.
-            li.story
-                p I love working with Designers, Engineers, and Executives. My career fulfillment has come from enabling teams to rise up innovation, and efficiency while building products. I strive to build the right relationship with each team member to help them find success in their own paths.
+    nav.toc
+        ul
+            li: a(href="#snapshot") Snapshot
+            li: a(href="#leadership") Leadership
+            li: a(href="#projects") Projects
+            li: a(href="#highlights") Highlights
+            li: a(href="#numbers") Numbers
+            li: a(href="#articles") Articles
+            li: a(href="#contact") Contact
+    .page
+      header
+          ul.intro
+              li.picture
+                  .headshot
+              li.content
+                  h1 Global Head of Product Design & UX Leader
+                  p.hero-subtitle Building high-performing design teams that ship complex AI/ML and enterprise products with clarity and confidence.
+              li.story
+                  p I love working with Designers, Engineers, and Executives. My career fulfillment has come from enabling teams to rise up with innovation and efficiency while building products. I strive to build the right relationship with each team member to help them find success in their own paths.
 
-    .leadership       
+    .leadership-snapshot.reveal#snapshot
+        h4 Leadership Snapshot
+        ul.snapshot-list
+            li
+                span.label Roles
+                span.value Global Head of Product Design, Director of User Experience, Creative Director (UX)
+            li
+                span.label Teams led
+                span.value Cross-functional product design teams across research, UX, and visual design
+            li
+                span.label Scale
+                span.value Products used across multiple industries, countries, and regulatory environments
+            li
+                span.label Operating style
+                span.value Outcome-focused, coaching-heavy, and systems-oriented design leadership
+
+    .leadership.reveal#leadership       
         h4 Leadership
         ul.items
             //- li.video
@@ -33,13 +60,37 @@ npm
                     +slide("Kate Palazzolo | VP Solution Sales","Tyrale has done a fantastic job leveraging product design principles to persuade the right people to produce optimal results. By focusing on intent and removing emotion from the equation, all people involved can objectively debate how best to solve the problem at hand.")
                     +slide("Jim Hewitt | EVP, Solutions","Tyrale doesn't bring his own agenda. Rather, he brings his talents towards helping us win our market, and the hearts and minds of our customers.")
 
+    .leadership-list-container.reveal
+        p.leadership-approach I lead with clarity, candor, and care—building design teams that are trusted partners to Product, Engineering, and the business. My focus is on creating the systems, feedback rituals, and research practices that help teams move from opinion to evidence, and from reactive delivery to intentional product strategy.
+        p.leadership-approach-small This is how people I work with describe that experience:
+        ul.leadership-list
+            li.leadership-item
+                p.quote I truly appreciate how often Tyrale takes the time to provide constructive feedback on how I can become the best version of myself. I appreciate his ability to remove emotion and help me see things objectively to ultimately derive the best solution.
+                p.credit Direct report — Nikki Davis, Senior UX Designer
+            li.leadership-item
+                p.quote Tyrale brings a strong mix of opinion, humor, and passion to conversations. He takes time to compliment and constructively critique his fellow co-workers. He is not afraid to deliver a tough conversation, and yet does not make it personal.
+                p.credit Product leadership — Brandon Carl, Chief Product Officer
+            li.leadership-item
+                p.quote I respect Tyrale's opinions and welcome his feedback. He provides positive feedback when appropriate, but certainly doesn't overdue it. I really appreciate this aspect of Tyrale's feedback. His constructive feedback is important, as he identifies issues and raises the concern.
+                p.credit Design leadership — Josh Goodwin, Senior Principal UX Designer
+            li.leadership-item
+                p.quote There have been numerous times where the design has been challenged with feature parity. Each time, Tyrale has devised creative solutions to improve the user experience, and set the product up for success. His ability to think through problems and features with the broader context in mind has led to simple yet robust designs.
+                p.credit Product management — Jena Acuff, Director of Product Management
+            li.leadership-item
+                p.quote Tyrale strives for excellence in everything he does. This is evident in the tools he chooses, the processes he creates, and his work itself. He has taken an active role in leading others forward. He knows what “great” looks like, and can infuse the drive for excellence in others. Consistently channels frustration towards transformation.
+                p.credit Executive — Jeff Franks, President
+            li.leadership-item
+                p.quote Tyrale has done a fantastic job leveraging product design principles to persuade the right people to produce optimal results. By focusing on intent and removing emotion from the equation, all people involved can objectively debate how best to solve the problem at hand.
+                p.credit Sales leadership — Kate Palazzolo, VP Solution Sales
+            li.leadership-item
+                p.quote Tyrale doesn't bring his own agenda. Rather, he brings his talents towards helping us win our market, and the hearts and minds of our customers.
+                p.credit Executive — Jim Hewitt, EVP, Solutions
 
-
-    .recent
+    .recent.reveal#projects
         h4 Recent Projects
         p The majority of my projects over the last few years are underneath layers of verbose NDA's. Here is a succinct list of these projects, with product names witheld. 
         mixin recent-project(title, body)
-            .recent-project
+            .recent-project.reveal
                 p.strong.title= title
                 p= body
                 ul
@@ -87,35 +138,55 @@ npm
             li Reduced “Time in EHR” from > 4 hrs daily to < 30 min daily
             li Multiple UX Design patents (timeline, ordering, reconciliation, shared collaborative experience)
    
-    .stats
-      h4 Build Stats
-      mixin number(value,title)
-        div
-          h3= value
-            span= title
-      .numbers
-        
-        +number("66","Websites")
-        +number("63","Brands Built")
-        +number("55","Design Sprints")
-        +number("30","Mobile Apps")
-        +number("17","Featured Medium Posts")
-        +number("14","Web Apps")
-        +number("05","AI/ML Projects")
-        +number("05","Enterprise Applications")
-        +number("04","Hardware/Wearables")
-        +number("02","Chatbots")
-        +number("02","Enterprise Research Programs")
+    .stats.reveal#numbers
+      h4 Leadership & Impact
+      .stats-grid
+        .stats-column
+          h5 Leadership
+          ul.leadership-metrics
+            li
+              span.label Design org scope
+              span.value Global Head of Product Design, Director of UX, Creative Director (UX)
+            li
+              span.label Teams
+              span.value Small startup squads to multi-team enterprise product organizations
+            li
+              span.label Collaboration
+              span.value Partnering with Product, Engineering, Data Science, Sales, and Executive leadership
+            li
+              span.label Focus
+              span.value Design systems, research programs, and operational rigor to support innovation
+        .stats-column
+          h5 Build stats
+          mixin number(value,title)
+            li
+              h3= value
+                span= title
+          ul.numbers
+            +number("66","Websites")
+            +number("63","Brands Built")
+            +number("55","Design Sprints Facilitated")
+            +number("30","Mobile Apps")
+            +number("17","Featured Medium Posts")
+            +number("14","Web Apps")
+            +number("05","AI/ML Projects")
+            +number("05","Enterprise Applications Led")
+            +number("04","Hardware/Wearables")
+            +number("02","Chatbots")
+            +number("02","Enterprise Research Programs")
 
-    .projects-clients       
+    .projects-clients.reveal#highlights       
         h4 Highlights
         mixin content(title, link1)
-            p.strong= title
-            if block
-                block
-            else
-                p No content provided
-            a.web(href=link1) Link
+            .project-content
+                .logo-box
+                .copy
+                    p.strong= title
+                    if block
+                        block
+                    else
+                        p No content provided
+                    a.web(href=link1 target="_blank" rel="noopener noreferrer") Link
         mixin project(title, src, link1)
             li.project(class!=attributes.content factor="0")
                 ul.items
@@ -155,11 +226,11 @@ npm
             //- +project("UX Triage", "./img/uxtriage.mp4", "http://uxtriage.com", "https://medium.com/startup-grind/3-day-design-sprint-ux-triage-e9c2b251664a", "https://medium.com/startup-grind/3-day-design-sprint-ux-triage-e9c2b251664a")(content="content-box-9")
             //-     p UX Triage is the result of a deliberate & relentless pursuit to simplify the problem solving workflow for designers. Through the use of thoughtfully pure simplicity.
 
-    .articles
+    .articles#articles
         h4 Articles
         ul.articles
             mixin article(title, link1)
-                li.article(class!=attributes.content factor="0")
+                li.article.reveal(class!=attributes.content factor="0")
                     a.web(href=link1)=title
 
             +article(
@@ -191,7 +262,18 @@ npm
                 "http://bit.ly/1HkMRKS")
     
 
-  .social
+  .resume.reveal#contact
+    h4 Resume & Contact
+    p
+        | Prefer structured details?
+        |  
+        a(href="files/Tyrale Bloomfield.pdf") Download resume (PDF)
+        | .
+    p For speaking, advisory, or leadership roles, email 
+        a(href="mailto:hello@tyrale.com") hello@tyrale.com
+        | .
+
+  .social.reveal
     p
         a(href="http://medium.com/@tyrale") Medium
         | /

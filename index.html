@@ -4,21 +4,55 @@
   <link href="style.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Halant:400,600" rel="stylesheet"/>
   <body>
-    <header>
-      <ul class="intro">
-        <li class="picture">
-          <div class="headshot"></div>
+    <nav class="toc">
+      <ul>
+        <li><a href="#snapshot">Snapshot</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#numbers">Numbers</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="page">
+      <header>
+        <ul class="intro">
+          <li class="picture">
+            <div class="headshot"></div>
+          </li>
+          <li class="content">
+            <h1>Global Head of Product Design &amp; UX Leader</h1>
+            <p class="hero-subtitle">I lead teams that turn complex enterprise challenges into award-winning, AI-driven product experiences. My work is grounded in research, metrics, and rapid experimentation. I build cultures where creativity, technical depth, and smart decision-making thrive together.</p>
+          </li>
+          <li class="story">
+            <p>Fulfillment has come from enabling teams to rise up with innovation and efficiency while building products. I strive to build the right relationship with each team member to help them find success in their own paths.</p>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <div class="leadership-snapshot reveal" id="snapshot">
+      <h4>Leadership Snapshot</h4>
+      <ul class="snapshot-list">
+        <li>
+          <span class="label">Roles: </span><span class="value">Global Head of Product Design, Director of User Experience, Creative Director.</span>
         </li>
-        <li class="content">
-          <h1>Tyrale is a Creative Leader. Focused on building confident design teams, that are capable of building amazing products.</h1>
+        <li>
+          <span class="label">Teams led: </span><span class="value">Cross-functional Product Design, User Research, UX/UI, Visual Design, and Front-End Engineering.</span>
         </li>
-        <li class="story">
-          <p>I love working with Designers, Engineers, and Executives. My career fulfillment has come from enabling teams to rise up with innovation, and efficiency while building products. I strive to build the right relationship with each team member to help them find success in their own paths.</p>
+        <li>
+          <span class="label">Scale: </span><span class="value">Products used across multiple industries, countries, and regulatory environments</span>
+        </li>
+        <li>
+          <span class="label">Operating style: </span><span class="value">Outcome-focused, mentorship-heavy, and systems-oriented design leadership</span>
+        </li>
+        <li>
+          <span class="label">Bragging Rights: </span><span class="value">Owned the online presence of The Army National Gaurd; including the site, socials, and online enlistment web app. Lead and managed HALF of all Las Vegas websites.  </span>
         </li>
       </ul>
-    </header>
-    <div class="leadership">      
-      <h4>Leadership</h4>
+    </div>
+    <div class="leadership reveal" id="leadership">      
+      <h4>Leadership Responses</h4>
       <ul class="items">
         <li class="content">
           <div id="slideshow">
@@ -55,7 +89,41 @@
         </li>
       </ul>
     </div>
-    <div class="recent">
+    <div class="leadership-list-container reveal">
+      <p class="leadership-approach">I build high-trust, high-performing design teams and the systems that guide them. My leadership turns opinion into evidence, research into strategy, and AI-driven experimentation into measurable product outcomes.</p>
+      <p class="leadership-approach-small">This is how people I work with describe that experience:</p>
+      <ul class="leadership-list">
+        <li class="leadership-item">
+          <p class="quote">I truly appreciate how often Tyrale takes the time to provide constructive feedback on how I can become the best version of myself. I appreciate his ability to remove emotion and help me see things objectively to ultimately derive the best solution.</p>
+          <p class="credit">Direct report — Nikki Davis, Senior UX Designer</p>
+        </li>
+        <li class="leadership-item">
+          <p class="quote">Tyrale brings a strong mix of opinion, humor, and passion to conversations. He takes time to compliment and constructively critique his fellow co-workers. He is not afraid to deliver a tough conversation, and yet does not make it personal.</p>
+          <p class="credit">Executive — Brandon Carl, Chief Product Officer</p>
+        </li>
+        <li class="leadership-item">
+          <p class="quote">I respect Tyrale's opinions and welcome his feedback. He provides positive feedback when appropriate, but certainly doesn't overdue it. I really appreciate this aspect of Tyrale's feedback. His constructive feedback is important, as he identifies issues and raises the concern.</p>
+          <p class="credit">Design leadership — Josh Goodwin, Senior Principal UX Designer</p>
+        </li>
+        <li class="leadership-item">
+          <p class="quote">There have been numerous times where the design has been challenged with feature parity. Each time, Tyrale has devised creative solutions to improve the user experience, and set the product up for success. His ability to think through problems and features with the broader context in mind has led to simple yet robust designs.</p>
+          <p class="credit">Product management — Jena Acuff, Director of Product Management</p>
+        </li>
+        <li class="leadership-item">
+          <p class="quote">Tyrale strives for excellence in everything he does. This is evident in the tools he chooses, the processes he creates, and his work itself. He has taken an active role in leading others forward. He knows what “great” looks like, and can infuse the drive for excellence in others. Consistently channels frustration towards transformation.</p>
+          <p class="credit">Executive — Jeff Franks, President</p>
+        </li>
+        <li class="leadership-item">
+          <p class="quote">Tyrale has done a fantastic job leveraging product design principles to persuade the right people to produce optimal results. By focusing on intent and removing emotion from the equation, all people involved can objectively debate how best to solve the problem at hand.</p>
+          <p class="credit">Sales Executive — Kate Palazzolo, VP Solution Sales</p>
+        </li>
+        <li class="leadership-item">
+          <p class="quote">Tyrale doesn't bring his own agenda. Rather, he brings his talents towards helping us win our market, and the hearts and minds of our customers.</p>
+          <p class="credit">Executive — Jim Hewitt, EVP, Solutions</p>
+        </li>
+      </ul>
+    </div>
+    <div class="recent reveal" id="projects">
       <h4>Recent Projects</h4>
       <p>The majority of my projects over the last few years are underneath layers of verbose NDA's. Here is a succinct list of these projects, with product names witheld. </p>
             <div class="recent-project">
@@ -113,127 +181,183 @@
               </ul>
             </div>
     </div>
-    <div class="stats">
-      <h4>Build Stats</h4>
-      <div class="numbers">
-              <div>
-                <h3>66<span>Websites</span></h3>
-              </div>
-              <div>
-                <h3>63<span>Brands Built</span></h3>
-              </div>
-              <div>
-                <h3>55<span>Design Sprints</span></h3>
-              </div>
-              <div>
-                <h3>30<span>Mobile Apps</span></h3>
-              </div>
-              <div>
-                <h3>17<span>Featured Medium Posts</span></h3>
-              </div>
-              <div>
-                <h3>14<span>Web Apps</span></h3>
-              </div>
-              <div>
-                <h3>05<span>AI/ML Projects</span></h3>
-              </div>
-              <div>
-                <h3>05<span>Enterprise Applications</span></h3>
-              </div>
-              <div>
-                <h3>04<span>Hardware/Wearables</span></h3>
-              </div>
-              <div>
-                <h3>02<span>Chatbots</span></h3>
-              </div>
-              <div>
-                <h3>02<span>Enterprise Research Programs</span></h3>
-              </div>
-      </div>
-    </div>
-    <div class="projects-clients">      
+    <div class="projects-clients reveal" id="highlights">      
       <h4>Highlights</h4>
       <ul class="project-list">
-              <li class="project content-box-dr" factor="0">
-                <ul class="items">
-                  <li class="video">
-                    <video src="./img/drvideo.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
-                  </li>
-                  <li class="content">
-                          <p class="strong">Digital Reasoning User Research</p>
-                          <p>A research process that converts user interactions and feedback into useable, trackable, cross-referenced data points available to the entire team. </p><a class="web" href="http://bit.ly/2GTtA64">Link</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="project content-box-dr" factor="0">
-                <ul class="items">
-                  <li class="video">
-                    <video src="./img/dr.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
-                  </li>
-                  <li class="content">
-                          <p class="strong">Digital Reasoning</p>
-                          <p>Conduct Surveillance uses patented AI to turn all forms of communications and structured data into discoverable, understandable, and actionable insights.</p><a class="web" href="http://digitalreasoning.com">Link</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="project content-box-sb" factor="0">
-                <ul class="items">
-                  <li class="video">
-                    <video src="./img/startbox.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
-                  </li>
-                  <li class="content">
-                          <p class="strong">Startbox</p>
-                          <p>Prevent wrong-site surgery and capture near misses through a real-time, data-driven approach.</p><a class="web" href="http://startboxor.com">Link</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="project content-box-av" factor="0">
-                <ul class="items">
-                  <li class="video">
-                    <video src="./img/medical.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
-                  </li>
-                  <li class="content">
-                          <p class="strong">Avenel</p>
-                          <p>The first AI/Machine Learning EHR that assists Providers in the office.</p><a class="web" href="http://avenel.com">Link</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="project content-box-5" factor="0">
-                <ul class="items">
-                  <li class="video">
-                    <video src="./img/shade.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
-                  </li>
-                  <li class="content">
-                          <p class="strong">Shade.io</p>
-                          <p>The Shade UV sensor is the only scientific way to control your sunlight exposure.</p><a class="web" href="https://verypossible.com/case-studies/shade">Link</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="project content-box-7" factor="0">
-                <ul class="items">
-                  <li class="video">
-                    <video src="./img/very.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
-                  </li>
-                  <li class="content">
-                          <p class="strong">Very</p>
-                          <p>28 Design Sprints in 2 years for various startups. Fully distributed team in an extremely fast paced environment. </p><a class="web" href="http://verypossible.com">Link</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="project content-box-8" factor="0">
-                <ul class="items">
-                  <li class="video">
-                    <video src="./img/nok.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
-                  </li>
-                  <li class="content">
-                          <p class="strong">nok</p>
-                          <p>We set out to make a wallet that carries ONLY what you need. 3 cards, 1 ID, weighing 1gm. Plus, a pocket for cash.</p><a class="web" href="http://ordernok.com">Link</a>
-                  </li>
-                </ul>
-              </li>
+        <li class="project content-box-dr" factor="0">
+          <ul class="items">
+            <li class="video">
+              <video src="./img/smarsh.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
+            </li>
+            <li class="content">
+              <div class="project-content">
+                <div class="logo-box"><img src="./img/smarsh-logo.png" alt="Smarsh logo"></div>
+                <div class="copy">
+                  <p class="strong">Smarsh</p>
+                  <p>Conduct Surveillance uses patented AI to turn all forms of communications and structured data into discoverable, understandable, and actionable insights.</p><a class="web" href="http://smarsh.com" target="_blank" rel="noopener noreferrer">Link</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="project content-box-dr" factor="0">
+          <ul class="items">
+            <li class="video">
+              <video src="./img/drvideo.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
+            </li>
+            <li class="content">
+              <div class="project-content">
+                <div class="logo-box"><img src="./img/dr-logo.png" alt="Digital Reasoning User Research logo"></div>
+                <div class="copy">
+                  <p class="strong">Digital Reasoning User Research</p>
+                  <p>A research process that converts user interactions and feedback into useable, trackable, cross-referenced data points available to the entire team. </p><a class="web" href="https://uxdesign.cc/empowering-enterprise-users-to-become-experience-advocates-181b2a0e82e" target="_blank" rel="noopener noreferrer">Link</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="project content-box-dr" factor="0">
+          <ul class="items">
+            <li class="video">
+              <video src="./img/dr.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
+            </li>
+            <li class="content">
+              <div class="project-content">
+                <div class="logo-box"><img src="./img/dr-logo.png" alt="Digital Reasoning logo"></div>
+                <div class="copy">
+                  <p class="strong">Digital Reasoning</p>
+                  <p>Conduct Surveillance uses patented AI to turn all forms of communications and structured data into discoverable, understandable, and actionable insights.</p><a class="web" href="http://digitalreasoning.com" target="_blank" rel="noopener noreferrer">Link</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="project content-box-sb" factor="0">
+          <ul class="items">
+            <li class="video">
+              <video src="./img/startbox.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
+            </li>
+            <li class="content">
+              <div class="project-content">
+                <div class="logo-box"><img src="./img/start-logo.png" alt="Startbox logo"></div>
+                <div class="copy">
+                  <p class="strong">Startbox</p>
+                  <p>Prevent wrong-site surgery and capture near misses through a real-time, data-driven approach.</p><a class="web" href="http://startboxor.com" target="_blank" rel="noopener noreferrer">Link</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="project content-box-av" factor="0">
+          <ul class="items">
+            <li class="video">
+              <video src="./img/medical.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
+            </li>
+            <li class="content">
+              <div class="project-content">
+                <div class="logo-box"><img src="./img/vera-logo.png" alt="Avenel / Veradigm logo"></div>
+                <div class="copy">
+                  <p class="strong">Avenel @ Veradigm</p>
+                  <p>The first AI/Machine Learning EHR that assists Providers in the office.</p><a class="web" href="https://veradigm.com/" target="_blank" rel="noopener noreferrer">Link</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="project content-box-5" factor="0">
+          <ul class="items">
+            <li class="video">
+              <video src="./img/shade.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
+            </li>
+            <li class="content">
+              <div class="project-content">
+                <div class="logo-box"><img src="./img/shade-logo.png" alt="Shade.io logo"></div>
+                <div class="copy">
+                  <p class="strong">Shade.io</p>
+                  <p>The Shade UV sensor is the only scientific way to control your sunlight exposure.</p><a class="web" href="https://verypossible.com/case-studies/shade" target="_blank" rel="noopener noreferrer">Link</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="project content-box-7" factor="0">
+          <ul class="items">
+            <li class="video">
+              <video src="./img/very.mp4" poster="https://source.unsplash.com/500x300" autoplay="autoplay" loop="loop" muted="muted"></video>
+            </li>
+            <li class="content">
+              <div class="project-content">
+                <div class="logo-box"><img src="./img/very-logo.png" alt="Very logo"></div>
+                <div class="copy">
+                  <p class="strong">Very</p>
+                  <p>28 Design Sprints in 2 years for various startups. Fully distributed team in an extremely fast paced environment. </p><a class="web" href="http://verypossible.com" target="_blank" rel="noopener noreferrer">Link</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="project content-box-8" factor="0">
+          <ul class="items">
+            <li class="video">
+              <img src="./img/guard.png" poster="https://source.unsplash.com/500x300"></img>
+            </li>
+            <li class="content">
+              <div class="project-content">
+                <div class="logo-box"><img src="./img/army-logo.png" alt="Army National Guard logo"></div>
+                <div class="copy">
+                  <p class="strong">Army National Guard</p>
+                  <p>Built and maintained the online presence of the Army National Guard, including the site, socials, and online enlistment web app.</p><a class="web" href="http://nationalguard.com" target="_blank" rel="noopener noreferrer">Link</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
-    <div class="articles">
+    <div class="stats reveal" id="numbers">
+      <h4>Leadership Numbers</h4>
+      <div class="stats-grid">
+        <div class="stats-column">
+          <h5>Build stats</h5>
+          <ul class="numbers">
+            <li>
+              <h3>66<span>Websites</span></h3>
+            </li>
+            <li>
+              <h3>63<span>Brands Built</span></h3>
+            </li>
+            <li>
+              <h3>55<span>Design Sprints</span></h3>
+            </li>
+            <li>
+              <h3>30<span>Mobile Apps</span></h3>
+            </li>
+            <li>
+              <h3>17<span>Featured Medium Posts</span></h3>
+            </li>
+            <li>
+              <h3>14<span>Web Apps</span></h3>
+            </li>
+            <li>
+              <h3>05<span>AI/ML Projects</span></h3>
+            </li>
+            <li>
+              <h3>05<span>Enterprise Apps</span></h3>
+            </li>
+            <li>
+              <h3>04<span>Hardware/Wearables</span></h3>
+            </li>
+            <li>
+              <h3>02<span>Chatbots</span></h3>
+            </li>
+            <li>
+              <h3>02<span>Ent Research Programs</span></h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="articles reveal" id="articles">
       <h4>Articles</h4>
       <ul class="articles">
                 <li class="article" factor="0"><a class="web" href="http://bit.ly/2GTtA64">Empowering enterprise users to become experience advocates</a></li>
@@ -248,7 +372,11 @@
       </ul>
     </div>
   </body>
-  <div class="social">
+  <div class="resume reveal" id="contact">
+    <h4>Contact</h4>
+    <p>For speaking, advisory, or leadership roles, email <a href="mailto:hello@tyrale.com">hello@tyrale.com</a>.</p>
+  </div>
+  <div class="social reveal">
     <p><a href="http://medium.com/@tyrale">Medium</a>/<a href="http://instagram.com/tyrale">Instagram</a>/<a href="http://twitter.com/tyrale">Twitter</a></p><span>I don't particpate on Social Media much, but I have the links...</span>
   </div>
   <script src="js/jquery.js" type="text/javascript"></script>

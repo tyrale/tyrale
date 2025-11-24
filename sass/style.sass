@@ -1,13 +1,38 @@
 html
     font-size: 1rem
+
 body
-    margin: 35vh 2.5rem 3rem
+    margin: 0 0 3rem
     background: #fff
+
+.page
+    max-width: 720px
+    margin: 0 auto
+    padding: 0 1.5rem
+
+// Center all major sections in the same column as the hero
+.leadership-snapshot,
+.leadership,
+.leadership-list-container,
+.recent,
+.stats,
+.projects-clients,
+.articles,
+.resume,
+.social
+    max-width: 720px
+    margin: 0 auto
+    padding: 0 1.5rem
+
 @media(min-width: 600px)
     body
-        margin: 45vh 11rem 3rem
+        margin: 0 0 4rem
     p
         max-width: 600px
+
+@media(min-width: 1024px)
+    body
+        margin: 0 0 5rem
 
 
 // TypeStyle
@@ -26,9 +51,10 @@ h1
   font-size: 1.4em
   font-weight: 700
 @media(min-width: 600px)
-  font-size: 1.81em
-  font-weight: 700
-  line-height: 2.2rem
+  h1
+    font-size: 1.81em
+    font-weight: 700
+    line-height: 2.2rem
 
 h2
   line-height: 1.4rem
@@ -43,7 +69,7 @@ h3
     font-size: 0.8em
 h4
   font-size: 1.414em
-  margin-top: 41vh
+  margin-top: 10vh
 p
   font-weight: 400
   line-height: 20px
@@ -55,10 +81,8 @@ p
       font-weight: 400
       margin-left: 1rem
 blockquote
-
   font-weight: 400
   line-height: 30px
-a
 img 
     max-width: 600
 
@@ -99,13 +123,17 @@ ul
             width: 100%
             max-width: 500px
             max-height: 300px
+        img
+            width: 100%
+            max-width: 500px
+            height: auto
     .content    
         width: 100%
     @media(min-width: 600px)
         .video
             margin-right: 2rem
         .content    
-            width: 40%
+            width: 60%
 
 // Header
 
@@ -113,16 +141,21 @@ header
     .video   
         width: 100%
     .headshot 
-        background-image: url("./img/profile3.png")
+        background-image: url("./img/profile.jpg")
         background-size: cover
         height: 240px
         min-width: 240px
         max-width: 240px
-        border-radius: 240px
+        border-radius: 0 0 24px 24px
         border: 6px solid black
+        border-top: none
+        opacity: 0
+        transform: translateY(-60px)
         
     .content
         padding-top: 5.5rem
+        h1
+            font-weight: 600
     @media(max-width: 590px)
         .headshot
             margin: 0 auto
@@ -148,9 +181,9 @@ header
 
 .recent
     p.strong
-        margin-top: 5rem
+        margin-top: 2.5rem
     @media(min-width: 600px)
-        margin-top: 4rem
+        margin-top: 2rem
     ul  
         border-left: 1px solid #eee
     li  
@@ -184,42 +217,39 @@ header
 
 .leadership 
     .content    
-        height: 100px
-#slideshow
-    position: relative 
-    button
-        font-size: 2.4rem
-        font-family: inherit
-        border: 0
-        padding: 0   
-        position: absolute
-        top: 0rem
-        left: 3rem 
-        z-index: 1
-        outline: none
-        color: #ccc
-        cursor: pointer
-        background: none
-.slide
-    position: absolute
-    padding: 2rem
-    @media(min-width: 600px)
-        width: 200%
-    .quote
-        font-size: 1.1rem
-    .credit
-        font-size: 0.8rem
-    &:before
-        content: "“"
-        font-size: 3rem
-        opacity: 0.2
-        width: 0.75rem
-        display: block
-        position: absolute
-        top: 0rem
-        left: 0rem
+        height: auto
 
-.project-list, .leadership-list
+// Hide old carousel UI in favor of static list
+#slideshow
+    display: none
+
+.leadership-list-container
+    margin-top: 1rem
+
+.leadership-approach
+    max-width: 600px
+    font-weight: 600
+
+.leadership-approach-small
+    font-size: 0.85rem
+    color: #777
+
+.leadership-list
+    margin: 1rem 0
+    padding: 0
+    list-style-type: none
+
+.leadership-item
+    margin-bottom: 2.5rem
+
+.leadership-item .quote
+    font-size: 1rem
+
+.leadership-item .credit
+    font-size: 0.8rem
+    margin-top: 0.25rem
+
+.project-list
     border-left: 1px solid #eee
 
 .project
@@ -252,6 +282,27 @@ header
             margin-top: 1rem
             padding-top: 1rem
             width: 540px
+
+.project-content
+    display: flex
+    align-items: flex-start
+    gap: 1rem
+
+.logo-box
+    width: 60px
+    height: 60px
+    border: 2px solid #eee
+    flex-shrink: 0
+    margin-top: 20px
+
+.project-content .copy
+    flex: 1
+
+.logo-box img
+    width: 100%
+    height: 100%
+    object-fit: contain
+    display: block
 
 .timeline
   display: block
@@ -316,7 +367,7 @@ header
       p.company
 
 .social
-    margin-top: 15rem
+    margin-top: 7.5rem
     a
         border: none
         color: black
@@ -363,3 +414,132 @@ header
         @include links (inline-block, none, none)
     &box-10 >
         @include links (inline-block, none, inline-block)
+
+// Stats grid: leadership vs build stats
+.stats-grid
+    display: flex
+    flex-direction: column
+    gap: 2rem
+
+@media(min-width: 768px)
+    .stats-grid
+        flex-direction: row
+        align-items: flex-start
+
+.stats-column
+    flex: 1
+
+.stats-column h5
+    font-size: 0.9rem
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    margin-bottom: 0.75rem
+
+.leadership-metrics
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+.leadership-metrics li
+    margin-bottom: 0.75rem
+
+.leadership-metrics .label
+    font-weight: 700
+
+.leadership-metrics .value
+    display: block
+    margin-top: 0.15rem
+
+.numbers
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+.hero-subtitle
+    margin-top: 0.75rem
+
+.leadership-snapshot
+    margin-top: 1.5rem
+
+.snapshot-list
+    list-style-type: none
+    padding: 0
+    margin: 1.5rem 0 0
+
+.snapshot-list li
+    margin-bottom: 0.7rem
+
+.snapshot-list .label
+    font-weight: 700
+
+.snapshot-list .value
+    margin-left: 0.5rem
+
+.resume
+    margin-top: 2rem
+
+// Table of contents navigation
+.toc
+    position: fixed
+    top: 1.5rem
+    left: 1.5rem
+    font-size: 0.7rem
+    z-index: 20
+    ul
+        margin: 0
+        padding: 0
+        list-style-type: none
+    li
+        margin-bottom: 0.25rem
+    a
+        color: black
+        text-decoration: none
+        border-bottom: 1px solid transparent
+        &:hover
+            border-bottom-color: black
+
+.toc a.is-active
+    font-weight: 700
+    border-bottom-color: black
+
+@media(max-width: 768px)
+    .toc
+        display: none
+
+// Offset anchored sections so headings aren't flush with the top on jump
+.leadership-snapshot,
+.leadership,
+.recent,
+.projects-clients,
+.stats,
+.articles,
+.resume
+    scroll-margin-top: 4rem
+
+// Scroll reveal animations
+.reveal
+    opacity: 0
+    transform: translateY(12px)
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out
+
+.reveal-visible
+    opacity: 1
+    transform: none
+
+@media (prefers-reduced-motion: reduce)
+    .reveal
+        opacity: 1
+        transform: none
+        transition: none
+
+// Headshot drop-in animation on load
+.headshot-animate
+    animation: headshotDrop 0.7s ease-out forwards
+
+@keyframes headshotDrop
+    from
+        opacity: 0
+        transform: translateY(-60px)
+    to
+        opacity: 1
+        transform: translateY(0)
